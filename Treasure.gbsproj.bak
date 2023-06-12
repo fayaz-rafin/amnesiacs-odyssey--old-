@@ -13,7 +13,7 @@
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
-            "autoFadeSpeed": 1,
+            "autoFadeSpeed": 6,
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
             "symbol": "scene_1",
             "x": 220.88788727086936,
@@ -33,7 +33,7 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
-                                "x": 8,
+                                "x": 9,
                                 "y": 2,
                                 "direction": "down",
                                 "fadeSpeed": "2"
@@ -44,7 +44,18 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_CAMERA_SHAKE",
+                    "args": {
+                        "time": 0.6,
+                        "frames": 30,
+                        "shakeDirection": "horizontal",
+                        "__collapse": true
+                    },
+                    "id": "8aafb66a-57b4-443d-91b1-ba676c9814be"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -155,7 +166,6 @@
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -164,7 +174,6 @@
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -175,7 +184,6 @@
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -184,7 +192,6 @@
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -194,8 +201,6 @@
                 0,
                 0,
                 0,
-                16,
-                16,
                 0,
                 0,
                 0,
@@ -204,7 +209,6 @@
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -214,9 +218,7 @@
                 0,
                 0,
                 0,
-                16,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -224,19 +226,11 @@
                 0,
                 0,
                 0,
-                16,
-                16,
-                16,
-                16,
-                16,
-                16,
-                16,
                 0,
                 0,
                 0,
                 0,
                 0,
-                16,
                 0,
                 0,
                 0,
@@ -250,13 +244,30 @@
                 0,
                 0,
                 0,
-                16,
-                16,
-                16,
-                16,
-                16,
-                16,
-                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -427,7 +438,31 @@
             "symbol": "scene_2",
             "x": 218.53793234574292,
             "y": 331.5697679967704,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_0",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "32f6f5ee-e03c-4ea3-a71e-5d16c7e3f84b",
+                    "x": 4,
+                    "y": 12
+                }
+            ],
             "triggers": [
                 {
                     "name": "VillageDoor",
@@ -437,8 +472,7 @@
                     "symbol": "trigger_1",
                     "width": 6,
                     "height": 1,
-                    "script": [],
-                    "leaveScript": [
+                    "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
@@ -448,9 +482,10 @@
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             },
-                            "id": "0dc31e53-acfa-4ffb-ad91-f8166de55934"
+                            "id": "98743e1b-7a2b-4d97-a20d-51d4c0c7609e"
                         }
-                    ]
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [],
@@ -647,7 +682,7 @@
                     ]
                 }
             ],
-            "numTiles": 5,
+            "numTiles": 6,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -1694,16 +1729,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
+        "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
         "startX": 8,
-        "startY": 6,
+        "startY": 7,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 303.20001220703125,
-        "worldScrollY": 400,
+        "worldScrollX": 252,
+        "worldScrollY": 112.80000305175781,
         "zoom": 214.9836801290512,
         "customColorsEnabled": false,
         "sgbEnabled": false,
