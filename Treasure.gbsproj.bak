@@ -13,11 +13,11 @@
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
-            "autoFadeSpeed": 6,
+            "autoFadeSpeed": 1,
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
             "symbol": "scene_1",
-            "x": 220.88788727086936,
-            "y": 145.88636902809492,
+            "x": 222.74849361903443,
+            "y": 144.95606585401237,
             "actors": [],
             "triggers": [
                 {
@@ -46,14 +46,64 @@
             ],
             "script": [
                 {
-                    "command": "EVENT_CAMERA_SHAKE",
+                    "command": "EVENT_FADE_IN",
                     "args": {
-                        "time": 0.6,
-                        "frames": 30,
-                        "shakeDirection": "horizontal",
+                        "speed": 1,
                         "__collapse": true
                     },
-                    "id": "8aafb66a-57b4-443d-91b1-ba676c9814be"
+                    "id": "c0712857-2ede-4bdd-89fe-394a2a228d68"
+                },
+                {
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "L0",
+                        "__collapseElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CAMERA_SHAKE",
+                                "args": {
+                                    "time": 0.6,
+                                    "frames": 30,
+                                    "shakeDirection": "horizontal",
+                                    "__collapse": true
+                                },
+                                "id": "8aafb66a-57b4-443d-91b1-ba676c9814be"
+                            },
+                            {
+                                "command": "EVENT_FADE_IN",
+                                "args": {
+                                    "speed": 6,
+                                    "__collapse": true
+                                },
+                                "id": "90f8fd7f-be3e-428f-b981-8ed589424493"
+                            },
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "L0",
+                                    "__collapse": true
+                                },
+                                "id": "151f7745-7b14-4ddb-9b4d-21623c5a9995"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        ". . .",
+                                        "Huh... Where am I?\n",
+                                        "What is this place?"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "c5172fdd-222b-48ed-842b-318d4cde05a2"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "49806cae-7541-4cb7-9099-e182079d18ab"
                 }
             ],
             "playerHit1Script": [],
@@ -1721,7 +1771,13 @@
             "filename": "sweat.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
+            "name": "onLoad",
+            "symbol": "var_onload"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",
@@ -1737,8 +1793,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 252,
-        "worldScrollY": 112.80000305175781,
+        "worldScrollX": 252.8000030517578,
+        "worldScrollY": 212.8000030517578,
         "zoom": 214.9836801290512,
         "customColorsEnabled": false,
         "sgbEnabled": false,

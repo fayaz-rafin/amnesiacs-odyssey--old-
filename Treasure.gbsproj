@@ -18,7 +18,131 @@
             "symbol": "scene_1",
             "x": 222.74849361903443,
             "y": 144.95606585401237,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "Old man",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "symbol": "actor_1",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Hey man you \nfinally woke up."
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "3715ef4f-100f-45ba-b021-639f8cf7fb23"
+                        },
+                        {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Who are you?",
+                                "falseText": "Where am I?",
+                                "__collapse": true
+                            },
+                            "id": "cc5a2374-cffc-4282-a60c-23bedf6c0588"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I am Nico. I live \nhere."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6734075b-6e46-40ab-a295-853662a31e45"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You are in my \nhouse. "
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "ea37444c-7d79-4363-958b-94c094b16079"
+                                    }
+                                ]
+                            },
+                            "id": "f9754415-c7b2-4687-ba71-1faf752aa42f"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I found you by the\npond yesterday.",
+                                    "Your head was \nbleeding so much.",
+                                    "You slept for \n2 days"
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "0d4ff808-43fd-47da-9306-e2e159827207"
+                        },
+                        {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "What pond?",
+                                "falseText": "Where is the pond",
+                                "__collapse": true
+                            },
+                            "id": "1d8622a2-031b-418f-9e35-aaea1d9578d9"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "It's a couple of \nyards away from my\nhouse.",
+                                    "Here have some\nsoup."
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "e101460b-c625-43fa-9c3b-39b812edd0e0"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "$self$",
+                                "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
+                            },
+                            "id": "7de980f2-3c8b-41b1-914c-5814ea9e74c2"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8479e4ae-6912-403d-9059-902ac5101f92",
+                    "x": 2,
+                    "y": 11
+                }
+            ],
             "triggers": [
                 {
                     "name": "HomeDoor",
@@ -63,6 +187,14 @@
                     "children": {
                         "true": [
                             {
+                                "command": "EVENT_FADE_IN",
+                                "args": {
+                                    "speed": 6,
+                                    "__collapse": true
+                                },
+                                "id": "35b5137b-3c4d-4450-834e-2a6354cc8c0f"
+                            },
+                            {
                                 "command": "EVENT_CAMERA_SHAKE",
                                 "args": {
                                     "time": 0.6,
@@ -94,9 +226,10 @@
                                     "text": [
                                         ". . .",
                                         "Huh... Where am I?\n",
-                                        "What is this place?"
+                                        "What is this\nplace?"
                                     ],
-                                    "avatarId": ""
+                                    "avatarId": "",
+                                    "__collapse": true
                                 },
                                 "id": "c5172fdd-222b-48ed-842b-318d4cde05a2"
                             }
@@ -1775,7 +1908,12 @@
         {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "onLoad",
-            "symbol": "var_onload"
+            "symbol": "var_onload_0"
+        },
+        {
+            "id": "8479e4ae-6912-403d-9059-902ac5101f92__L0",
+            "name": "whereabouts",
+            "symbol": "var_whereabouts"
         }
     ],
     "engineFieldValues": [
@@ -1793,8 +1931,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 252.8000030517578,
-        "worldScrollY": 212.8000030517578,
+        "worldScrollX": 152,
+        "worldScrollY": 200,
         "zoom": 214.9836801290512,
         "customColorsEnabled": false,
         "sgbEnabled": false,
