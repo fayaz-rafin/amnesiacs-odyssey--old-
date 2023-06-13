@@ -6,27 +6,512 @@
     "scenes": [
         {
             "name": "Home",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "5f3f1c95-540f-4167-bca0-b9f82b215369",
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
             "paletteIds": [],
             "spritePaletteIds": [],
-            "collisions": [],
+            "collisions": [
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                15,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15
+            ],
             "autoFadeSpeed": 1,
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
             "symbol": "scene_1",
             "x": 222.74849361903443,
             "y": 144.95606585401237,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "Old man",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "symbol": "actor_1",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Hey man you \nfinally woke up."
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "3715ef4f-100f-45ba-b021-639f8cf7fb23"
+                        },
+                        {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Who are you?",
+                                "falseText": "Where am I?",
+                                "__collapse": true
+                            },
+                            "id": "cc5a2374-cffc-4282-a60c-23bedf6c0588"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I am Nico. I live \nhere."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "6734075b-6e46-40ab-a295-853662a31e45"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You are in my \nhouse. "
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "ea37444c-7d79-4363-958b-94c094b16079"
+                                    }
+                                ]
+                            },
+                            "id": "f9754415-c7b2-4687-ba71-1faf752aa42f"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I found you by the\npond yesterday.",
+                                    "Your head was \nbleeding so much.",
+                                    "You slept for \n2 days"
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "0d4ff808-43fd-47da-9306-e2e159827207"
+                        },
+                        {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "What pond?",
+                                "falseText": "Where is the pond",
+                                "__collapse": true
+                            },
+                            "id": "1d8622a2-031b-418f-9e35-aaea1d9578d9"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "It's a couple of \nyards away from my\nhouse.",
+                                    "Here have some\nsoup."
+                                ],
+                                "avatarId": "",
+                                "__collapse": true
+                            },
+                            "id": "e101460b-c625-43fa-9c3b-39b812edd0e0"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "$self$",
+                                "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
+                            },
+                            "id": "7de980f2-3c8b-41b1-914c-5814ea9e74c2"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8479e4ae-6912-403d-9059-902ac5101f92",
+                    "x": 12,
+                    "y": 5
+                }
+            ],
             "triggers": [
                 {
-                    "name": "HomeDoor",
-                    "id": "d647d8b3-edc8-4983-8ac1-ba7425faee27",
-                    "x": 7,
+                    "name": "",
+                    "id": "83fbdd4b-a0cd-4f31-b769-2be9f41a470e",
+                    "x": 5,
                     "y": 17,
                     "symbol": "trigger_0",
-                    "width": 5,
+                    "width": 2,
                     "height": 1,
                     "script": [
                         {
@@ -35,10 +520,54 @@
                                 "sceneId": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
                                 "x": 9,
                                 "y": 2,
-                                "direction": "down",
+                                "direction": "",
                                 "fadeSpeed": "2"
                             },
-                            "id": "fdafd223-5ab0-47b5-8719-f7a11ddf52e8"
+                            "id": "4fdf97b6-7208-4d65-8fce-96df10f92366"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "c971c38b-0f2f-4352-bccd-6ab57019a27e",
+                    "x": 16,
+                    "y": 14,
+                    "symbol": "trigger_2",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "The Trash can is\nempty"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "4524b9a5-c3c8-4920-8ad3-e6ca8aff606c"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "ba2d2a3e-ed32-4617-82d8-367f124f7a05",
+                    "x": 16,
+                    "y": 7,
+                    "symbol": "trigger_3",
+                    "width": 1,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "It's a rubber\nducky!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "70113310-133b-43e0-b2a2-16550590f63a"
                         }
                     ],
                     "leaveScript": []
@@ -62,6 +591,14 @@
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_FADE_IN",
+                                "args": {
+                                    "speed": 6,
+                                    "__collapse": true
+                                },
+                                "id": "35b5137b-3c4d-4450-834e-2a6354cc8c0f"
+                            },
                             {
                                 "command": "EVENT_CAMERA_SHAKE",
                                 "args": {
@@ -94,9 +631,10 @@
                                     "text": [
                                         ". . .",
                                         "Huh... Where am I?\n",
-                                        "What is this place?"
+                                        "What is this\nplace?"
                                     ],
-                                    "avatarId": ""
+                                    "avatarId": "",
+                                    "__collapse": true
                                 },
                                 "id": "c5172fdd-222b-48ed-842b-318d4cde05a2"
                             }
@@ -515,24 +1053,24 @@
             ],
             "triggers": [
                 {
-                    "name": "VillageDoor",
-                    "id": "d6a602c1-558d-4b4e-b367-8a1bfe851c7d",
-                    "x": 7,
+                    "name": "",
+                    "id": "deb4a5e8-5bf5-46a0-b848-44c5fa5f85c5",
+                    "x": 8,
                     "y": 0,
                     "symbol": "trigger_1",
-                    "width": 6,
+                    "width": 2,
                     "height": 1,
                     "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-                                "x": 9,
+                                "x": 5,
                                 "y": 15,
-                                "direction": "up",
+                                "direction": "",
                                 "fadeSpeed": "2"
                             },
-                            "id": "98743e1b-7a2b-4d97-a20d-51d4c0c7609e"
+                            "id": "e9f960d5-6fce-4044-92c8-c04650a92f13"
                         }
                     ],
                     "leaveScript": []
@@ -546,6 +1084,16 @@
         }
     ],
     "backgrounds": [
+        {
+            "id": "5f3f1c95-540f-4167-bca0-b9f82b215369",
+            "name": "home",
+            "symbol": "bg_home",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "home.png"
+        },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
@@ -1775,7 +2323,12 @@
         {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "onLoad",
-            "symbol": "var_onload"
+            "symbol": "var_onload_0"
+        },
+        {
+            "id": "8479e4ae-6912-403d-9059-902ac5101f92__L0",
+            "name": "whereabouts",
+            "symbol": "var_whereabouts"
         }
     ],
     "engineFieldValues": [
@@ -1786,15 +2339,15 @@
     ],
     "settings": {
         "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 8,
-        "startY": 7,
+        "startX": 14,
+        "startY": 11,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 252.8000030517578,
-        "worldScrollY": 212.8000030517578,
+        "worldScrollX": 152,
+        "worldScrollY": 279,
         "zoom": 214.9836801290512,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -1823,9 +2376,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            465,
-            138,
-            138
+            425,
+            125,
+            125
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
