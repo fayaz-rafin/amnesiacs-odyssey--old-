@@ -518,34 +518,12 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
-                                "x": 9,
+                                "x": 8,
                                 "y": 2,
-                                "direction": "",
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             },
                             "id": "4fdf97b6-7208-4d65-8fce-96df10f92366"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "c971c38b-0f2f-4352-bccd-6ab57019a27e",
-                    "x": 16,
-                    "y": 14,
-                    "symbol": "trigger_2",
-                    "width": 1,
-                    "height": 2,
-                    "script": [
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "The Trash can is\nempty"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "4524b9a5-c3c8-4920-8ad3-e6ca8aff606c"
                         }
                     ],
                     "leaveScript": []
@@ -1067,7 +1045,7 @@
                                 "sceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
                                 "x": 5,
                                 "y": 15,
-                                "direction": "",
+                                "direction": "up",
                                 "fadeSpeed": "2"
                             },
                             "id": "e9f960d5-6fce-4044-92c8-c04650a92f13"
@@ -2347,7 +2325,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 152,
-        "worldScrollY": 279,
+        "worldScrollY": 385,
         "zoom": 214.9836801290512,
         "customColorsEnabled": false,
         "sgbEnabled": false,
