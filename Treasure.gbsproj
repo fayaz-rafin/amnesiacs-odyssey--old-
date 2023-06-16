@@ -525,9 +525,9 @@
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "22e6e5c8-0faa-4af2-b966-9cea2ee56592",
-                                "x": 1,
-                                "y": 1,
+                                "sceneId": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
+                                "x": 22,
+                                "y": 17,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             },
@@ -1730,7 +1730,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "",
+            "labelColor": "green"
         },
         {
             "name": "The Pond",
@@ -2801,10 +2802,11 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "",
+            "labelColor": "green"
         },
         {
-            "name": "Scene 4",
+            "name": "In development",
             "backgroundId": "5dd0d8f4-1d6a-4501-87b5-7464c23a27fb",
             "width": 70,
             "height": 70,
@@ -6298,9 +6300,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 167,
-        "worldScrollY": 320,
-        "zoom": 94.41553454077803,
+        "worldScrollX": 0,
+        "worldScrollY": 253,
+        "zoom": 80.69938455498777,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
