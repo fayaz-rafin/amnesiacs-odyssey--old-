@@ -237,8 +237,8 @@
                 15,
                 0,
                 0,
-                15,
-                15,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -547,11 +547,79 @@
                     "id": "c0712857-2ede-4bdd-89fe-394a2a228d68"
                 },
                 {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "Attack",
+                                    "__comment": false
+                                },
+                                "id": "84c3ae69-5ef8-4ad7-900b-aae4190d9fe2"
+                            },
+                            {
+                                "command": "EVENT_LAUNCH_PROJECTILE",
+                                "args": {
+                                    "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+                                    "spriteStateId": "",
+                                    "actorId": "$self$",
+                                    "x": 0,
+                                    "y": 0,
+                                    "otherActorId": "$self$",
+                                    "direction": "right",
+                                    "angle": 0,
+                                    "angleVariable": "L0",
+                                    "directionType": "direction",
+                                    "initialOffset": 0,
+                                    "speed": 2,
+                                    "animSpeed": 63,
+                                    "lifeTime": 0.1,
+                                    "loopAnim": false,
+                                    "destroyOnHit": false,
+                                    "collisionGroup": "3",
+                                    "collisionMask": [
+                                        "1"
+                                    ]
+                                },
+                                "id": "80f1873e-e3ce-41da-bef4-c23766ea1d99"
+                            }
+                        ]
+                    },
+                    "id": "60ff6930-3508-4ff0-be77-785982071843"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.1,
+                        "frames": 30,
+                        "__collapse": false
+                    },
+                    "id": "c1156d0e-77fe-4f84-9375-8dec7036fe9e"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_STATE",
+                    "args": {
+                        "actorId": "player",
+                        "spriteStateId": ""
+                    },
+                    "id": "7cd31fe3-56e2-4709-8435-621fbc117bda"
+                },
+                {
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "L0",
                         "__collapseElse": true,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -887,41 +955,41 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
                 15,
                 15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0,
                 15,
                 15,
                 15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 15,
                 15,
                 0,
@@ -1654,7 +1722,31 @@
             "symbol": "scene_2",
             "x": 226.92009038051555,
             "y": 303.9367742429371,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "290a155b-5e9e-4d97-966a-426151c2b348",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_0",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "4d316985-3f89-4222-82e3-85d14ca89baa",
+                    "x": 13,
+                    "y": 16
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -1730,7 +1822,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "",
+            "labelColor": "green"
         },
         {
             "name": "The Pond",
@@ -2100,8 +2193,8 @@
                 0,
                 0,
                 0,
-                15,
-                15,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -2801,7 +2894,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "",
+            "labelColor": "green"
         },
         {
             "name": "In development",
@@ -2834,7 +2928,8 @@
             "height": 70,
             "imageWidth": 560,
             "imageHeight": 560,
-            "filename": "bigmap.png"
+            "filename": "bigmap.png",
+            "tileColors": []
         },
         {
             "id": "5f3f1c95-540f-4167-bca0-b9f82b215369",
@@ -2855,7 +2950,8 @@
             "height": 56,
             "imageWidth": 800,
             "imageHeight": 448,
-            "filename": "map.png"
+            "filename": "map.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -2905,7 +3001,7 @@
     "spriteSheets": [
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-            "name": "actor",
+            "name": "LegoActor2",
             "symbol": "sprite_actor",
             "numFrames": 3,
             "type": "actor",
@@ -3087,7 +3183,7 @@
         },
         {
             "id": "290a155b-5e9e-4d97-966a-426151c2b348",
-            "name": "actor2",
+            "name": "LegoActor",
             "symbol": "sprite_actor2",
             "numFrames": 3,
             "type": "actor",
@@ -3362,7 +3458,7 @@
         },
         {
             "id": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
-            "name": "actor3",
+            "name": "Invisible",
             "symbol": "sprite_actor3",
             "numFrames": 3,
             "type": "actor",
@@ -3382,34 +3478,7 @@
                             "frames": [
                                 {
                                     "id": "06715edb-a355-4157-8820-f90792441850",
-                                    "tiles": [
-                                        {
-                                            "id": "6f5e7ce9-241d-4f20-bba5-40d9fc48ac17",
-                                            "x": 0,
-                                            "y": 0,
-                                            "sliceX": 32,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        },
-                                        {
-                                            "id": "32b3f843-13bc-4a33-819e-892e87b6ec82",
-                                            "x": 8,
-                                            "y": 0,
-                                            "sliceX": 40,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        }
-                                    ]
+                                    "tiles": []
                                 }
                             ]
                         },
@@ -3427,34 +3496,7 @@
                             "frames": [
                                 {
                                     "id": "faa0f584-ce30-4791-8e4c-8dab50e6ad10",
-                                    "tiles": [
-                                        {
-                                            "id": "65d6affb-0e18-4582-9fb6-457967d288b7",
-                                            "x": 0,
-                                            "y": 0,
-                                            "sliceX": 16,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        },
-                                        {
-                                            "id": "0674a310-542d-4368-b22f-85bde5b1100e",
-                                            "x": 8,
-                                            "y": 0,
-                                            "sliceX": 24,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        }
-                                    ]
+                                    "tiles": []
                                 }
                             ]
                         },
@@ -3463,34 +3505,7 @@
                             "frames": [
                                 {
                                     "id": "e6656d0e-4650-452a-bd4d-ef73bf279b00",
-                                    "tiles": [
-                                        {
-                                            "id": "8bde26c2-3c62-48f0-8f7e-aaf212af0e7c",
-                                            "x": 0,
-                                            "y": 0,
-                                            "sliceX": 0,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        },
-                                        {
-                                            "id": "a254161c-e890-46cc-89b6-89a0349d9119",
-                                            "x": 8,
-                                            "y": 0,
-                                            "sliceX": 8,
-                                            "sliceY": 0,
-                                            "flipX": false,
-                                            "flipY": false,
-                                            "palette": 0,
-                                            "paletteIndex": 0,
-                                            "objPalette": "OBP0",
-                                            "priority": false
-                                        }
-                                    ]
+                                    "tiles": []
                                 }
                             ]
                         },
@@ -3533,7 +3548,7 @@
                     ]
                 }
             ],
-            "numTiles": 6,
+            "numTiles": 0,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -3544,7 +3559,7 @@
         },
         {
             "id": "abd06377-0bf0-4477-b6fd-affbba9eacc6",
-            "name": "actor3animated",
+            "name": "WalkCycleActor(df)",
             "symbol": "sprite_actor3animated",
             "numFrames": 6,
             "type": "actor_animated",
@@ -4019,7 +4034,7 @@
         },
         {
             "id": "ab0aa65a-1809-4222-9682-ceb78a5382e5",
-            "name": "actor3animated2",
+            "name": "Player",
             "symbol": "sprite_actor3animated2",
             "numFrames": 5,
             "type": "animated",
@@ -6298,9 +6313,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 98,
-        "worldScrollY": 239,
-        "zoom": 80.69938455498777,
+        "worldScrollX": 521.5999755859375,
+        "worldScrollY": 797.5999755859375,
+        "zoom": 219.37426865077578,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -6328,9 +6343,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            427,
-            123,
-            123
+            471,
+            135,
+            135
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
