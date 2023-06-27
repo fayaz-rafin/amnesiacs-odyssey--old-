@@ -1761,7 +1761,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "290a155b-5e9e-4d97-966a-426151c2b348",
+                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -5865,7 +5865,11 @@
                                     "id": "df1ab012-351b-4d53-9f40-5e3266280e26",
                                     "tiles": [
                                         {
+<<<<<<< Updated upstream
                                             "id": "77ec04f2-0dbe-43f6-a084-d27320a7ca10",
+=======
+                                            "id": "45971d5b-be14-47c8-8e7c-cd2c8c91d35e",
+>>>>>>> Stashed changes
                                             "x": 0,
                                             "y": 0,
                                             "sliceX": 0,
@@ -5878,7 +5882,11 @@
                                             "priority": false
                                         },
                                         {
+<<<<<<< Updated upstream
                                             "id": "3276b830-7199-4356-b3bf-f4e34966295e",
+=======
+                                            "id": "3d73bb7e-cc57-468f-9c3d-79a5409dfa1f",
+>>>>>>> Stashed changes
                                             "x": 8,
                                             "y": 0,
                                             "sliceX": 8,
