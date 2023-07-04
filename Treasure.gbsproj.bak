@@ -1905,15 +1905,6 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_ACTOR_DEACTIVATE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "id": "b9b02376-6eba-4f59-b566-e5ac3647ece1"
-                                    }
-                                ],
-                                "false": [
-                                    {
                                         "command": "EVENT_SET_VALUE",
                                         "args": {
                                             "variable": "1",
@@ -1924,7 +1915,8 @@
                                         },
                                         "id": "a34fb2db-5625-4d08-aca4-ea9ba775c341"
                                     }
-                                ]
+                                ],
+                                "false": []
                             },
                             "id": "26b44579-3213-42da-b28f-367741543098"
                         }
@@ -1934,42 +1926,62 @@
                     "hit2Script": [],
                     "hit3Script": [
                         {
-                            "command": "EVENT_IF_VALUE",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "1",
-                                "operator": "<=",
-                                "comparator": "0",
+                                "variable": "2",
                                 "__collapseElse": false
                             },
                             "children": {
                                 "true": [
+                                    {
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "operator": ">",
+                                            "comparator": "0",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_DEC_VALUE",
+                                                    "args": {
+                                                        "variable": "1"
+                                                    },
+                                                    "id": "a8f3ca0b-7218-476a-a57c-f45795e0b2b0"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "2"
+                                                    },
+                                                    "id": "13befb1f-8852-46a4-a10c-ede7d4e4fc86"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_DEACTIVATE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    },
+                                                    "id": "87f86f34-685a-41bc-935b-049116cb92d0"
+                                                }
+                                            ]
+                                        },
+                                        "id": "ec7471b8-3451-4490-920f-da3cb8c2e63a"
+                                    }
+                                ],
+                                "false": [
                                     {
                                         "command": "EVENT_ACTOR_DEACTIVATE",
                                         "args": {
                                             "actorId": "$self$"
                                         },
                                         "id": "2015e9f3-d3f5-4eef-b14d-01a77cc0364c"
-                                    },
-                                    {
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "2"
-                                        },
-                                        "id": "cb4a2fd3-7b74-4766-9a14-c71ae582fbd2"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_DEC_VALUE",
-                                        "args": {
-                                            "variable": "1",
-                                            "__collapse": false
-                                        },
-                                        "id": "a8f3ca0b-7218-476a-a57c-f45795e0b2b0"
                                     }
                                 ]
                             },
-                            "id": "c10bb16b-9832-464b-bfcf-6df4e20c77e4"
+                            "id": "4e0d21b5-503c-47a0-81bd-ad7f2f19bd38"
                         }
                     ],
                     "id": "9c75a702-8873-47f9-8941-06c044aef369",
@@ -2057,7 +2069,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -7866,7 +7878,7 @@
         {
             "id": "9c75a702-8873-47f9-8941-06c044aef369__L0",
             "name": "Local 0",
-            "symbol": "var_local_1"
+            "symbol": "var_local_0"
         }
     ],
     "engineFieldValues": [
