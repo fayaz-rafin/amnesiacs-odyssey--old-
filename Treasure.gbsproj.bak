@@ -510,6 +510,29 @@
                     "id": "8479e4ae-6912-403d-9059-902ac5101f92",
                     "x": 14,
                     "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_8",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "94487f81-864b-493c-b2d6-0ba60e965924",
+                    "x": 7,
+                    "y": 7
                 }
             ],
             "triggers": [
@@ -4583,11 +4606,11 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 16
+                                                "value": 15
                                             },
                                             "y": {
                                                 "type": "number",
-                                                "value": 12
+                                                "value": 2
                                             }
                                         },
                                         "id": "65c1647e-d688-4453-b227-89320e750027"
@@ -13105,9 +13128,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2141,
-        "worldScrollY": 2316,
-        "zoom": 401.2545775359022,
+        "worldScrollX": 1179,
+        "worldScrollY": 600,
+        "zoom": 274.1935896461355,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
