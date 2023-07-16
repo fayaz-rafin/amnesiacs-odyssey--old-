@@ -510,6 +510,29 @@
                     "id": "8479e4ae-6912-403d-9059-902ac5101f92",
                     "x": 14,
                     "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_8",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "94487f81-864b-493c-b2d6-0ba60e965924",
+                    "x": 7,
+                    "y": 7
                 }
             ],
             "triggers": [
@@ -4576,6 +4599,21 @@
                                             "avatarId": ""
                                         },
                                         "id": "10da8db2-b192-4102-89ed-917905874737"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 15
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 2
+                                            }
+                                        },
+                                        "id": "65c1647e-d688-4453-b227-89320e750027"
                                     }
                                 ],
                                 "false": [
@@ -4600,8 +4638,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4",
-                    "x": 15,
-                    "y": 3
+                    "x": 13,
+                    "y": 2
                 }
             ],
             "triggers": [
@@ -4655,10 +4693,11 @@
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "labelColor": "blue"
         },
         {
-            "name": "Scene 5",
+            "name": "cave2",
             "backgroundId": "07cb2558-915e-4cb4-99d1-b5c4d8110e46",
             "width": 64,
             "height": 64,
@@ -8821,7 +8860,8 @@
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "labelColor": "blue"
         }
     ],
     "backgrounds": [
@@ -13043,6 +13083,11 @@
             "symbol": "var_not_hit"
         },
         {
+            "id": "3",
+            "name": "BoxCount",
+            "symbol": "var_boxcount_0"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -13066,11 +13111,6 @@
             "id": "9c75a702-8873-47f9-8941-06c044aef369__L0",
             "name": "Local 0",
             "symbol": "var_local_1"
-        },
-        {
-            "id": "3",
-            "name": "BoxCount",
-            "symbol": "var_boxcount_0"
         }
     ],
     "engineFieldValues": [
@@ -13088,9 +13128,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 431.20001220703125,
-        "worldScrollY": 738.4000244140625,
-        "zoom": 248.10058771050444,
+        "worldScrollX": 1179,
+        "worldScrollY": 600,
+        "zoom": 274.1935896461355,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -13118,9 +13158,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            483,
-            129,
-            129
+            400,
+            30,
+            205
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
