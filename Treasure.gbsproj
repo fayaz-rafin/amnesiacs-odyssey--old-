@@ -4500,7 +4500,7 @@
             "y": 625.7675077953237,
             "actors": [
                 {
-                    "name": "",
+                    "name": "Steve",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
@@ -4514,92 +4514,163 @@
                     "symbol": "actor_3",
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "text": [
-                                    "Welcome, Stranger!"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "403757ec-72e5-4f75-8e19-bb0d3b654f24"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Yes you are not\nhallucinating."
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "2ca08a29-5a86-4e04-83bf-c987f2ef7f65"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "I am indeed Steve\nfrom MINECRAFT!"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "82aa04c4-83aa-436b-a76b-24352ac6f4a1"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "I lost my pickaxe\nin that cave"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "478bc7fb-e6c9-4b8d-818b-67a9d9a66910"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "And i do not have\na weapon to craft"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "30918c99-1e61-4d2d-b164-733817f01d4f"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Will yu help me?"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "f4928082-92d6-46ee-950e-305f2b16c3c3"
-                        },
-                        {
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "3",
-                                "trueText": "Yes",
-                                "falseText": "No"
-                            },
-                            "id": "fcffe4f2-7a0c-4dc4-bb3b-58a19c845692"
-                        },
-                        {
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "3",
-                                "__collapseElse": false
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
                                     {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapse": true
+                                        },
+                                        "id": "2e45db2b-099f-4888-9e51-6d29b11b9ad8"
+                                    },
+                                    {
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Thanks, you're\na real one."
+                                                "Welcome, Stranger!"
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "",
+                                            "__collapse": true
                                         },
-                                        "id": "10da8db2-b192-4102-89ed-917905874737"
+                                        "id": "403757ec-72e5-4f75-8e19-bb0d3b654f24"
                                     },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Yes you are not\nhallucinating."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "2ca08a29-5a86-4e04-83bf-c987f2ef7f65"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I am indeed Steve\nfrom MINECRAFT!"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "82aa04c4-83aa-436b-a76b-24352ac6f4a1"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I lost my pickaxe\nin that cave"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "478bc7fb-e6c9-4b8d-818b-67a9d9a66910"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "And i do not have\na weapon to craft"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": true
+                                        },
+                                        "id": "30918c99-1e61-4d2d-b164-733817f01d4f"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Will you help me?"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        },
+                                        "id": "f4928082-92d6-46ee-950e-305f2b16c3c3"
+                                    },
+                                    {
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "4",
+                                            "trueText": "Yes",
+                                            "falseText": "No",
+                                            "__collapse": false
+                                        },
+                                        "id": "fcffe4f2-7a0c-4dc4-bb3b-58a19c845692"
+                                    },
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "4",
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Thanks, you're\na real one."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "10da8db2-b192-4102-89ed-917905874737"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": {
+                                                            "type": "number",
+                                                            "value": 15
+                                                        },
+                                                        "y": {
+                                                            "type": "number",
+                                                            "value": 2
+                                                        }
+                                                    },
+                                                    "id": "65c1647e-d688-4453-b227-89320e750027"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Aw man :(\nI had hope."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "dfa41503-1f64-437f-879b-b2f600de5194"
+                                                }
+                                            ]
+                                        },
+                                        "id": "617d139f-3e4a-4722-bf65-7bd6be7529f7"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "c4287a8b-d96d-4efe-a985-66b0aadfee81"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
                                     {
                                         "command": "EVENT_ACTOR_SET_POSITION",
                                         "args": {
@@ -4613,26 +4684,14 @@
                                                 "value": 2
                                             }
                                         },
-                                        "id": "65c1647e-d688-4453-b227-89320e750027"
+                                        "id": "9cf737f7-6ae0-4ac8-93b2-8c5053ea0766"
                                     }
                                 ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Aw man :(\nI had hope."
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "dfa41503-1f64-437f-879b-b2f600de5194"
-                                    }
-                                ]
+                                "false": []
                             },
-                            "id": "617d139f-3e4a-4722-bf65-7bd6be7529f7"
+                            "id": "d0fb22d9-b117-4fa3-9eb6-c1e3a552e051"
                         }
                     ],
-                    "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -13111,6 +13170,16 @@
             "id": "9c75a702-8873-47f9-8941-06c044aef369__L0",
             "name": "Local 0",
             "symbol": "var_local_1"
+        },
+        {
+            "id": "4",
+            "name": "HelpingToGetWeapon",
+            "symbol": "var_helpingtogetweapon"
+        },
+        {
+            "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4__L0",
+            "name": "TalekdToCaveman",
+            "symbol": "var_talekdtocaveman"
         }
     ],
     "engineFieldValues": [
@@ -13128,8 +13197,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1178,
-        "worldScrollY": 1180,
+        "worldScrollX": 1208,
+        "worldScrollY": 1355.199951171875,
         "zoom": 274.1935896461355,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -13158,9 +13227,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            400,
+            470,
             30,
-            205
+            241
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
