@@ -4692,37 +4692,7 @@
                             "id": "d0fb22d9-b117-4fa3-9eb6-c1e3a552e051"
                         }
                     ],
-                    "updateScript": [
-                        {
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "L0",
-                                "__collapseElse": true,
-                                "__comment": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 16
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 2
-                                            }
-                                        },
-                                        "id": "7d92cc67-ff4d-4471-85e5-97c5a2757fc5"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "3a891739-ca43-485a-8204-3c0de50f87e3"
-                        }
-                    ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
