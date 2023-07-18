@@ -708,9 +708,18 @@
                         "value": "0",
                         "minValue": "0",
                         "maxValue": "32767",
-                        "clamp": false
+                        "clamp": false,
+                        "__collapse": true
                     },
                     "id": "0e0b3109-9500-41e6-b9e0-f30be48d9926"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+                        "__comment": true
+                    },
+                    "id": "138d752c-9e76-4a4b-a182-eec89152c7f8"
                 }
             ],
             "playerHit1Script": [],
@@ -3282,7 +3291,7 @@
                     "name": "Box1",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "7128c22e-6c79-45e6-9b26-30936867378c",
+                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -3320,7 +3329,7 @@
                     "name": "Box3",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "7128c22e-6c79-45e6-9b26-30936867378c",
+                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -3358,7 +3367,7 @@
                     "name": "Box2",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "7128c22e-6c79-45e6-9b26-30936867378c",
+                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -11674,7 +11683,7 @@
             "animSpeed": 15
         },
         {
-            "id": "7128c22e-6c79-45e6-9b26-30936867378c",
+            "id": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
             "name": "coconut",
             "symbol": "sprite_coconut",
             "numFrames": 1,
@@ -11685,19 +11694,19 @@
             "height": 16,
             "states": [
                 {
-                    "id": "a79382a4-5e11-42f8-a7c0-72cb54ab8efa",
+                    "id": "6754d115-ddad-460f-8348-3e44fe9be0e8",
                     "name": "",
                     "animationType": "fixed",
                     "flipLeft": false,
                     "animations": [
                         {
-                            "id": "7085bb1d-8857-4f83-84d4-e6e8192d544f",
+                            "id": "7f937527-da6e-415a-bf94-cbf52762eafe",
                             "frames": [
                                 {
-                                    "id": "4845329e-b041-498a-9e92-601b08f321fc",
+                                    "id": "e335462b-fe5a-4801-ba9f-2c0dca094fad",
                                     "tiles": [
                                         {
-                                            "id": "a311e2d9-0221-4e9e-b61d-64fc49fff136",
+                                            "id": "51763f2e-d00d-4871-935d-53b62269d73d",
                                             "x": 0,
                                             "y": 0,
                                             "sliceX": 0,
@@ -11710,7 +11719,7 @@
                                             "priority": false
                                         },
                                         {
-                                            "id": "0d2768eb-54e3-4d24-aaac-0c30125f09be",
+                                            "id": "059bc5e4-4587-4c29-929a-b0e28535fa15",
                                             "x": 8,
                                             "y": 0,
                                             "sliceX": 8,
@@ -11727,64 +11736,64 @@
                             ]
                         },
                         {
-                            "id": "ba3103c4-c6f8-4432-8e11-1b6b3d48f699",
+                            "id": "b681147f-1857-43dd-957d-8da3228b8c9a",
                             "frames": [
                                 {
-                                    "id": "c21172c1-ab7d-420b-ae3f-09e57f5ce275",
+                                    "id": "22712722-7af3-44be-88fb-52f8bb4a5a41",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "30d311b0-fd2d-4582-b3d3-0048addb773f",
+                            "id": "b1d6174b-e206-4fdf-9143-4e05e6bcdf69",
                             "frames": [
                                 {
-                                    "id": "54a71727-1968-4c5b-91f2-0e3e7fa17ea6",
+                                    "id": "d8e27578-1b48-4438-95f1-53d81de1869b",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "fa989af5-3eac-4b5b-8c93-00a6d8eab4a6",
+                            "id": "2ee0c21c-a4a8-40d6-a498-f0d6cfb9786f",
                             "frames": [
                                 {
-                                    "id": "500fcb5f-4b92-4b6f-9257-339af71248ba",
+                                    "id": "3fd987dc-b3f5-4d5c-8348-722650c44a35",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "5861f227-3ad7-4fd4-878b-6c7ecd1d8216",
+                            "id": "b11f95e0-c327-4692-a57e-ea5faafea3de",
                             "frames": [
                                 {
-                                    "id": "52e2ed61-02ad-49e1-9281-c1c44da85125",
+                                    "id": "83c29f2f-cb19-402a-972c-e5b2aaed0028",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "551c1123-6235-4965-9cdb-627353559fb9",
+                            "id": "5206889b-5114-4472-b364-0473255639ab",
                             "frames": [
                                 {
-                                    "id": "c781f882-ec9a-4154-92bd-36eb5105d4c3",
+                                    "id": "eb5425e8-619a-40af-ab2b-cce985558c3a",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "26d8fbf6-1d92-42f0-a671-3b6b7933386b",
+                            "id": "98e86d15-1926-4c1e-b99b-52f6c21d37b9",
                             "frames": [
                                 {
-                                    "id": "df0f6521-2997-4cbc-b89a-58f3f844c0cb",
+                                    "id": "c97bbb56-637f-4b5b-911a-347a9e00fe88",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "b7abd2db-af9e-4dcf-813a-65e279bfd207",
+                            "id": "dc1cfadd-efdc-490c-8cba-a3327d4f3f55",
                             "frames": [
                                 {
-                                    "id": "3dc465c2-f254-4a8a-9303-121443a50695",
+                                    "id": "9a3bdd0e-6d93-4f9d-9c04-4e7c3ab2d750",
                                     "tiles": []
                                 }
                             ]
@@ -13275,11 +13284,6 @@
             "symbol": "var_boxcount_0"
         },
         {
-            "id": "4",
-            "name": "HelpingToGetWeapon",
-            "symbol": "var_helpingtogetweapon"
-        },
-        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -13305,6 +13309,11 @@
             "symbol": "var_local_1"
         },
         {
+            "id": "4",
+            "name": "HelpingToGetWeapon",
+            "symbol": "var_helpingtogetweapon"
+        },
+        {
             "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4__L0",
             "name": "TalekdToCaveman",
             "symbol": "var_talekdtocaveman"
@@ -13325,8 +13334,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 703,
-        "worldScrollY": 1378,
+        "worldScrollX": 1473.5999755859375,
+        "worldScrollY": 1755.199951171875,
         "zoom": 274.1935896461355,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -13355,9 +13364,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            399,
+            470,
             30,
-            205
+            241
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
