@@ -8958,7 +8958,7 @@
                         {
                             "command": "EVENT_ACTOR_GET_POSITION",
                             "args": {
-                                "actorId": "$self$",
+                                "actorId": "player",
                                 "vectorX": "L1",
                                 "vectorY": "L2",
                                 "__collapse": false
@@ -8976,7 +8976,7 @@
                                 },
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -8987,7 +8987,7 @@
                                             "operator": "<",
                                             "vectorY": "L3",
                                             "__collapseElse": true,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -8999,7 +8999,7 @@
                                                             "type": "direction",
                                                             "value": "down"
                                                         },
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     },
                                                     "id": "c08470f4-dc9d-45ea-9a2d-157a82d815d0"
                                                 },
@@ -9017,7 +9017,7 @@
                                                         },
                                                         "moveType": "horizontal",
                                                         "useCollisions": true,
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     },
                                                     "id": "68e1b770-5b61-4c1f-83c8-0359e27b6909"
                                                 }
@@ -9033,7 +9033,7 @@
                                             "operator": ">",
                                             "vectorY": "L3",
                                             "__collapseElse": true,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -9043,7 +9043,7 @@
                                                         "actorId": "$self$",
                                                         "direction": {
                                                             "type": "direction",
-                                                            "value": "down"
+                                                            "value": "up"
                                                         },
                                                         "__collapse": false
                                                     },
@@ -9078,7 +9078,7 @@
                                             "operator": "<",
                                             "vectorY": "L4",
                                             "__collapseElse": true,
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -13754,17 +13754,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 14,
-        "startY": 12,
+        "startSceneId": "29484a9a-33e8-49f4-9731-7bae3f381c13",
+        "startX": 32,
+        "startY": 56,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2134,
-        "worldScrollY": 1134,
-        "zoom": 274.1935896461355,
+        "worldScrollX": 883,
+        "worldScrollY": 238,
+        "zoom": 145.88280709437004,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
