@@ -8945,7 +8945,7 @@
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
@@ -8979,7 +8979,8 @@
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
                                 "__collapse": true,
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -9220,7 +9221,7 @@
                                 "operation": "down",
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -9253,7 +9254,7 @@
                                 "operation": "left",
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -9286,7 +9287,7 @@
                                 "operation": "right",
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -9326,7 +9327,7 @@
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
@@ -9360,7 +9361,8 @@
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
                                 "__collapse": true,
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -9707,7 +9709,7 @@
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
@@ -9741,7 +9743,8 @@
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
                                 "__collapse": true,
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -10088,7 +10091,7 @@
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 0.5,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
@@ -10122,7 +10125,8 @@
                                 "otherActorId": "$self$",
                                 "__collapseElse": true,
                                 "__collapse": true,
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -15353,7 +15357,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1261,
-        "worldScrollY": 441,
+        "worldScrollY": 563,
         "zoom": 191.72181327990165,
         "customColorsEnabled": false,
         "sgbEnabled": false,
