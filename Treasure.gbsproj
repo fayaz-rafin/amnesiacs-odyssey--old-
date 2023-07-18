@@ -52,7 +52,7 @@
                 15,
                 15,
                 15,
-                15,
+                0,
                 15,
                 15,
                 15,
@@ -169,7 +169,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 15,
                 15,
@@ -535,7 +535,7 @@
                     "y": 7
                 },
                 {
-                    "name": "",
+                    "name": "heart",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
@@ -548,7 +548,15 @@
                     "collisionGroup": "",
                     "symbol": "actor_9",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8"
+                            },
+                            "id": "5b3206d0-0810-459b-8473-2f590a9951ef"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -740,7 +748,8 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-                        "__comment": true
+                        "__comment": true,
+                        "__collapse": true
                     },
                     "id": "138d752c-9e76-4a4b-a182-eec89152c7f8"
                 }
@@ -812,7 +821,7 @@
                 15,
                 15,
                 15,
-                15,
+                0,
                 15,
                 15,
                 15,
@@ -1056,8 +1065,8 @@
                 0,
                 0,
                 0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 15,
                 15,
@@ -2122,18 +2131,26 @@
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
-                    "isPinned": false,
+                    "isPinned": true,
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_10",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8"
+                            },
+                            "id": "dfa540eb-9f27-44c8-8472-5f373bee650c"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "aa6fbf43-95fe-44de-8d5f-922d1cd048c2",
-                    "x": 30,
+                    "x": 18,
                     "y": 1
                 }
             ],
@@ -3337,7 +3354,7 @@
                     "name": "Box1",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
+                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -3375,7 +3392,7 @@
                     "name": "Box3",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
+                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -3413,7 +3430,7 @@
                     "name": "Box2",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "44f7271c-2505-478a-905d-06d9767c5fe9",
+                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -12164,7 +12181,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "heart.png",
-            "checksum": "81b7edf6c2b2e348cd681bb2944c27508f49bc10",
+            "checksum": "f37e535f6394be8efaa6da505437f6704b2afd6c",
             "width": 16,
             "height": 16,
             "states": [
@@ -13491,6 +13508,11 @@
             "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4__L0",
             "name": "TalekdToCaveman",
             "symbol": "var_talekdtocaveman"
+        },
+        {
+            "id": "8",
+            "name": "Health",
+            "symbol": "var_health"
         }
     ],
     "engineFieldValues": [
@@ -13508,8 +13530,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 829,
-        "worldScrollY": 762,
+        "worldScrollX": 634,
+        "worldScrollY": 635,
         "zoom": 274.1935896461355,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -13538,9 +13560,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            399,
+            600,
             30,
-            205
+            307
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
