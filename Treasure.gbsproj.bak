@@ -9666,7 +9666,7 @@
                                         "args": {
                                             "time": 0.3,
                                             "frames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
                                     },
@@ -9674,7 +9674,7 @@
                                         "command": "EVENT_ACTOR_HIDE",
                                         "args": {
                                             "actorId": "$self$",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
                                     },
@@ -9683,7 +9683,7 @@
                                         "args": {
                                             "time": 0.3,
                                             "frames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "2e91f3fa-0839-4d26-80eb-31265f3faa1c"
                                     },
@@ -9691,7 +9691,7 @@
                                         "command": "EVENT_ACTOR_SHOW",
                                         "args": {
                                             "actorId": "$self$",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
                                     },
@@ -9700,7 +9700,7 @@
                                         "args": {
                                             "time": 0.3,
                                             "frames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
                                     },
@@ -9708,7 +9708,7 @@
                                         "command": "EVENT_ACTOR_HIDE",
                                         "args": {
                                             "actorId": "$self$",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "3859b608-b21f-47da-8aae-05283437c38e"
                                     },
@@ -9717,7 +9717,7 @@
                                         "args": {
                                             "time": 0.3,
                                             "frames": 30,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
                                     },
@@ -9725,7 +9725,7 @@
                                         "command": "EVENT_ACTOR_SHOW",
                                         "args": {
                                             "actorId": "$self$",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "23c37066-9299-420a-9278-513e43116f05"
                                     }
@@ -14328,10 +14328,10 @@
             "numTiles": 11,
             "canvasWidth": 16,
             "canvasHeight": 16,
-            "boundsX": 0,
-            "boundsY": 0,
-            "boundsWidth": 16,
-            "boundsHeight": 16,
+            "boundsX": -1,
+            "boundsY": -1,
+            "boundsWidth": 18,
+            "boundsHeight": 18,
             "animSpeed": 15
         },
         {
@@ -15865,8 +15865,8 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 516,
-        "worldScrollY": 788,
+        "worldScrollX": 1092,
+        "worldScrollY": 772,
         "zoom": 191.72181327990165,
         "customColorsEnabled": false,
         "sgbEnabled": false,
