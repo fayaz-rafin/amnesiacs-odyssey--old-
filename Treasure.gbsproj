@@ -14485,8 +14485,8 @@
         },
         {
             "id": "5",
-            "name": "BigBossHP",
-            "symbol": "var_bigbosshp"
+            "name": "creeperHP",
+            "symbol": "var_creeperhp"
         },
         {
             "id": "6",
@@ -14495,8 +14495,8 @@
         },
         {
             "id": "7",
-            "name": "BigBossDeafeated",
-            "symbol": "var_bigbossdeafeated"
+            "name": "creeperDefated",
+            "symbol": "var_creeperdefated"
         },
         {
             "id": "8",
