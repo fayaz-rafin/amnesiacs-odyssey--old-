@@ -1153,7 +1153,7 @@
                                     "text": [
                                         ". . .",
                                         "Huh... Where am I?\n",
-                                        "What is this\nplace?"
+                                        "Why cant i\nremember\nanything?"
                                     ],
                                     "avatarId": "",
                                     "__collapse": false
@@ -11574,7 +11574,7 @@
         },
         {
             "name": "Scene 6",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "backgroundId": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
@@ -11945,14 +11945,43 @@
             "autoFadeSpeed": 1,
             "id": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
             "symbol": "scene_6",
-            "x": 79.45807834680595,
-            "y": 102.27286243099353,
+            "x": 172.1910610537305,
+            "y": 83.23496531897592,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b",
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
+                                    "x": 14,
+                                    "y": 12,
+                                    "direction": "down",
+                                    "fadeSpeed": 3
+                                },
+                                "id": "5bd55f05-cdd1-4f31-a85b-ffe4528bd4e1"
+                            }
+                        ]
+                    },
+                    "id": "334a043c-6f3b-418a-bd6a-d321f40ae540"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa"
         }
     ],
     "backgrounds": [
@@ -12034,6 +12063,16 @@
             "tileColors": []
         },
         {
+            "id": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
+            "name": "title",
+            "symbol": "bg_title",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 166,
+            "imageHeight": 144,
+            "filename": "title.png"
+        },
+        {
             "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
             "name": "town",
             "symbol": "bg_town",
@@ -12068,6 +12107,107 @@
         }
     ],
     "spriteSheets": [
+        {
+            "id": "625071e6-51b3-4042-baa0-92a3f7730a9b",
+            "name": "Sprite-0002",
+            "symbol": "sprite_sprite_0002",
+            "numFrames": 10,
+            "type": "animated",
+            "filename": "Sprite-0002.png",
+            "checksum": "6f6c329a4214a58d470195ccdb976f10466e9f8f",
+            "width": 160,
+            "height": 160,
+            "states": [
+                {
+                    "id": "5949480f-c25c-4e01-852f-ef1caa3dbfae",
+                    "name": "",
+                    "animationType": "multi_movement",
+                    "flipLeft": true,
+                    "animations": [
+                        {
+                            "id": "37af858e-3417-4701-bbe1-cad55b3d66d9",
+                            "frames": [
+                                {
+                                    "id": "1d235dfb-e5de-4032-b846-33e978266071",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6947d15c-a603-4c22-94dd-7a1563842449",
+                            "frames": [
+                                {
+                                    "id": "7ab8863a-8d76-409b-adae-5a91fb0a6cd9",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "07ba5c5c-7a6f-40e7-87a0-2b79fb299ca2",
+                            "frames": [
+                                {
+                                    "id": "f97da338-756d-4ce6-8281-fbe0f48786b4",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "bfa2c7a0-7651-4a30-910a-a0b7c895c5f2",
+                            "frames": [
+                                {
+                                    "id": "6d8a55b6-2d92-4a9a-bc0b-a7a08c1ec5e7",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9be30736-0cbc-46a4-8a19-80ae0eeed2a4",
+                            "frames": [
+                                {
+                                    "id": "3ed81d4d-4250-4d33-94c2-630db917a6a7",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b1036053-fb65-4926-9dab-ea40544ccb8b",
+                            "frames": [
+                                {
+                                    "id": "d0257059-a9c8-4f80-8a6e-9f27bd88b94f",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "607e4183-77a6-4d4f-97de-4d2ab8a81d60",
+                            "frames": [
+                                {
+                                    "id": "06ac0e3b-18ed-49c7-8a59-27b41d4768df",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "070a310f-510d-4487-bb45-cc2da692aaed",
+                            "frames": [
+                                {
+                                    "id": "8aacf89d-5db8-4852-bc34-d3d3d62a99d2",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 0,
+            "canvasWidth": 32,
+            "canvasHeight": 32,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
             "name": "LegoActor2",
@@ -17051,6 +17191,26 @@
             "symbol": "var_health"
         },
         {
+            "id": "9",
+            "name": "KittyKatTalked ",
+            "symbol": "var_kittykattalked_"
+        },
+        {
+            "id": "10",
+            "name": "cutscene",
+            "symbol": "var_cutscene"
+        },
+        {
+            "id": "11",
+            "name": "OldManHasTalked",
+            "symbol": "var_oldmanhastalked"
+        },
+        {
+            "id": "12",
+            "name": "KatRanOff_Home",
+            "symbol": "var_katranoff_home"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -17256,29 +17416,9 @@
             "symbol": "var_talekdtocaveman_0"
         },
         {
-            "id": "9",
-            "name": "KittyKatTalked ",
-            "symbol": "var_kittykattalked_"
-        },
-        {
-            "id": "10",
-            "name": "cutscene",
-            "symbol": "var_cutscene"
-        },
-        {
-            "id": "11",
-            "name": "OldManHasTalked",
-            "symbol": "var_oldmanhastalked"
-        },
-        {
             "id": "94487f81-864b-493c-b2d6-0ba60e965924__L0",
             "name": "kittyRanOff",
             "symbol": "var_kittyranoff"
-        },
-        {
-            "id": "12",
-            "name": "KatRanOff_Home",
-            "symbol": "var_katranoff_home"
         }
     ],
     "engineFieldValues": [
@@ -17288,16 +17428,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 14,
-        "startY": 12,
+        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startX": 9,
+        "startY": 11,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 441.6000061035156,
-        "worldScrollY": 233.60000610351562,
+        "worldScrollX": 0,
+        "worldScrollY": 29,
         "zoom": 162.83311028312755,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -17326,9 +17466,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            201,
+            256,
             30,
-            510
+            651
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
