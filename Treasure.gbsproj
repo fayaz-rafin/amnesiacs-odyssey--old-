@@ -11661,7 +11661,7 @@
                     ],
                     "id": "fcf7e173-4b20-4300-8462-e826d8e66e8e",
                     "x": 31,
-                    "y": 25
+                    "y": 24
                 }
             ],
             "triggers": [
@@ -17411,6 +17411,11 @@
             "symbol": "var_katranoff_home"
         },
         {
+            "id": "13",
+            "name": "CreeperIsAlive",
+            "symbol": "var_creeperisalive"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -17636,9 +17641,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 19.200000762939453,
-        "worldScrollY": 71.19999694824219,
-        "zoom": 77.57537973532226,
+        "worldScrollX": 703.2000122070312,
+        "worldScrollY": 349.6000061035156,
+        "zoom": 129.2251180210128,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
