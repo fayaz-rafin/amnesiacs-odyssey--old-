@@ -3640,8 +3640,8 @@
                                         "args": {
                                             "text": [
                                                 "I... ",
-                                                "I seem to have\nlost my memories.",
-                                                "I woke up on some\nbeach",
+                                                "I seem to have\nlost my memories",
+                                                "I woke up on\nsome beach",
                                                 "and an old man\nnamed Bart\nfound me. ",
                                                 "Do you happen to\nknow anything?"
                                             ],
@@ -3664,10 +3664,10 @@
                                         "args": {
                                             "text": [
                                                 "I'm afraid \nI don't. ",
-                                                " But if you lost\nyour memories,\n",
+                                                "But if you lost\nyour memories,\n",
                                                 "you might want\nto seek out the\nwise sage.",
                                                 "who lives across\nthe shore.",
-                                                "They say he has\nthe ability to \nrestore forgotten\nmemories."
+                                                "They say he has\nthe ability to \nrestore \nmemories."
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
                                             "__collapse": false
@@ -17509,9 +17509,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 270.3999938964844,
-        "worldScrollY": 414.3999938964844,
-        "zoom": 126.18618283280875,
+        "worldScrollX": 31.200000762939453,
+        "worldScrollY": 68.80000305175781,
+        "zoom": 77.57537973532226,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
