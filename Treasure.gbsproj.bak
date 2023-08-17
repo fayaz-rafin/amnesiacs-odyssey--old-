@@ -4116,7 +4116,7 @@
                             {
                                 "command": "EVENT_LAUNCH_PROJECTILE",
                                 "args": {
-                                    "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+                                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
                                     "spriteStateId": "",
                                     "actorId": "$self$",
                                     "x": 0,
@@ -4135,8 +4135,7 @@
                                     "collisionGroup": "3",
                                     "collisionMask": [
                                         "1"
-                                    ],
-                                    "__collapse": false
+                                    ]
                                 },
                                 "id": "6113c5fa-4604-4071-8757-da5257bf52b5"
                             },
@@ -4156,15 +4155,6 @@
                                     "spriteStateId": ""
                                 },
                                 "id": "4d685790-1cd0-46bb-82e4-9ff72a3edb0e"
-                            },
-                            {
-                                "command": "EVENT_WAIT",
-                                "args": {
-                                    "time": 0.7,
-                                    "frames": 30,
-                                    "__collapse": false
-                                },
-                                "id": "fe208751-7632-4df8-a1f0-4cc9301922ab"
                             }
                         ]
                     },
@@ -17299,7 +17289,7 @@
     ],
     "settings": {
         "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 13,
+        "startX": 14,
         "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
