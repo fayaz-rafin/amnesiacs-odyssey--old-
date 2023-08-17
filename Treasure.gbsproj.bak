@@ -993,37 +993,6 @@
                     "id": "94487f81-864b-493c-b2d6-0ba60e965924",
                     "x": 9,
                     "y": 9
-                },
-                {
-                    "name": "heart",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": true,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_9",
-                    "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "8"
-                            },
-                            "id": "5b3206d0-0810-459b-8473-2f590a9951ef"
-                        }
-                    ],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "886e32bc-eec5-421d-a643-f8ec6eecc693",
-                    "x": 18,
-                    "y": 1
                 }
             ],
             "triggers": [
@@ -3559,37 +3528,6 @@
             "y": 276.30811470042187,
             "actors": [
                 {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": true,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_10",
-                    "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "8"
-                            },
-                            "id": "dfa540eb-9f27-44c8-8472-5f373bee650c"
-                        }
-                    ],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "aa6fbf43-95fe-44de-8d5f-922d1cd048c2",
-                    "x": 18,
-                    "y": 1
-                },
-                {
                     "name": "Steve",
                     "frame": 0,
                     "animate": false,
@@ -5467,7 +5405,11 @@
             "labelColor": "green"
         },
         {
+<<<<<<< Updated upstream
             "name": "Cave Enterence",
+=======
+            "name": "Cave Entrence",
+>>>>>>> Stashed changes
             "backgroundId": "d1a7fa0d-b5bd-473b-8629-cb541614d0bf",
             "width": 32,
             "height": 32,
@@ -11496,239 +11438,24 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "13",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_IF_VALUE",
 <<<<<<< Updated upstream
-=======
-                                        "command": "EVENT_ACTOR_DEACTIVATE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "command": "EVENT_ACTOR_DEACTIVATE",
-                                                    "args": {
-                                                        "actorId": "$self$"
-                                                    },
-                                                    "id": "43ebe9ee-6a83-4685-9369-b00a99ff0aa3"
-                                                },
-                                                {
-                                                    "command": "EVENT_SET_FALSE",
-                                                    "args": {
-                                                        "variable": "13"
-                                                    },
-                                                    "id": "68ab015b-fda2-4470-bcdd-115448d0a276"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "I am dead"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "2a964a91-f4f8-4a12-837b-e506438cfbd7"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "5",
-                                                        "operation": "sub",
-                                                        "other": "rnd",
-                                                        "vectorY": "L0",
-                                                        "value": 1,
-                                                        "minValue": 1,
-                                                        "maxValue": 2,
-                                                        "clamp": false
-                                                    },
-                                                    "id": "3bd756ac-bfac-4d7f-a115-e99efa716084"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.3,
-                                                        "frames": 30,
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.3,
-                                                        "frames": 30,
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "3859b608-b21f-47da-8aae-05283437c38e"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.3,
-                                                        "frames": 30,
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "23c37066-9299-420a-9278-513e43116f05"
-                                                },
-                                                {
-                                                    "command": "EVENT_LAUNCH_PROJECTILE",
-                                                    "args": {
-                                                        "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
-                                                        "spriteStateId": "",
-                                                        "actorId": "$self$",
-                                                        "x": 0,
-                                                        "y": 0,
-                                                        "otherActorId": "$self$",
-                                                        "direction": "right",
-                                                        "angle": 0,
-                                                        "angleVariable": "L0",
-                                                        "directionType": "actor",
-                                                        "initialOffset": 0,
-                                                        "speed": 2,
-                                                        "animSpeed": 0,
-                                                        "lifeTime": 0.1,
-                                                        "loopAnim": false,
-                                                        "destroyOnHit": false,
-                                                        "collisionGroup": "3",
-                                                        "collisionMask": [
-                                                            "1"
-                                                        ],
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "de0db022-e5ee-4305-8e30-e919893d86b3"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.3,
-                                                        "frames": 30,
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "74d791f6-8362-46ce-8495-5e83f1a6fef8"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "f56339dd-06b9-4d2b-9f42-70aaca8fbd50"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SET_STATE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "spriteStateId": ""
-                                                    },
-                                                    "id": "f153010a-1952-43a8-aaa9-154159985def"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "f6ec90c5-be45-467c-8958-774f29d55fb4"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "95c49407-a93a-4d84-bf30-5b24d85d3371"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "a27c8776-5d9f-4b9a-ae9c-6a920b499f1f"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "cf7d5deb-e035-43ef-a522-0b8ae372a96f"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "7bb0f731-7be0-4cbf-bfb1-cf059a3e03e8"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "34d2eee3-1178-47e1-8824-7090a723ada6"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "9fbe9b4e-3881-4779-957b-f03496d3ba3f"
-                                                }
-                                            ]
-                                        },
-                                        "id": "b2d68189-71ad-4da4-97dd-6db08c56b1ac"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-
->>>>>>> Stashed changes
+                                        "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "5",
                                             "operator": "<=",
                                             "comparator": "0",
                                             "__collapseElse": false,
                                             "__collapse": false
+=======
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "$self$"
+>>>>>>> Stashed changes
                                         },
                                         "children": {
                                             "true": [
@@ -11737,6 +11464,7 @@
                                                     "args": {
                                                         "actorId": "$self$"
                                                     },
+<<<<<<< Updated upstream
                                                     "children": {
                                                         "true": [
                                                             {
@@ -11936,13 +11664,20 @@
                                                         ]
                                                     },
                                                     "id": "1d36f29c-5c45-4816-b049-1150379fe544"
+=======
+                                                    "id": "43ebe9ee-6a83-4685-9369-b00a99ff0aa3"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_SET_FALSE",
                                                     "args": {
                                                         "variable": "13"
                                                     },
+<<<<<<< Updated upstream
                                                     "id": "11ceda6b-d643-46a0-9f07-f6ec68c0c057"
+=======
+                                                    "id": "68ab015b-fda2-4470-bcdd-115448d0a276"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_TEXT",
@@ -11950,9 +11685,15 @@
                                                         "text": [
                                                             "I am dead"
                                                         ],
+<<<<<<< Updated upstream
                                                         "avatarId": "2ec68969-e52c-4514-aa19-50627413d2f8"
                                                     },
                                                     "id": "1d2ba8f2-78e1-4c0c-9b94-df4ffc368a3a"
+=======
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "2a964a91-f4f8-4a12-837b-e506438cfbd7"
+>>>>>>> Stashed changes
                                                 }
                                             ],
                                             "false": [
@@ -11963,6 +11704,7 @@
                                                         "operation": "sub",
                                                         "other": "rnd",
                                                         "vectorY": "L0",
+<<<<<<< Updated upstream
                                                         "value": "0",
                                                         "minValue": 1,
                                                         "maxValue": 5,
@@ -11978,6 +11720,14 @@
                                                         "__collapse": false
                                                     },
                                                     "id": "32a7f4a8-9622-4457-a219-19c719e2ad88"
+=======
+                                                        "value": 1,
+                                                        "minValue": 1,
+                                                        "maxValue": 2,
+                                                        "clamp": false
+                                                    },
+                                                    "id": "3bd756ac-bfac-4d7f-a115-e99efa716084"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
@@ -11985,7 +11735,11 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
+<<<<<<< Updated upstream
                                                     "id": "5a50b599-0c2f-4c32-a48d-8ee91380e313"
+=======
+                                                    "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
@@ -11994,7 +11748,11 @@
                                                         "frames": 30,
                                                         "__collapse": false
                                                     },
+<<<<<<< Updated upstream
                                                     "id": "d9cda415-8b3a-48aa-93a8-58009489d8c2"
+=======
+                                                    "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_SHOW",
@@ -12002,41 +11760,69 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
+<<<<<<< Updated upstream
                                                     "id": "b6cf15cf-b3cb-4eaa-b54f-0a8ad076ba73"
+=======
+                                                    "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.3,
                                                         "frames": 30,
+<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "5017f183-9f5a-4d83-896e-064c225574e5"
+=======
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
                                                     "args": {
                                                         "actorId": "$self$",
+<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "abb10407-ce76-4b58-8bee-c1592cc7a5c8"
+=======
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "3859b608-b21f-47da-8aae-05283437c38e"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.3,
                                                         "frames": 30,
+<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "779c7f3b-1145-4f2e-9604-d7909c70e181"
+=======
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_SHOW",
                                                     "args": {
                                                         "actorId": "$self$",
+<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "babe23c8-5673-4049-838b-3f629d32d5a6"
+=======
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "23c37066-9299-420a-9278-513e43116f05"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_LAUNCH_PROJECTILE",
@@ -12059,20 +11845,36 @@
                                                         "destroyOnHit": false,
                                                         "collisionGroup": "3",
                                                         "collisionMask": [
+<<<<<<< Updated upstream
                                                             "player"
                                                         ],
                                                         "__collapse": false
                                                     },
                                                     "id": "c1e3d256-610a-4ff6-8b85-be35ad66bf82"
+=======
+                                                            "1"
+                                                        ],
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "de0db022-e5ee-4305-8e30-e919893d86b3"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
+<<<<<<< Updated upstream
                                                         "time": 0.7,
                                                         "frames": 30,
                                                         "__collapse": false
                                                     },
                                                     "id": "86f3273f-9c52-45e2-bacf-c87711755576"
+=======
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "74d791f6-8362-46ce-8495-5e83f1a6fef8"
+>>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
@@ -12080,11 +11882,79 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
+<<<<<<< Updated upstream
                                                     "id": "5cd58512-b032-444b-af14-cc6cb499e98f"
                                                 }
                                             ]
                                         },
                                         "id": "d679fc73-86c1-43e7-99f6-669c5503381a"
+=======
+                                                    "id": "f56339dd-06b9-4d2b-9f42-70aaca8fbd50"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SET_STATE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "spriteStateId": ""
+                                                    },
+                                                    "id": "f153010a-1952-43a8-aaa9-154159985def"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "f6ec90c5-be45-467c-8958-774f29d55fb4"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30
+                                                    },
+                                                    "id": "95c49407-a93a-4d84-bf30-5b24d85d3371"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "a27c8776-5d9f-4b9a-ae9c-6a920b499f1f"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30
+                                                    },
+                                                    "id": "cf7d5deb-e035-43ef-a522-0b8ae372a96f"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "7bb0f731-7be0-4cbf-bfb1-cf059a3e03e8"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30
+                                                    },
+                                                    "id": "34d2eee3-1178-47e1-8824-7090a723ada6"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "9fbe9b4e-3881-4779-957b-f03496d3ba3f"
+                                                }
+                                            ]
+                                        },
+                                        "id": "b2d68189-71ad-4da4-97dd-6db08c56b1ac"
+>>>>>>> Stashed changes
                                     }
                                 ],
                                 "false": []
@@ -12095,32 +11965,6 @@
                     "id": "fcf7e173-4b20-4300-8462-e826d8e66e8e",
                     "x": 31,
                     "y": 24
-<<<<<<< Updated upstream
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": true,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_11",
-                    "script": [],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "956e9383-698a-49a7-a927-b0bff840c780",
-                    "x": 18,
-                    "y": 1
-=======
->>>>>>> Stashed changes
                 }
             ],
             "triggers": [
@@ -12315,17 +12159,6 @@
                     "id": "19164a9c-7bef-4d1a-8e01-f4d06960add3"
                 },
                 {
-                    "command": "EVENT_ACTOR_SET_FRAME",
-                    "args": {
-                        "actorId": "956e9383-698a-49a7-a927-b0bff840c780",
-                        "frame": {
-                            "type": "number",
-                            "value": 1
-                        }
-                    },
-                    "id": "2c5caa1b-8c6f-4ce2-b396-115106577d19"
-                },
-                {
                     "command": "EVENT_ACTOR_SHOW",
                     "args": {
                         "actorId": "$self$"
@@ -12339,17 +12172,6 @@
                         "frames": 30
                     },
                     "id": "58aa41b9-530f-4a03-bfca-a8bfbac4e84a"
-                },
-                {
-                    "command": "EVENT_ACTOR_SET_FRAME",
-                    "args": {
-                        "actorId": "956e9383-698a-49a7-a927-b0bff840c780",
-                        "frame": {
-                            "type": "number",
-                            "value": 2
-                        }
-                    },
-                    "id": "d8c0dd5f-7bb1-496a-9f8f-7097815a782e"
                 },
                 {
                     "command": "EVENT_ACTOR_HIDE",
@@ -12408,17 +12230,8 @@
             "labelColor": "green"
         },
         {
-<<<<<<< Updated upstream
             "name": "Tittle Screen",
             "backgroundId": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
-=======
-
-            "name": "Title screen",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "name": "Scene 6",
-            "backgroundId": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
-
->>>>>>> Stashed changes
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
@@ -12825,11 +12638,11 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-<<<<<<< Updated upstream
             "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+<<<<<<< Updated upstream
             "labelColor": "gray"
 =======
-            "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa"
+            "labelColor": "orange"
 >>>>>>> Stashed changes
         }
     ],
@@ -12919,12 +12732,8 @@
             "height": 18,
             "imageWidth": 166,
             "imageHeight": 144,
-<<<<<<< Updated upstream
             "filename": "title.png",
             "tileColors": []
-=======
-            "filename": "title.png"
->>>>>>> Stashed changes
         },
         {
             "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
@@ -18309,20 +18118,9 @@
         }
     ],
     "settings": {
-<<<<<<< Updated upstream
         "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
         "startX": 9,
         "startY": 11,
-=======
-
-        "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 13,
-        "startY": 12,
-        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
-        "startX": 9,
-        "startY": 11,
-
->>>>>>> Stashed changes
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -18330,12 +18128,12 @@
         "showConnections": true,
 <<<<<<< Updated upstream
         "worldScrollX": 252,
-        "worldScrollY": 132,
+        "worldScrollY": 264,
         "zoom": 106.92412806534912,
 =======
-        "worldScrollX": 703.2000122070312,
-        "worldScrollY": 349.6000061035156,
-        "zoom": 129.2251180210128,
+        "worldScrollX": 465.6000061035156,
+        "worldScrollY": 199.1999969482422,
+        "zoom": 110.88319334847392,
 >>>>>>> Stashed changes
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -18364,15 +18162,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-<<<<<<< Updated upstream
             200,
             30,
             511
-=======
-            256,
-            30,
-            651
->>>>>>> Stashed changes
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
