@@ -397,7 +397,8 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "11",
-                                "__collapseElse": false
+                                "__collapseElse": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -405,7 +406,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "we've got plenty of\ntime to get you \nback on your feet."
+                                                "we've got plenty\nof time to get\nyou back on your\nfeet."
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3"
                                         },
@@ -435,7 +436,7 @@
                                                 "Ah, you're\nfinally awake."
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "3715ef4f-100f-45ba-b021-639f8cf7fb23"
                                     },
@@ -445,7 +446,7 @@
                                             "variable": "L0",
                                             "trueText": "Who are you?",
                                             "falseText": "Where am I?",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "cc5a2374-cffc-4282-a60c-23bedf6c0588"
                                     },
@@ -465,9 +466,10 @@
                                                             "Take it easy, \nlad.",
                                                             "My name is \nCaptain \nBartholomew,",
                                                             "but you can \ncall me Bart. ",
-                                                            "As for where\nyou are",
-                                                            "you're in my \nlittle house in \na village nearby",
-                                                            "I found you washed \nup on the shore, \nunconscious"
+                                                            "As for where\nyou are,",
+                                                            "you're in my \nlittle house in \na village",
+                                                            "I found you\nwashed up on the\nshore,",
+                                                            "you were\nunconscious"
                                                         ],
                                                         "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3"
                                                     },
@@ -479,11 +481,12 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "You're in my \nlittle house in \nthe village \nnearby.",
-                                                            "I found you \nwashed up on the \nshore, \nunconscious."
+                                                            "You're in my \nlittle house in \nthe village ",
+                                                            "I found you \nwashed up on the\nshore, ",
+                                                            "you were\nunconscious"
                                                         ],
                                                         "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
-                                                        "__collapse": false
+                                                        "__collapse": true
                                                     },
                                                     "id": "ea37444c-7d79-4363-958b-94c094b16079"
                                                 }
@@ -496,6 +499,7 @@
                                         "args": {
                                             "text": [
                                                 "Washed up?",
+                                                "unconscious?",
                                                 "What happened",
                                                 "And why\ncan't I remember \nanything?"
                                             ],
@@ -551,7 +555,7 @@
                                             },
                                             "moveType": "horizontal",
                                             "useCollisions": true,
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "0fe8c2d4-53fb-4f81-b55b-f9c7a3af8cf1"
                                     },
@@ -559,9 +563,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "I've seen my fair\nshare of sailors",
+                                                "I've seen my\nfair share of\nsailors",
                                                 "lose their way \nat sea",
-                                                "But none have \narrived with such\na foggy mind."
+                                                "But none have \narrived with\nsuch a foggy\nmind"
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
                                             "__collapse": true
@@ -572,7 +576,8 @@
                                         "command": "EVENT_WAIT",
                                         "args": {
                                             "time": 1,
-                                            "frames": 30
+                                            "frames": 30,
+                                            "__collapse": true
                                         },
                                         "id": "3243e4d1-7b1b-4b4c-abd9-690f75c98b4a"
                                     },
@@ -602,7 +607,7 @@
                                             },
                                             "moveType": "horizontal",
                                             "useCollisions": true,
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "e6a5344d-00d3-482a-ba20-f774d1623dcd"
                                     },
@@ -613,7 +618,8 @@
                                             "direction": {
                                                 "type": "direction",
                                                 "value": "right"
-                                            }
+                                            },
+                                            "__collapse": true
                                         },
                                         "id": "14d02755-618e-473f-a6f7-d4af483ee660"
                                     },
@@ -673,7 +679,7 @@
                                         "args": {
                                             "text": [
                                                 "Well, let's not \ndwell on that \nfor now.",
-                                                "You need some rest \nand a good meal."
+                                                "You need some\nrest and a good\nmeal."
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
                                             "__collapse": true
@@ -695,7 +701,7 @@
                                             "text": [
                                                 "By the way,",
                                                 "do you remember\nanything at all?",
-                                                "Even the faintest \nmemory could be \nhelpful"
+                                                "Even the\nfaintest memory\ncould be helpful"
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
                                             "__collapse": true
@@ -706,7 +712,8 @@
                                         "command": "EVENT_ACTOR_EMOTE",
                                         "args": {
                                             "actorId": "player",
-                                            "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+                                            "emoteId": "d508e529-57eb-458b-9782-66f318243c32",
+                                            "__collapse": true
                                         },
                                         "id": "1450e73e-2d97-490a-b975-0f9a72be4d02"
                                     },
@@ -715,7 +722,7 @@
                                         "args": {
                                             "text": [
                                                 "I... I can't say \nfor certain.",
-                                                "There are flashes, \nvague images of"
+                                                "There are flashes,\nvague images of"
                                             ],
                                             "avatarId": "",
                                             "__collapse": true
@@ -757,7 +764,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Well, let's hope \nthose flashes",
+                                                "Well, let's hope\nthose flashes",
                                                 "turn into \nsomething more \nsubstantial soon",
                                                 "In the meantime,",
                                                 "we've got plenty\nof time ",
@@ -781,7 +788,8 @@
                                                 "value": 15
                                             },
                                             "moveType": "vertical",
-                                            "useCollisions": true
+                                            "useCollisions": true,
+                                            "__collapse": true
                                         },
                                         "id": "0e5d69b3-3645-4f56-97a7-66b39c559fc8"
                                     },
@@ -798,14 +806,16 @@
                                                 "value": 17
                                             },
                                             "moveType": "vertical",
-                                            "useCollisions": true
+                                            "useCollisions": true,
+                                            "__collapse": true
                                         },
                                         "id": "d5779045-22ce-4afa-a813-8ada617cd914"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_DEACTIVATE",
                                         "args": {
-                                            "actorId": "94487f81-864b-493c-b2d6-0ba60e965924"
+                                            "actorId": "94487f81-864b-493c-b2d6-0ba60e965924",
+                                            "__collapse": true
                                         },
                                         "id": "135d5dd9-26af-40e2-aa0e-4cab4605cc9b"
                                     },
@@ -851,7 +861,7 @@
                                             "text": [
                                                 "Since you're\nstuck here\nfor awhile",
                                                 "Why don't you\nhelp me look for\nkittykat.",
-                                                "It'll help you be\nfamiliar with the \nvilllage."
+                                                "It'll help you\nbe familiar with\nthe village."
                                             ],
                                             "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
                                             "__collapse": true
@@ -1125,7 +1135,7 @@
                     "args": {
                         "variable": "L0",
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -1186,11 +1196,19 @@
                         "variable": "5",
                         "value": {
                             "type": "number",
-                            "value": 10
+                            "value": 5
                         },
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "b7536e3a-830c-4a49-8af3-ded255d077bf"
+                },
+                {
+                    "command": "EVENT_SET_TRUE",
+                    "args": {
+                        "variable": "13",
+                        "__collapse": true
+                    },
+                    "id": "1001653a-07c0-4ea1-ad8e-b8582cd63f75"
                 },
                 {
                     "command": "EVENT_SET_VALUE",
@@ -3575,14 +3593,13 @@
                     "name": "Steve",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
-                    "collisionGroup": "",
                     "symbol": "actor_12",
                     "script": [
                         {
@@ -3600,7 +3617,7 @@
                                             "text": [
                                                 "Goodluck out\nthere."
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                                            "avatarId": ""
                                         },
                                         "id": "f8015f76-e4b3-47f2-ad2f-520d9a732e0e"
                                     }
@@ -3614,7 +3631,7 @@
                                                 "I dont think i\nhave seen you\naround before."
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "b1c4daa1-9a58-4973-afc1-bb7c3e22e680"
                                     },
@@ -3622,31 +3639,23 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "I... I seem to have\nlost my memories.",
-                                                "I woke up on some\nbeach",
+                                                "I... ",
+                                                "I seem to have\nlost my memories",
+                                                "I woke up on\nsome beach",
                                                 "and an old man\nnamed Bart\nfound me. ",
-                                                "Do you happen to\nknow anything \nabout me \nor my past?"
+                                                "Do you happen to\nknow anything?"
                                             ],
-                                            "avatarId": "",
-                                            "__collapse": true
+                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "__collapse": false
                                         },
                                         "id": "548a1cb4-e651-4949-bf35-79d506ec8c39"
-                                    },
-                                    {
-                                        "command": "EVENT_WAIT",
-                                        "args": {
-                                            "time": 0.5,
-                                            "frames": 30,
-                                            "__collapse": true
-                                        },
-                                        "id": "29414b2b-2bb9-4c88-8758-64e24d5d242a"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
                                         "args": {
                                             "actorId": "$self$",
                                             "emoteId": "d508e529-57eb-458b-9782-66f318243c32",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "9c0901fc-e62c-4edf-af4a-33e9227724a5"
                                     },
@@ -3655,13 +3664,13 @@
                                         "args": {
                                             "text": [
                                                 "I'm afraid \nI don't. ",
-                                                " But if you lost \nyour memories,   \n",
-                                                "you might want to \nseek out the wise \nsage.",
+                                                "But if you lost\nyour memories,\n",
+                                                "you might want\nto seek out the\nwise sage.",
                                                 "who lives across\nthe shore.",
-                                                "They say he has\nthe ability to \nrestore forgotten\nmemories."
+                                                "They say he has\nthe ability to \nrestore \nmemories."
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "af3a9e78-57f9-457b-a2e2-d193e9ec8fb5"
                                     },
@@ -3682,7 +3691,7 @@
                                                 "Where can I find \nthis wise sage?"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "589626ab-6b5a-4b16-83bc-4d8377653c96"
                                     },
@@ -3702,7 +3711,7 @@
                                                 "Just follow the \npath down the \nroad."
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "829a4ae7-551a-47e6-a17b-77ce8c7b1b7c"
                                     },
@@ -3720,7 +3729,7 @@
                                             },
                                             "moveType": "horizontal",
                                             "useCollisions": true,
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "5e9bc1cc-5694-4224-a0b6-76023dfd086f"
                                     },
@@ -3731,7 +3740,7 @@
                                                 "But i must\nwarn you!"
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "2c338dbe-3dc7-45fd-b786-78b88e38b5b0"
                                     },
@@ -3757,7 +3766,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "There's wild\ncreatures \ninhabiting this\nisland."
+                                                "There are wild\ncreatures \ninhabiting this\nisland.",
+                                                "You may have to \nfight them off"
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
                                             "__collapse": false
@@ -3772,7 +3782,7 @@
                                                 "I'll take my \nchances."
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "070678a6-741e-42b3-8b8d-c620d11eaf58"
                                     },
@@ -3794,7 +3804,7 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "L0",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
@@ -3828,7 +3838,7 @@
                     "y": 24
                 },
                 {
-                    "name": "",
+                    "name": "Village Enemy",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
@@ -3856,7 +3866,7 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 0.2,
+                                "time": 0.3,
                                 "frames": 30,
                                 "units": "time"
                             },
@@ -3870,6 +3880,14 @@
                             "id": "9017ea17-6fd9-4d6c-b215-cbeae14f464c"
                         },
                         {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.3,
+                                "frames": 30
+                            },
+                            "id": "56f36024-1578-4784-9bff-d658151ebf8b"
+                        },
+                        {
                             "command": "EVENT_ACTOR_HIDE",
                             "args": {
                                 "actorId": "$self$"
@@ -3879,10 +3897,10 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 0.2,
+                                "time": 0.3,
                                 "frames": 30
                             },
-                            "id": "56f36024-1578-4784-9bff-d658151ebf8b"
+                            "id": "65947ad8-59db-4728-8a16-8e4206755732"
                         },
                         {
                             "command": "EVENT_ACTOR_SHOW",
@@ -3890,6 +3908,21 @@
                                 "actorId": "$self$"
                             },
                             "id": "f9d0eb2f-f5c3-479a-9a49-3e69a1420d48"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.3,
+                                "frames": 30
+                            },
+                            "id": "21910dec-b4f5-4385-9535-a7d0fdecf126"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "e5f0e986-b101-4e63-a2e7-4da93279cb1b"
                         }
                     ],
                     "id": "3dd04c70-ade5-470a-bb24-3e3c418c3a28",
@@ -5250,7 +5283,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
+                    "spriteSheetId": "290a155b-5e9e-4d97-966a-426151c2b348",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -6481,7 +6514,8 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "L0",
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -6521,10 +6555,9 @@
                                                 "Hello, friend.",
                                                 "Yes you're not\nhallucinating.",
                                                 "I am indeed\nSteve from\nMINECRAFT!",
-                                                "I somehow ended\nup over here \nwith no memories",
-                                                "And while i was\nlooking for\nclues",
-                                                "I stumbled upon\nthat cave",
-                                                "And i had lost\nmy pickaxe.",
+                                                "I somehow ended\nup in this\nvillage",
+                                                "And while I was\nlooking for\nclues",
+                                                "I lost my \npickaxe in the \ncave.",
                                                 "There's no way\nfor me to craft\na new one here."
                                             ],
                                             "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
@@ -6535,7 +6568,8 @@
                                         "command": "EVENT_ACTOR_EMOTE",
                                         "args": {
                                             "actorId": "$self$",
-                                            "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+                                            "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202",
+                                            "__collapse": false
                                         },
                                         "id": "4ca5faae-5b77-42c3-96f6-7edd55375cb8"
                                     },
@@ -6570,12 +6604,21 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Thanks a a lot!",
-                                                            "I'll be waiting\nhere for you\nwhen you are done."
+                                                            "Thanks a lot!",
+                                                            "I appreciate it"
                                                         ],
                                                         "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
                                                     },
                                                     "id": "6273fe20-46b8-4c30-ab3a-7b86077c2f4a"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "af5e1713-3062-4f11-ae64-c0211131a8ae"
                                                 }
                                             ],
                                             "false": [
@@ -6584,15 +6627,107 @@
                                                     "args": {
                                                         "text": [
                                                             "Are you serious?",
-                                                            "Look..if you help\nme find it,",
+                                                            "Look..if you\nhelp me find it,",
                                                             "Maybe we can\nboth help\neach other",
-                                                            "And get out of\nthis place.",
-                                                            "So plese, do me\na solid\nand help me.",
-                                                            "I'll be waiting\nhere for you\nwhen you are done."
+                                                            "And get out of\nthis place."
                                                         ],
                                                         "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
                                                     },
                                                     "id": "4ead8484-4df4-437f-9df3-2e5ed632f643"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "wait... "
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "566f8a0d-7e2c-40cd-8c8b-017e9bb6c96d"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "emoteId": "d508e529-57eb-458b-9782-66f318243c32",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "69f57f69-9cd7-4a70-9539-eabd673bc5a6"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1",
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "1026846e-74ff-4790-ba28-502a088b888a"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You know\nsomething"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "c3c251b6-2e66-41fa-a9c5-db0356745a91"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "What do you know?",
+                                                            "How did you get\nhere?",
+                                                            "Tell me everything\nthat you know"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "8ee0444f-7fa1-4c0a-ba37-7f334c803ed7"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Take it easy lad",
+                                                            "Help me and I'll\ntell you \neverything"
+                                                        ],
+                                                        "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "09b6a394-a73d-4a00-b330-e4db76bdaa9b"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Sure, I'll help \nyou",
+                                                            "You better tell me\neverything after."
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "4de43004-647b-4c79-b8d7-5fa246d689e6"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Thanks, man. I\nappreciate it"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "f1637eff-a0c6-473c-9efc-fba3626f2f71"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "1337f859-5ecd-4fc2-afea-e0643a8fc1cf"
                                                 }
                                             ]
                                         },
@@ -6626,7 +6761,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "I'll be waiting\nhere for you\nwhen you are done."
+                                                "I'll be waiting\nhere for you."
                                             ],
                                             "avatarId": ""
                                         },
@@ -6846,7 +6981,7 @@
             "labelColor": "blue"
         },
         {
-            "name": "cave2",
+            "name": "Cave",
             "backgroundId": "07cb2558-915e-4cb4-99d1-b5c4d8110e46",
             "width": 64,
             "height": 64,
@@ -10958,7 +11093,7 @@
             "y": 229.2831883859162,
             "actors": [
                 {
-                    "name": "",
+                    "name": "Cave_Enemy",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "ebae5a56-8d98-4643-ba1e-b49dab9ad214",
@@ -11346,117 +11481,121 @@
                     "hit2Script": [],
                     "hit3Script": [
                         {
-                            "command": "EVENT_IF_VALUE",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "variable": "5",
-                                "operator": "<=",
-                                "comparator": "0",
-                                "__collapseElse": false,
-                                "__collapse": false
+                                "variable": "13",
+                                "__collapseElse": true
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "command": "EVENT_IF_VALUE",
                                         "args": {
-                                            "actorId": "$self$"
+                                            "variable": "5",
+                                            "operator": "<=",
+                                            "comparator": "0",
+                                            "__collapseElse": false,
+                                            "__collapse": false
                                         },
-                                        "id": "43ebe9ee-6a83-4685-9369-b00a99ff0aa3"
-                                    },
-                                    {
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "7"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_ACTOR_DEACTIVATE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    },
+                                                    "id": "43ebe9ee-6a83-4685-9369-b00a99ff0aa3"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_FALSE",
+                                                    "args": {
+                                                        "variable": "13"
+                                                    },
+                                                    "id": "68ab015b-fda2-4470-bcdd-115448d0a276"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "5",
+                                                        "operation": "sub",
+                                                        "other": "rnd",
+                                                        "vectorY": "L0",
+                                                        "value": 1,
+                                                        "minValue": 1,
+                                                        "maxValue": 2,
+                                                        "clamp": false
+                                                    },
+                                                    "id": "3bd756ac-bfac-4d7f-a115-e99efa716084"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "3859b608-b21f-47da-8aae-05283437c38e"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "23c37066-9299-420a-9278-513e43116f05"
+                                                }
+                                            ]
                                         },
-                                        "id": "b2d68189-71ad-4da4-97dd-6db08c56b1ac"
+                                        "id": "5274ef36-9463-4805-8ae9-dedfa6c3dfda"
                                     }
                                 ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-                                        "args": {
-                                            "vectorX": "5",
-                                            "operation": "sub",
-                                            "other": "rnd",
-                                            "vectorY": "L0",
-                                            "value": "0",
-                                            "minValue": 1,
-                                            "maxValue": 5,
-                                            "clamp": false
-                                        },
-                                        "id": "3bd756ac-bfac-4d7f-a115-e99efa716084"
-                                    },
-                                    {
-                                        "command": "EVENT_WAIT",
-                                        "args": {
-                                            "time": 0.3,
-                                            "frames": 30,
-                                            "__collapse": false
-                                        },
-                                        "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "__collapse": false
-                                        },
-                                        "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
-                                    },
-                                    {
-                                        "command": "EVENT_WAIT",
-                                        "args": {
-                                            "time": 0.3,
-                                            "frames": 30,
-                                            "__collapse": false
-                                        },
-                                        "id": "2e91f3fa-0839-4d26-80eb-31265f3faa1c"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_SHOW",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "__collapse": false
-                                        },
-                                        "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
-                                    },
-                                    {
-                                        "command": "EVENT_WAIT",
-                                        "args": {
-                                            "time": 0.3,
-                                            "frames": 30,
-                                            "__collapse": false
-                                        },
-                                        "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "__collapse": false
-                                        },
-                                        "id": "3859b608-b21f-47da-8aae-05283437c38e"
-                                    },
-                                    {
-                                        "command": "EVENT_WAIT",
-                                        "args": {
-                                            "time": 0.3,
-                                            "frames": 30,
-                                            "__collapse": false
-                                        },
-                                        "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_SHOW",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "__collapse": false
-                                        },
-                                        "id": "23c37066-9299-420a-9278-513e43116f05"
-                                    }
-                                ]
+                                "false": []
                             },
-                            "id": "5274ef36-9463-4805-8ae9-dedfa6c3dfda"
+                            "id": "2cf7b9fa-8ab4-42ae-b1e0-4ac7132eba23"
                         }
                     ],
                     "id": "fcf7e173-4b20-4300-8462-e826d8e66e8e",
@@ -11498,7 +11637,8 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": false,
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -11514,7 +11654,7 @@
                             {
                                 "command": "EVENT_LAUNCH_PROJECTILE",
                                 "args": {
-                                    "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+                                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
                                     "spriteStateId": "",
                                     "actorId": "$self$",
                                     "x": 0,
@@ -11524,7 +11664,7 @@
                                     "angle": 0,
                                     "angleVariable": "L0",
                                     "directionType": "actor",
-                                    "initialOffset": 12,
+                                    "initialOffset": 7,
                                     "speed": 4,
                                     "animSpeed": 0,
                                     "lifeTime": 0.1,
@@ -11559,6 +11699,74 @@
                     "id": "447aaf4c-04d4-4846-80d3-5a14cc9349fc"
                 },
                 {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": false,
+                        "__scriptTabs": "press",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "Attack",
+                                    "__comment": false
+                                },
+                                "id": "aa9912c9-c3ab-4142-87db-20669201c6c6"
+                            },
+                            {
+                                "command": "EVENT_LAUNCH_PROJECTILE",
+                                "args": {
+                                    "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+                                    "spriteStateId": "",
+                                    "actorId": "$self$",
+                                    "x": 0,
+                                    "y": 0,
+                                    "otherActorId": "$self$",
+                                    "direction": "right",
+                                    "angle": 0,
+                                    "angleVariable": "L0",
+                                    "directionType": "actor",
+                                    "initialOffset": 0,
+                                    "speed": 4,
+                                    "animSpeed": 0,
+                                    "lifeTime": 0.1,
+                                    "loopAnim": false,
+                                    "destroyOnHit": false,
+                                    "collisionGroup": "3",
+                                    "collisionMask": [
+                                        "1"
+                                    ]
+                                },
+                                "id": "cea79f30-4e58-4c5a-9cc7-911b41dae0e9"
+                            },
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.7,
+                                    "frames": 30,
+                                    "__collapse": false
+                                },
+                                "id": "b0b507cf-3e9a-4713-ac55-d23659694890"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "player",
+                                    "spriteStateId": ""
+                                },
+                                "id": "a1076811-4a61-483d-92c4-bdf1075bbd41"
+                            }
+                        ]
+                    },
+                    "id": "b5375514-f99a-4f01-a883-58a0a0f605e6"
+                },
+                {
                     "command": "EVENT_ACTOR_SET_STATE",
                     "args": {
                         "actorId": "600cb3a4-c152-472f-be5d-e5b37df20280",
@@ -11573,7 +11781,7 @@
             "labelColor": "blue"
         },
         {
-            "name": "Scene 6",
+            "name": "Title screen",
             "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "width": 20,
             "height": 18,
@@ -17051,6 +17259,26 @@
             "symbol": "var_health"
         },
         {
+            "id": "9",
+            "name": "KittyKatTalked ",
+            "symbol": "var_kittykattalked_"
+        },
+        {
+            "id": "10",
+            "name": "cutscene",
+            "symbol": "var_cutscene"
+        },
+        {
+            "id": "11",
+            "name": "OldManHasTalked",
+            "symbol": "var_oldmanhastalked"
+        },
+        {
+            "id": "12",
+            "name": "KatRanOff_Home",
+            "symbol": "var_katranoff_home"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -17256,29 +17484,14 @@
             "symbol": "var_talekdtocaveman_0"
         },
         {
-            "id": "9",
-            "name": "KittyKatTalked ",
-            "symbol": "var_kittykattalked_"
-        },
-        {
-            "id": "10",
-            "name": "cutscene",
-            "symbol": "var_cutscene"
-        },
-        {
-            "id": "11",
-            "name": "OldManHasTalked",
-            "symbol": "var_oldmanhastalked"
-        },
-        {
             "id": "94487f81-864b-493c-b2d6-0ba60e965924__L0",
             "name": "kittyRanOff",
             "symbol": "var_kittyranoff"
         },
         {
-            "id": "12",
-            "name": "KatRanOff_Home",
-            "symbol": "var_katranoff_home"
+            "id": "13",
+            "name": "CreeperIsAlive",
+            "symbol": "var_creeperisalive"
         }
     ],
     "engineFieldValues": [
@@ -17296,9 +17509,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 441.6000061035156,
-        "worldScrollY": 233.60000610351562,
-        "zoom": 162.83311028312755,
+        "worldScrollX": 31.200000762939453,
+        "worldScrollY": 68.80000305175781,
+        "zoom": 77.57537973532226,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
