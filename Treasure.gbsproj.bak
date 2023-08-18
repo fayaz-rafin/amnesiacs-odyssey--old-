@@ -5356,11 +5356,7 @@
             "labelColor": "green"
         },
         {
-<<<<<<< Updated upstream
             "name": "Cave Enterence",
-=======
-            "name": "Cave Entrence",
->>>>>>> Stashed changes
             "backgroundId": "d1a7fa0d-b5bd-473b-8629-cb541614d0bf",
             "width": 32,
             "height": 32,
@@ -11288,12 +11284,11 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "13",
-                                "__collapseElse": false
+                                "__collapseElse": true
                             },
                             "children": {
                                 "true": [
                                     {
-<<<<<<< Updated upstream
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "5",
@@ -11301,11 +11296,6 @@
                                             "comparator": "0",
                                             "__collapseElse": false,
                                             "__collapse": false
-=======
-                                        "command": "EVENT_ACTOR_DEACTIVATE",
-                                        "args": {
-                                            "actorId": "$self$"
->>>>>>> Stashed changes
                                         },
                                         "children": {
                                             "true": [
@@ -11314,7 +11304,6 @@
                                                     "args": {
                                                         "actorId": "$self$"
                                                     },
-<<<<<<< Updated upstream
                                                     "children": {
                                                         "true": [
                                                             {
@@ -11514,20 +11503,13 @@
                                                         ]
                                                     },
                                                     "id": "1d36f29c-5c45-4816-b049-1150379fe544"
-=======
-                                                    "id": "43ebe9ee-6a83-4685-9369-b00a99ff0aa3"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_SET_FALSE",
                                                     "args": {
                                                         "variable": "13"
                                                     },
-<<<<<<< Updated upstream
                                                     "id": "11ceda6b-d643-46a0-9f07-f6ec68c0c057"
-=======
-                                                    "id": "68ab015b-fda2-4470-bcdd-115448d0a276"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_TEXT",
@@ -11535,15 +11517,9 @@
                                                         "text": [
                                                             "I am dead"
                                                         ],
-<<<<<<< Updated upstream
                                                         "avatarId": "2ec68969-e52c-4514-aa19-50627413d2f8"
                                                     },
                                                     "id": "1d2ba8f2-78e1-4c0c-9b94-df4ffc368a3a"
-=======
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "2a964a91-f4f8-4a12-837b-e506438cfbd7"
->>>>>>> Stashed changes
                                                 }
                                             ],
                                             "false": [
@@ -11554,7 +11530,6 @@
                                                         "operation": "sub",
                                                         "other": "rnd",
                                                         "vectorY": "L0",
-<<<<<<< Updated upstream
                                                         "value": "0",
                                                         "minValue": 1,
                                                         "maxValue": 5,
@@ -11570,14 +11545,6 @@
                                                         "__collapse": false
                                                     },
                                                     "id": "32a7f4a8-9622-4457-a219-19c719e2ad88"
-=======
-                                                        "value": 1,
-                                                        "minValue": 1,
-                                                        "maxValue": 2,
-                                                        "clamp": false
-                                                    },
-                                                    "id": "3bd756ac-bfac-4d7f-a115-e99efa716084"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
@@ -11585,11 +11552,7 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
-<<<<<<< Updated upstream
                                                     "id": "5a50b599-0c2f-4c32-a48d-8ee91380e313"
-=======
-                                                    "id": "55dba1ea-3575-4fd1-b9b3-83766ae7a954"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
@@ -11598,11 +11561,7 @@
                                                         "frames": 30,
                                                         "__collapse": false
                                                     },
-<<<<<<< Updated upstream
                                                     "id": "d9cda415-8b3a-48aa-93a8-58009489d8c2"
-=======
-                                                    "id": "fb4b88fa-6949-4249-9ac5-80df823f818c"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_SHOW",
@@ -11610,69 +11569,41 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
-<<<<<<< Updated upstream
                                                     "id": "b6cf15cf-b3cb-4eaa-b54f-0a8ad076ba73"
-=======
-                                                    "id": "23cf2c0f-7ed3-415d-9cc3-d3eee4a568e0"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.3,
                                                         "frames": 30,
-<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "5017f183-9f5a-4d83-896e-064c225574e5"
-=======
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "03eeba3e-ae09-4f5c-a278-0a1fca51e928"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
                                                     "args": {
                                                         "actorId": "$self$",
-<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "abb10407-ce76-4b58-8bee-c1592cc7a5c8"
-=======
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "3859b608-b21f-47da-8aae-05283437c38e"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.3,
                                                         "frames": 30,
-<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "779c7f3b-1145-4f2e-9604-d7909c70e181"
-=======
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "da5601f1-ab6e-46ff-ae99-4fe9350cb1b3"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_SHOW",
                                                     "args": {
                                                         "actorId": "$self$",
-<<<<<<< Updated upstream
                                                         "__collapse": false
                                                     },
                                                     "id": "babe23c8-5673-4049-838b-3f629d32d5a6"
-=======
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "23c37066-9299-420a-9278-513e43116f05"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_LAUNCH_PROJECTILE",
@@ -11695,36 +11626,20 @@
                                                         "destroyOnHit": false,
                                                         "collisionGroup": "3",
                                                         "collisionMask": [
-<<<<<<< Updated upstream
                                                             "player"
                                                         ],
                                                         "__collapse": false
                                                     },
                                                     "id": "c1e3d256-610a-4ff6-8b85-be35ad66bf82"
-=======
-                                                            "1"
-                                                        ],
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "de0db022-e5ee-4305-8e30-e919893d86b3"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_WAIT",
                                                     "args": {
-<<<<<<< Updated upstream
                                                         "time": 0.7,
                                                         "frames": 30,
                                                         "__collapse": false
                                                     },
                                                     "id": "86f3273f-9c52-45e2-bacf-c87711755576"
-=======
-                                                        "time": 0.3,
-                                                        "frames": 30,
-                                                        "__collapse": false
-                                                    },
-                                                    "id": "74d791f6-8362-46ce-8495-5e83f1a6fef8"
->>>>>>> Stashed changes
                                                 },
                                                 {
                                                     "command": "EVENT_ACTOR_HIDE",
@@ -11732,79 +11647,11 @@
                                                         "actorId": "$self$",
                                                         "__collapse": false
                                                     },
-<<<<<<< Updated upstream
                                                     "id": "5cd58512-b032-444b-af14-cc6cb499e98f"
                                                 }
                                             ]
                                         },
                                         "id": "d679fc73-86c1-43e7-99f6-669c5503381a"
-=======
-                                                    "id": "f56339dd-06b9-4d2b-9f42-70aaca8fbd50"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SET_STATE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "spriteStateId": ""
-                                                    },
-                                                    "id": "f153010a-1952-43a8-aaa9-154159985def"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "f6ec90c5-be45-467c-8958-774f29d55fb4"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "95c49407-a93a-4d84-bf30-5b24d85d3371"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "a27c8776-5d9f-4b9a-ae9c-6a920b499f1f"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "cf7d5deb-e035-43ef-a522-0b8ae372a96f"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "7bb0f731-7be0-4cbf-bfb1-cf059a3e03e8"
-                                                },
-                                                {
-                                                    "command": "EVENT_WAIT",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30
-                                                    },
-                                                    "id": "34d2eee3-1178-47e1-8824-7090a723ada6"
-                                                },
-                                                {
-                                                    "command": "EVENT_ACTOR_SHOW",
-                                                    "args": {
-                                                        "actorId": "player"
-                                                    },
-                                                    "id": "9fbe9b4e-3881-4779-957b-f03496d3ba3f"
-                                                }
-                                            ]
-                                        },
-                                        "id": "b2d68189-71ad-4da4-97dd-6db08c56b1ac"
->>>>>>> Stashed changes
                                     }
                                 ],
                                 "false": []
@@ -12013,378 +11860,17 @@
         {
             "name": "Tittle Screen",
             "backgroundId": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
-            "width": 20,
-            "height": 18,
+            "width": 32,
+            "height": 32,
             "type": "TOPDOWN",
             "paletteIds": [],
             "spritePaletteIds": [],
-            "collisions": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
+            "collisions": [],
             "autoFadeSpeed": 1,
             "id": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
             "symbol": "scene_6",
-            "x": 172.1910610537305,
-            "y": 83.23496531897592,
+            "x": 60,
+            "y": 30,
             "actors": [],
             "triggers": [],
             "script": [
@@ -12420,11 +11906,7 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
-<<<<<<< Updated upstream
             "labelColor": "gray"
-=======
-            "labelColor": "orange"
->>>>>>> Stashed changes
         }
     ],
     "backgrounds": [
@@ -12506,15 +11988,14 @@
             "tileColors": []
         },
         {
-            "id": "3297dd73-15ac-4d73-9e6e-027c3d9a23bd",
+            "id": "330007dd-acb3-4906-a2fe-69c49e2ef5a0",
             "name": "title",
             "symbol": "bg_title",
             "width": 20,
             "height": 18,
             "imageWidth": 166,
             "imageHeight": 144,
-            "filename": "title.png",
-            "tileColors": []
+            "filename": "title.png"
         },
         {
             "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
@@ -12552,7 +12033,7 @@
     ],
     "spriteSheets": [
         {
-            "id": "625071e6-51b3-4042-baa0-92a3f7730a9b",
+            "id": "b0fcdd02-c6da-4a8f-8966-12402e99267f",
             "name": "Sprite-0002",
             "symbol": "sprite_sprite_0002",
             "numFrames": 10,
@@ -12563,79 +12044,79 @@
             "height": 160,
             "states": [
                 {
-                    "id": "5949480f-c25c-4e01-852f-ef1caa3dbfae",
+                    "id": "7092e0b2-df00-4896-9627-a5e2fb483784",
                     "name": "",
                     "animationType": "multi_movement",
                     "flipLeft": true,
                     "animations": [
                         {
-                            "id": "37af858e-3417-4701-bbe1-cad55b3d66d9",
+                            "id": "053b9d09-4e7e-43d0-873f-de57313fb690",
                             "frames": [
                                 {
-                                    "id": "1d235dfb-e5de-4032-b846-33e978266071",
+                                    "id": "409147ff-159c-451a-a73b-e5ed4d3a459e",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "6947d15c-a603-4c22-94dd-7a1563842449",
+                            "id": "27e09415-acc8-41f0-9920-f04bded1948c",
                             "frames": [
                                 {
-                                    "id": "7ab8863a-8d76-409b-adae-5a91fb0a6cd9",
+                                    "id": "58787944-b230-42c1-9c25-5bd46e0b3d63",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "07ba5c5c-7a6f-40e7-87a0-2b79fb299ca2",
+                            "id": "44664824-18d4-4dcb-8dcf-e782d3bc96e9",
                             "frames": [
                                 {
-                                    "id": "f97da338-756d-4ce6-8281-fbe0f48786b4",
+                                    "id": "3a842ef6-da93-4d4e-b707-0c0d9e802486",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "bfa2c7a0-7651-4a30-910a-a0b7c895c5f2",
+                            "id": "ca2ebc29-85dc-4e38-9e25-17309cb93285",
                             "frames": [
                                 {
-                                    "id": "6d8a55b6-2d92-4a9a-bc0b-a7a08c1ec5e7",
+                                    "id": "b2992af7-56a8-4ee0-90ab-0f6f55bbed0b",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "9be30736-0cbc-46a4-8a19-80ae0eeed2a4",
+                            "id": "0818c921-726e-4a2c-879d-a217b6b53429",
                             "frames": [
                                 {
-                                    "id": "3ed81d4d-4250-4d33-94c2-630db917a6a7",
+                                    "id": "1b9ae469-d318-45e3-9694-2a39fe972ff3",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "b1036053-fb65-4926-9dab-ea40544ccb8b",
+                            "id": "1ee75c8f-be5a-417e-901e-1a21b5179221",
                             "frames": [
                                 {
-                                    "id": "d0257059-a9c8-4f80-8a6e-9f27bd88b94f",
+                                    "id": "e45b306e-846a-48df-a3b7-b8c4c9a3f57f",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "607e4183-77a6-4d4f-97de-4d2ab8a81d60",
+                            "id": "e67558e4-932f-470e-ad91-d00849669055",
                             "frames": [
                                 {
-                                    "id": "06ac0e3b-18ed-49c7-8a59-27b41d4768df",
+                                    "id": "1824d367-9668-4722-a4cd-b424562428ce",
                                     "tiles": []
                                 }
                             ]
                         },
                         {
-                            "id": "070a310f-510d-4487-bb45-cc2da692aaed",
+                            "id": "5445eb76-9f66-4149-80b0-e7aa4c793949",
                             "frames": [
                                 {
-                                    "id": "8aacf89d-5db8-4852-bc34-d3d3d62a99d2",
+                                    "id": "7fa2420c-b846-4816-a8f1-527ab0352ab3",
                                     "tiles": []
                                 }
                             ]
@@ -17902,15 +17383,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-<<<<<<< Updated upstream
-        "worldScrollX": 252,
-        "worldScrollY": 264,
+        "worldScrollX": 185.60000610351562,
+        "worldScrollY": 0,
         "zoom": 106.92412806534912,
-=======
-        "worldScrollX": 465.6000061035156,
-        "worldScrollY": 199.1999969482422,
-        "zoom": 110.88319334847392,
->>>>>>> Stashed changes
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
