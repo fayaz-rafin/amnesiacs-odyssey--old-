@@ -13465,7 +13465,8 @@
             "height": 18,
             "imageWidth": 166,
             "imageHeight": 144,
-            "filename": "title.png"
+            "filename": "title.png",
+            "tileColors": []
         },
         {
             "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
@@ -18981,6 +18982,16 @@
             "symbol": "var_creeperisalive"
         },
         {
+            "id": "14",
+            "name": "PlayerVariablesSet",
+            "symbol": "var_playervariablesset"
+        },
+        {
+            "id": "15",
+            "name": "CreeperVariableSet",
+            "symbol": "var_creepervariableset"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -19191,19 +19202,9 @@
             "symbol": "var_kittyranoff"
         },
         {
-            "id": "14",
-            "name": "PlayerVariablesSet",
-            "symbol": "var_playervariablesset"
-        },
-        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L1",
             "name": "Player_Initial_Load",
             "symbol": "var_player_initial_load"
-        },
-        {
-            "id": "15",
-            "name": "CreeperVariableSet",
-            "symbol": "var_creepervariableset"
         }
     ],
     "engineFieldValues": [
@@ -19214,16 +19215,16 @@
     ],
     "settings": {
         "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
-        "startX": 9,
-        "startY": 11,
+        "startX": 8,
+        "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 47.20000076293945,
-        "worldScrollY": 23.200000762939453,
-        "zoom": 81.6093124398003,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 45.44297724449734,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",

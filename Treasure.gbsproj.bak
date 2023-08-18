@@ -6662,8 +6662,8 @@
                             "args": {
                                 "variable": "L0",
                                 "__collapseElse": false,
-                                "__collapse": true,
-                                "__comment": true
+                                "__collapse": false,
+                                "__comment": false
                             },
                             "children": {
                                 "true": [
@@ -6955,7 +6955,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4",
-                    "x": 15,
+                    "x": 13,
                     "y": 2
                 },
                 {
@@ -11362,9 +11362,11 @@
                             "id": "0dcc99ae-3430-4942-96fd-7445a646775a"
                         },
                         {
-                            "command": "EVENT_IF_TRUE",
+                            "command": "EVENT_IF_VALUE",
                             "args": {
-                                "variable": "7",
+                                "variable": "5",
+                                "operator": "<=",
+                                "comparator": "0",
                                 "__collapseElse": true
                             },
                             "children": {
@@ -11372,14 +11374,14 @@
                                     {
                                         "command": "EVENT_ACTOR_DEACTIVATE",
                                         "args": {
-                                            "actorId": "$self$"
+                                            "actorId": "fcf7e173-4b20-4300-8462-e826d8e66e8e"
                                         },
-                                        "id": "76f37228-1320-4c4f-813e-5d4297577cdf"
+                                        "id": "a19b2362-9066-4975-9dd5-cb09d6d86a17"
                                     }
                                 ],
                                 "false": []
                             },
-                            "id": "36396f6f-1bb0-4a83-88ef-9b2e83400039"
+                            "id": "375f6107-4b0f-4979-82d5-c32b8c505281"
                         }
                     ],
                     "updateScript": [
@@ -12344,6 +12346,28 @@
                         "spriteStateId": ""
                     },
                     "id": "6392a908-5c0a-4bab-843c-4e7f1f1f4c07"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "5",
+                        "operator": "<=",
+                        "comparator": "0",
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "fcf7e173-4b20-4300-8462-e826d8e66e8e"
+                                },
+                                "id": "b37b8362-8a22-4d8d-8372-904e2a6ee207"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "c30fdd43-5f07-492e-91ba-e493f9e7cdce"
                 }
             ],
             "playerHit1Script": [],
@@ -13441,7 +13465,8 @@
             "height": 18,
             "imageWidth": 166,
             "imageHeight": 144,
-            "filename": "title.png"
+            "filename": "title.png",
+            "tileColors": []
         },
         {
             "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
@@ -18957,6 +18982,16 @@
             "symbol": "var_creeperisalive"
         },
         {
+            "id": "14",
+            "name": "PlayerVariablesSet",
+            "symbol": "var_playervariablesset"
+        },
+        {
+            "id": "15",
+            "name": "CreeperVariableSet",
+            "symbol": "var_creepervariableset"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -19167,19 +19202,9 @@
             "symbol": "var_kittyranoff"
         },
         {
-            "id": "14",
-            "name": "PlayerVariablesSet",
-            "symbol": "var_playervariablesset"
-        },
-        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L1",
             "name": "Player_Initial_Load",
             "symbol": "var_player_initial_load"
-        },
-        {
-            "id": "15",
-            "name": "CreeperVariableSet",
-            "symbol": "var_creepervariableset"
         }
     ],
     "engineFieldValues": [
@@ -19189,7 +19214,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startSceneId": "cd1a03ea-c89c-43c7-8774-8efc177c2dd1",
         "startX": 9,
         "startY": 11,
         "startMoveSpeed": 1,
@@ -19197,8 +19222,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0.800000011920929,
+        "worldScrollX": 40.79999923706055,
+        "worldScrollY": 114.4000015258789,
         "zoom": 81.6093124398003,
         "customColorsEnabled": false,
         "sgbEnabled": false,
