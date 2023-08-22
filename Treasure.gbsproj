@@ -12764,7 +12764,8 @@
                     "id": "9d4644a6-d8bc-4dfc-ba4e-5a48f9f0da3a"
                 }
             ],
-            "labelColor": "green"
+            "labelColor": "green",
+            "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa"
         },
         {
             "name": "Tittle Screen",
@@ -13641,6 +13642,16 @@
             "imageHeight": 512,
             "filename": "cave2.png",
             "tileColors": []
+        },
+        {
+            "id": "a9d2b324-87fd-48f4-9699-8c17e2fe47bf",
+            "name": "gameover",
+            "symbol": "bg_gameover",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 166,
+            "imageHeight": 144,
+            "filename": "gameover.png"
         },
         {
             "id": "5f3f1c95-540f-4167-bca0-b9f82b215369",
@@ -19083,7 +19094,7 @@
                         "operator": "<",
                         "vectorY": "V2",
                         "__collapseElse": false,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true,
                         "__comment": false
                     },
@@ -19255,7 +19266,7 @@
                         "operator": ">",
                         "vectorY": "V2",
                         "__collapseElse": false,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true,
                         "__comment": false
                     },
@@ -19303,7 +19314,7 @@
                                     "otherActorId": "0",
                                     "__collapseElse": true,
                                     "__disableElse": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -19427,7 +19438,7 @@
                         "operator": ">",
                         "vectorY": "V3",
                         "__collapseElse": false,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true,
                         "__comment": false
                     },
@@ -19474,7 +19485,7 @@
                                     },
                                     "otherActorId": "0",
                                     "__collapseElse": true,
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -19599,7 +19610,7 @@
                         "operator": "<",
                         "vectorY": "V3",
                         "__collapseElse": false,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true,
                         "__comment": false
                     },
@@ -20786,9 +20797,9 @@
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3412.800048828125,
-        "worldScrollY": 1170.4000244140625,
-        "zoom": 354.9372684191817,
+        "worldScrollX": 635.2000122070312,
+        "worldScrollY": 644.7999877929688,
+        "zoom": 131.2035856675261,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
