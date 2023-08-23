@@ -995,7 +995,7 @@
                     "y": 9
                 },
                 {
-                    "name": "Heart",
+                    "name": "Heart3",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
@@ -1022,7 +1022,7 @@
                                     {
                                         "command": "EVENT_ACTOR_SET_STATE",
                                         "args": {
-                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
                                             "spriteStateId": "Half_Heart"
                                         },
                                         "id": "90ef5235-906b-49e3-802a-7f7809adb847"
@@ -1032,7 +1032,7 @@
                                     {
                                         "command": "EVENT_ACTOR_SET_STATE",
                                         "args": {
-                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
                                             "spriteStateId": ""
                                         },
                                         "id": "272760f8-321e-4529-b27b-ac519d7df5a2"
@@ -1048,6 +1048,230 @@
                     "hit3Script": [],
                     "id": "94bba262-088b-4731-a826-2d0f4f949cba",
                     "x": 0,
+                    "y": 1
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_15",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 12,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "f470d0e9-882d-46a5-b02c-162b2d4b5585",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "347bcd2d-fe05-4e34-bb98-cd21c31243a4"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "1fc4ed3d-22c5-4183-8f2c-af4515a1425c"
+                                    }
+                                ]
+                            },
+                            "id": "368b2db7-7fbd-4700-989b-f1f2e0fc8c47"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "f470d0e9-882d-46a5-b02c-162b2d4b5585",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_20",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 20,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "05bc9318-18d6-4875-b7d4-d8b8ffc856bc",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "1ca9ab58-1900-417c-8add-d683996bcbf9"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "cf169cc6-5960-422d-ba16-4688abacd5c2"
+                                    }
+                                ]
+                            },
+                            "id": "6abbc9cd-9c1c-4c0f-9cc7-d3ee31165c5f"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "05bc9318-18d6-4875-b7d4-d8b8ffc856bc",
+                    "x": 4,
+                    "y": 1
+                },
+                {
+                    "name": "Heart3",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_30",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 4,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "dca4381a-cfa9-4817-b08b-9067703b490b"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "53ec96bd-13cb-45dc-8734-9942e270771f"
+                                    }
+                                ]
+                            },
+                            "id": "75829167-73f8-45ca-b2e6-afb0c4475240"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "20bf016d-a544-4bc7-be15-310bd1d5ee87",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart3",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_32",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 4,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "6225800a-e010-45d3-82a2-8b4b326fffa6"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "8fed104e-aa47-41eb-961b-faa3344424bf"
+                                    }
+                                ]
+                            },
+                            "id": "06716950-d0a4-4115-96af-4a95b73149ee"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "226de6f9-a54f-4a66-b189-3c08a337c04f",
+                    "x": 4,
                     "y": 1
                 }
             ],
@@ -1082,19 +1306,11 @@
                     "args": {
                         "variable": "L1",
                         "__collapseElse": false,
-                        "__collapse": true
+                        "__collapse": false,
+                        "__disableElse": true
                     },
                     "children": {
                         "true": [
-                            {
-                                "command": "EVENT_ACTOR_SET_STATE",
-                                "args": {
-                                    "actorId": "94bba262-088b-4731-a826-2d0f4f949cba",
-                                    "spriteStateId": "",
-                                    "__collapse": true
-                                },
-                                "id": "3e1fb27a-47b9-4418-8771-61d285e992af"
-                            },
                             {
                                 "command": "EVENT_CAMERA_SHAKE",
                                 "args": {
@@ -1125,6 +1341,16 @@
                                     "__collapse": true
                                 },
                                 "id": "c5172fdd-222b-48ed-842b-318d4cde05a2"
+                            },
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+                                    "$actor[0]$": "05bc9318-18d6-4875-b7d4-d8b8ffc856bc",
+                                    "$actor[1]$": "f470d0e9-882d-46a5-b02c-162b2d4b5585",
+                                    "$actor[2]$": "94bba262-088b-4731-a826-2d0f4f949cba"
+                                },
+                                "id": "a2b84f5b-fd5d-4ffc-b5e5-74114dc01a71"
                             }
                         ],
                         "false": []
@@ -1136,14 +1362,20 @@
                     "args": {
                         "variable": "14",
                         "__collapseElse": true,
-                        "__collapse": true
+                        "__collapse": false,
+                        "__disableElse": true
                     },
                     "children": {
                         "true": [
                             {
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
-                                    "customEventId": "1173008d-6705-4b96-8c06-b1ee925f94d9"
+                                    "customEventId": "1173008d-6705-4b96-8c06-b1ee925f94d9",
+                                    "$actor[6af0ee7e-513f-449a-b9e1-e42f2ed84f86]$": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                    "$actor[0]$": "05bc9318-18d6-4875-b7d4-d8b8ffc856bc",
+                                    "$actor[1]$": "f470d0e9-882d-46a5-b02c-162b2d4b5585",
+                                    "$actor[2]$": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                    "__collapse": false
                                 },
                                 "id": "0cb0346e-3e76-4fe4-b657-7e6dba2113c2"
                             }
@@ -4040,6 +4272,118 @@
                     "id": "a4bab740-d930-4d5a-af86-c7707faba8e2",
                     "x": 0,
                     "y": 1
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_21",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 12,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "1a609b48-ec91-4002-bd82-d3ca0c5b8393"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "0005e830-a392-4f1b-84f0-27a0da558f24"
+                                    }
+                                ]
+                            },
+                            "id": "09369916-d2a5-4ef3-b6ee-be4d4ec48af1"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "fd99c49b-0753-4888-b476-5b86d191f6fe",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_25",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 20,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "e5f38dbf-d789-4a7d-8bd6-ec6c2e757b2d"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "6b8d4f79-976e-4648-9c85-0c289e01f287"
+                                    }
+                                ]
+                            },
+                            "id": "1e00254a-435a-49ed-b9c6-c43cec175b5f"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "704e0868-e9cc-4c5c-812b-f4a8cf27c7cb",
+                    "x": 4,
+                    "y": 1
                 }
             ],
             "triggers": [
@@ -5376,6 +5720,118 @@
                     "hit3Script": [],
                     "id": "865386e6-b3b9-46db-b0f1-1550bd2e9c8f",
                     "x": 0,
+                    "y": 1
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_22",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 12,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "73221d8b-3f54-43c7-ae9a-fbe1f9a97329"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "5eb04f4a-3986-47d9-b95a-db91269374c6"
+                                    }
+                                ]
+                            },
+                            "id": "6eefe16d-1109-4b3c-8596-f873a0944346"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "392429cc-0176-42bc-826c-148738fa6ee7",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_26",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 20,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "5fc23d13-eb0e-4c75-81d9-6616bb35a22c"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "cd3845ca-ce9c-455c-908d-cdce045347f4"
+                                    }
+                                ]
+                            },
+                            "id": "ee263531-519a-4529-8e7c-0457e58b1ebc"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "ababdcec-234d-4807-ba5e-fd1e448e6b9b",
+                    "x": 4,
                     "y": 1
                 }
             ],
@@ -6958,6 +7414,118 @@
                     "hit3Script": [],
                     "id": "0a486de9-78a7-4b94-a3dd-a4b6bd21a995",
                     "x": 0,
+                    "y": 1
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_23",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 12,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "52e7c3d0-d60f-44d5-8968-ebba53e027c3"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "781272a4-c324-42ac-a952-28ad46c0eff6"
+                                    }
+                                ]
+                            },
+                            "id": "17d17cc6-2eca-46a0-a036-c35fd49673a6"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "064df3dc-b50b-4128-bb0b-9af575a90209",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_27",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 20,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "7f9bf5f5-d6fe-4b11-a7aa-a691da5f94a7"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "6b8fa379-d064-45c6-bf09-405e02705b02"
+                                    }
+                                ]
+                            },
+                            "id": "db49fb1a-e1af-4ccb-86c6-9de944996b19"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "663a3424-0298-4d01-9538-04a4f07cd455",
+                    "x": 4,
                     "y": 1
                 }
             ],
@@ -12361,7 +12929,7 @@
                     "y": 24
                 },
                 {
-                    "name": "Heart",
+                    "name": "Heart3",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
@@ -12493,7 +13061,7 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "21",
-                                "__collapseElse": true,
+                                "__collapseElse": false,
                                 "__collapse": false
                             },
                             "children": {
@@ -14207,6 +14775,118 @@
                     "id": "4c140031-d3e8-4afb-b297-3d1d187c8fd7",
                     "x": 58,
                     "y": 16
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_24",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 12,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "a835949d-a589-48ef-88d3-21dc3f118043"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "d4b3b090-af67-448c-84b4-7aeb1aa74904"
+                                    }
+                                ]
+                            },
+                            "id": "f5179078-80f9-45c7-a12f-63796bc98431"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "82d85ca4-6c9f-433e-bc74-b9df57822209",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_28",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": "<=",
+                                "comparator": 20,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": "Half_Heart"
+                                        },
+                                        "id": "33f870f3-50b4-40de-8552-9fee1c981257"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                            "spriteStateId": ""
+                                        },
+                                        "id": "bd004f70-d53d-4f7d-925e-602c74ea5aaf"
+                                    }
+                                ]
+                            },
+                            "id": "9c3ce02d-e16b-4f4b-a498-f4feb5e0a794"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "23596bb2-28b3-46d6-a672-6bc768428788",
+                    "x": 4,
+                    "y": 1
                 }
             ],
             "triggers": [
@@ -14333,12 +15013,23 @@
                                 "id": "dfa6792b-ac39-49de-994f-35930386a680"
                             },
                             {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "6df9f058-b2c7-4d36-8792-13d2ede2f942",
+                                    "$actor[0]$": "23596bb2-28b3-46d6-a672-6bc768428788",
+                                    "$actor[1]$": "82d85ca4-6c9f-433e-bc74-b9df57822209",
+                                    "$actor[2]$": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86"
+                                },
+                                "id": "9513ed27-8f6e-4076-97a1-72e7175dced9"
+                            },
+                            {
                                 "command": "EVENT_IF_VALUE",
                                 "args": {
                                     "variable": "6",
                                     "operator": "<=",
                                     "comparator": 4,
-                                    "__collapseElse": false
+                                    "__collapseElse": false,
+                                    "__comment": true
                                 },
                                 "children": {
                                     "true": [
@@ -14459,12 +15150,23 @@
                                 "id": "976530b5-5e6d-4a69-b3d9-c749d425f0bf"
                             },
                             {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+                                    "$actor[0]$": "23596bb2-28b3-46d6-a672-6bc768428788",
+                                    "$actor[1]$": "82d85ca4-6c9f-433e-bc74-b9df57822209",
+                                    "$actor[2]$": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86"
+                                },
+                                "id": "9ae5eb3c-f387-4355-bb4b-568dcafa1e06"
+                            },
+                            {
                                 "command": "EVENT_IF_VALUE",
                                 "args": {
                                     "variable": "6",
                                     "operator": "<=",
                                     "comparator": 4,
-                                    "__collapseElse": false
+                                    "__collapseElse": false,
+                                    "__comment": true
                                 },
                                 "children": {
                                     "true": [
@@ -14893,9 +15595,130 @@
             "symbol": "scene_6",
             "x": 341.06815872456156,
             "y": 51.04253594729339,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "Heart3",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_29",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "f165afb0-767f-4bfd-ab14-f20878850eb0"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "6d29dd53-2c93-4f91-a5e4-8387d533b6c4",
+                    "x": 0,
+                    "y": 1
+                },
+                {
+                    "name": "Heart2",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_31",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "706e532f-5817-41f6-af5d-46a01d60d8f0"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "5ef99927-f3b3-4008-8cb3-cf5ee1c19c31",
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "name": "Heart1",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_33",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "1603badd-5207-4e34-8fe3-c3146703df49"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "0f9abd1a-29d6-4d6e-830a-1e71fbe57490",
+                    "x": 4,
+                    "y": 1
+                }
+            ],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "14",
+                        "__collapseElse": true,
+                        "__collapse": true,
+                        "__disableElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "1173008d-6705-4b96-8c06-b1ee925f94d9",
+                                    "$actor[6af0ee7e-513f-449a-b9e1-e42f2ed84f86]$": "94bba262-088b-4731-a826-2d0f4f949cba",
+                                    "$actor[0]$": "0f9abd1a-29d6-4d6e-830a-1e71fbe57490",
+                                    "$actor[1]$": "5ef99927-f3b3-4008-8cb3-cf5ee1c19c31",
+                                    "$actor[2]$": "6d29dd53-2c93-4f91-a5e4-8387d533b6c4",
+                                    "__collapse": false
+                                },
+                                "id": "11b3c6f8-77f0-4159-a17b-c078d4f76c6b"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "7837aa3f-795a-4a08-8ff7-33468a13b8c6"
+                },
                 {
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
@@ -15321,10 +16144,18 @@
                     "command": "EVENT_IF_TRUE",
                     "args": {
                         "variable": "L0",
-                        "__collapseElse": false
+                        "__collapseElse": true
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "f19131ab-45a6-439c-ab29-7a0378249663",
+                                    "__collapse": false
+                                },
+                                "id": "e0d8b82b-4768-4323-a28c-349464447a57"
+                            },
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
@@ -15338,6 +16169,14 @@
                             }
                         ],
                         "false": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "f19131ab-45a6-439c-ab29-7a0378249663",
+                                    "__collapse": false
+                                },
+                                "id": "88beb242-af87-47cf-9ed5-a3dbc6a1d862"
+                            },
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
@@ -23833,37 +24672,66 @@
             "name": "Setting Player Variables",
             "description": "Setting Player Variables",
             "variables": {},
-            "actors": {},
+            "actors": {
+                "0": {
+                    "id": "0",
+                    "name": "Heart1"
+                },
+                "1": {
+                    "id": "1",
+                    "name": "Heart2"
+                },
+                "2": {
+                    "id": "2",
+                    "name": "Heart3"
+                }
+            },
             "symbol": "script_2",
             "script": [
-                {
-                    "command": "EVENT_SWITCH_SCENE",
-                    "args": {
-                        "sceneId": "25ca99b2-e3a6-49a7-b383-ed40181ccf2a",
-                        "x": 0,
-                        "y": 0,
-                        "direction": "",
-                        "fadeSpeed": "2"
-                    },
-                    "id": "221d0eb9-3cb5-4b52-b86d-fd326c94e22b"
-                },
                 {
                     "command": "EVENT_SET_VALUE",
                     "args": {
                         "variable": "6",
                         "value": {
                             "type": "number",
-                            "value": 8
+                            "value": 24
                         },
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "87e90c2d-d0d2-4532-b8f0-9f947baf5e1d"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_STATE",
+                    "args": {
+                        "actorId": "0",
+                        "spriteStateId": "",
+                        "__collapse": true
+                    },
+                    "id": "533b358a-dc26-48c2-83b1-a563f1f12458"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_STATE",
+                    "args": {
+                        "actorId": "1",
+                        "spriteStateId": "",
+                        "__collapse": true
+                    },
+                    "id": "213e41f7-b0a6-40ec-b4fd-f60707995cd0"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_STATE",
+                    "args": {
+                        "actorId": "2",
+                        "spriteStateId": "",
+                        "__collapse": true
+                    },
+                    "id": "60284a4c-9d7e-41da-b451-00d19caa94a3"
                 },
                 {
                     "command": "EVENT_SET_TRUE",
                     "args": {
                         "variable": "14",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "5e9e3449-00f1-480b-8174-6ce16d1110a4"
                 }
@@ -24777,6 +25645,914 @@
                     "id": "d408ec4e-5307-48e2-b85b-6fd0bb133eb1"
                 }
             ]
+        },
+        {
+            "id": "f19131ab-45a6-439c-ab29-7a0378249663",
+            "name": "Resetting all variables",
+            "description": "Script is only run once right after restart or tryagain is selected in gameover scri",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_6",
+            "script": [
+                {
+                    "command": "EVENT_RESET_VARIABLES",
+                    "args": {},
+                    "id": "7b866c17-e8ac-4bee-b698-1ad0364dc606"
+                },
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "14",
+                        "__comment": true
+                    },
+                    "id": "9d78c236-c52d-4b84-855e-e0bf2d7b551b"
+                },
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "15",
+                        "__comment": true
+                    },
+                    "id": "ee3eb220-4878-43c9-b991-66cf8bd4516c"
+                },
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "26",
+                        "__comment": true
+                    },
+                    "id": "f67026aa-f033-4ff3-b872-696cbfd4e9a2"
+                }
+            ]
+        },
+        {
+            "id": "684e286d-f6f4-4ff3-965c-d382518eaead",
+            "name": "Heart display",
+            "description": "This Script will manage the heart's display",
+            "variables": {},
+            "actors": {
+                "0": {
+                    "id": "0",
+                    "name": "Heart1"
+                },
+                "1": {
+                    "id": "1",
+                    "name": "Heart2"
+                },
+                "2": {
+                    "id": "2",
+                    "name": "Hear3"
+                },
+                "6af0ee7e-513f-449a-b9e1-e42f2ed84f86": {
+                    "id": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                    "name": "Actor G"
+                }
+            },
+            "symbol": "script_7",
+            "script": [
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">=",
+                        "comparator": 16,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 20,
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "spriteStateId": "Half_Heart"
+                                            },
+                                            "id": "470035cb-c658-4f5a-943d-2aad8b1db3a5"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "23ee28d5-dd1a-4c38-9ca8-77f27286d1cd"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "089c1e04-659e-4c5a-ae6c-7eef8795163f"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "2b0092e6-042d-4cc4-b43f-e00faf5dc709"
+                            },
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": ">",
+                                    "comparator": 20,
+                                    "__collapseElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "spriteStateId": "",
+                                                "__collapse": true
+                                            },
+                                            "id": "d0030fa3-48ac-42ea-8607-c9b480668c37"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": "",
+                                                "__collapse": true
+                                            },
+                                            "id": "1a6d75f6-85fe-4fef-b20f-f09f61690792"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": "",
+                                                "__collapse": true
+                                            },
+                                            "id": "079dc269-2b7d-4016-a3ca-0ee955f6ce97"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "acc73c3b-cb70-4103-a089-909bdbe5c1af"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "29c8efb8-ec23-4c02-ad54-bc2016c45bd1"
+                            }
+                        ]
+                    },
+                    "id": "f88d6b8b-4207-4b9d-b801-e0238446e41e"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">",
+                        "comparator": 8,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 12,
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "d85ca49d-6ddf-4a91-b91d-3d4c704fa6a9"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": "Half_Heart"
+                                            },
+                                            "id": "629e926d-7e9b-44bf-811c-0085d504189c"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "f1d3d11c-bcae-47fe-9a7e-2f55e4410b13"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "35b8d255-80ad-4b3b-a077-984d65edb1f9"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "cd506ea8-2810-401d-952b-5aa8c9f7554a"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "d656b70b-fe37-4219-bd27-db320d00d107"
+                                        }
+                                    ]
+                                },
+                                "id": "35465a4b-24fb-49f9-8702-039e28fe258d"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "7cc03278-54c3-46cc-a2c1-d3c97f80687b"
+                            }
+                        ]
+                    },
+                    "id": "8d6a8093-299f-4948-ad21-669a96d09da6"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": "<=",
+                        "comparator": 8,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 4,
+                                    "__collapseElse": false,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "35bd30ef-7ffc-43bf-8b05-63a3dbce7efd"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "1"
+                                            },
+                                            "id": "bb1a8487-ac9d-4882-8962-0c33b484d607"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": "Half_Heart"
+                                            },
+                                            "id": "d9eadbd7-f343-4ad4-b29e-ffbc5d2f0263"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "ea04ebbc-0b95-45ba-ad82-ecec2faeca02"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "1"
+                                            },
+                                            "id": "dc260aae-4615-4640-98dc-47900e73be85"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "9c575d0c-e138-449d-bab4-7f81ca57e530"
+                                        }
+                                    ]
+                                },
+                                "id": "dddbacc6-6056-4574-b106-a24a30d65bdd"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "89e8b4ac-c883-47f1-b1c0-15b557c204b3"
+                            }
+                        ]
+                    },
+                    "id": "9454c2ee-7476-4816-be63-b94a1fe53d2d"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">",
+                        "comparator": 20,
+                        "__collapseElse": true,
+                        "__disableElse": true,
+                        "__collapse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "3631cea3-a3b8-4825-a448-71b18b606fcd"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "8bc62bad-2a3b-4425-8872-ac8f1525f270"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "a227b0ad-4e97-4879-9f82-2f7696666030"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "691e88ab-ec0a-4db6-9136-e8d595d1f572"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": "<=",
+                        "comparator": 20,
+                        "__collapseElse": false,
+                        "__collapse": true,
+                        "__disableElse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "spriteStateId": "Half_Heart",
+                                    "__collapse": true
+                                },
+                                "id": "63cbd2c3-adf3-4338-8e02-909f97a1f137"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "7a686909-e0b1-4c00-88fb-e063cc2b0d70"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "e65a56cd-0870-4c77-926c-975bd8a308aa"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "3b95d92d-fb13-494b-a65c-3fc36117a23e"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">",
+                        "comparator": 12,
+                        "__collapseElse": true,
+                        "__collapse": true,
+                        "__disableElse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "__collapse": true
+                                },
+                                "id": "0d2930a5-c5ab-4d5d-acc5-b2fb666c1336"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "2283ebb0-1f0f-4e44-9988-bb0776e1158a"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "955f63ce-fc41-4b2d-a0e7-216015136569"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "7e66d1ae-8627-4454-ad41-7aec75d8efaa"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": "<=",
+                        "comparator": 12,
+                        "__collapseElse": false,
+                        "__collapse": true,
+                        "__disableElse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "__collapse": true
+                                },
+                                "id": "371b64e4-de9f-45e8-a3fb-ca1adfa0cbf8"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "spriteStateId": "Half_Heart",
+                                    "__collapse": true
+                                },
+                                "id": "a003dcde-6269-4c32-85bd-65a40ce3a80d"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "0acc694e-345c-4be0-845d-d893f2bc0890"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "1c589fc0-f709-488f-a917-e44c03282aa2"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": "<=",
+                        "comparator": 4,
+                        "__collapseElse": false,
+                        "__collapse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "__collapse": true
+                                },
+                                "id": "e531c043-90f8-49c2-95b3-bb4a8bc7a7e1"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "__collapse": true
+                                },
+                                "id": "8fcde9ac-ee32-49b7-a4b2-f8f9f070351a"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "Half_Heart",
+                                    "__collapse": true
+                                },
+                                "id": "31dae3f5-5ce4-4584-863f-7ab70bf38344"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "0",
+                                    "__collapse": true
+                                },
+                                "id": "9abea7c8-b9c6-4c2a-870e-b9bf18ed527e"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "args": {
+                                    "actorId": "1",
+                                    "__collapse": true
+                                },
+                                "id": "3754ec82-5544-4d5c-8574-72fa3f543b11"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "2",
+                                    "spriteStateId": "",
+                                    "__collapse": true
+                                },
+                                "id": "64d804f9-6901-44b7-b638-cfbe0cd8b99d"
+                            }
+                        ]
+                    },
+                    "id": "e0f1f7bf-73bc-4630-aa85-fa775d928da0"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "V0",
+                        "operator": ">",
+                        "comparator": 4,
+                        "__collapseElse": true,
+                        "__collapse": true,
+                        "__comment": true
+                    },
+                    "children": {
+                        "true": [],
+                        "false": []
+                    },
+                    "id": "0963b49c-2cc1-4465-bcbe-dbfb063c7db8"
+                }
+            ]
+        },
+        {
+            "id": "6df9f058-b2c7-4d36-8792-13d2ede2f942",
+            "name": "OnHit Heart Animation",
+            "description": "Whenever the Player gets hit, it will run this script. The hearts will blink depending on the current hp of the player.",
+            "variables": {},
+            "actors": {
+                "0": {
+                    "id": "0",
+                    "name": "Heart1"
+                },
+                "1": {
+                    "id": "1",
+                    "name": "Heart2"
+                },
+                "2": {
+                    "id": "2",
+                    "name": "Heart3"
+                },
+                "6af0ee7e-513f-449a-b9e1-e42f2ed84f86": {
+                    "id": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                    "name": ""
+                }
+            },
+            "symbol": "script_8",
+            "script": [
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">",
+                        "comparator": 16,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 20,
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "spriteStateId": "Half_Heart_Blink"
+                                            },
+                                            "id": "8e44221f-a0ae-49b2-b389-2c84032baa44"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "0417121e-4c15-4b2c-8a7e-f6b5dc7510c7"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "3641324e-883a-47d7-bce9-bcbc2caa82f5"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "spriteStateId": "HeartBlink"
+                                            },
+                                            "id": "1621d8e7-4199-4b20-a11e-58329a781392"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "fe48d704-f65b-4dc7-9b7f-33fc88431ca8"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "b9ebbd16-945d-49df-9556-a84ac3937624"
+                                        }
+                                    ]
+                                },
+                                "id": "ddafea64-25c3-4c4a-9173-1eeeafb6a5d2"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "495712ae-d96f-4470-bd10-4d2e98319f98"
+                            }
+                        ]
+                    },
+                    "id": "331bbc00-5d62-4f2a-ac1d-051b257344a4"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": ">",
+                        "comparator": 8,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 12,
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "a320987a-402b-4864-aa2b-c2d9b71c312e"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": "Half_Heart_Blink"
+                                            },
+                                            "id": "de8ea58d-dc6b-4e6b-9822-727ea674c06d"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "cb34c525-fd69-4048-95d6-34303d7f1f49"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "2276751b-1650-4b9e-bcdd-6f93594acac6"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "1",
+                                                "spriteStateId": "HeartBlink"
+                                            },
+                                            "id": "350502fe-f627-4384-bdf2-ac6f5323de96"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": ""
+                                            },
+                                            "id": "6b9463af-6aa0-42d1-acd0-84bf8e413504"
+                                        }
+                                    ]
+                                },
+                                "id": "12db0318-881e-420d-afec-40d65a6d85e3"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "9c6770d3-86eb-4a90-aeff-fc5a0ecbd155"
+                            }
+                        ]
+                    },
+                    "id": "454fab8e-2810-473a-9266-526866d39054"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "6",
+                        "operator": "<=",
+                        "comparator": 8,
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "6",
+                                    "operator": "<=",
+                                    "comparator": 4,
+                                    "__collapseElse": false,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "acf58c08-aedd-49c0-ab5b-ec7fb9846a91"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "1"
+                                            },
+                                            "id": "3b7c4b18-4054-46ff-b777-e7339a5d16cd"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": "Half_Heart_Blink"
+                                            },
+                                            "id": "cf9dc02c-7a5d-4b18-8430-2a14997719a9"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "0"
+                                            },
+                                            "id": "b5cff03d-8a23-4928-8dca-40f06f029b08"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "1"
+                                            },
+                                            "id": "2fc71002-8c3c-4185-b57f-e248ca3b0647"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "2",
+                                                "spriteStateId": "HeartBlink"
+                                            },
+                                            "id": "ab69db85-2488-430a-bc47-eb62b33e324a"
+                                        }
+                                    ]
+                                },
+                                "id": "000d978c-6863-4203-b206-37d6b4b958ff"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+                                    "spriteStateId": "HeartBlink",
+                                    "__collapse": false
+                                },
+                                "id": "024b967d-48b0-46f9-87a4-3a3d47eba62a"
+                            }
+                        ]
+                    },
+                    "id": "d6d7a4d0-16e2-41aa-8702-ab3bc5d91796"
+                }
+            ]
         }
     ],
     "music": [
@@ -24977,6 +26753,61 @@
             "id": "15",
             "name": "Cave_CreeperVariableSet",
             "symbol": "var_cave_creepervariableset"
+        },
+        {
+            "id": "16",
+            "name": "Ghost1-HP",
+            "symbol": "var_ghost1_hp"
+        },
+        {
+            "id": "17",
+            "name": "Ghost2-HP",
+            "symbol": "var_ghost2_hp"
+        },
+        {
+            "id": "18",
+            "name": "Ghost3-HP",
+            "symbol": "var_ghost3_hp"
+        },
+        {
+            "id": "19",
+            "name": "Ghost4-HP",
+            "symbol": "var_ghost4_hp"
+        },
+        {
+            "id": "20",
+            "name": "Ghost5-HP",
+            "symbol": "var_ghost5_hp"
+        },
+        {
+            "id": "21",
+            "name": "Ghost1-Alive",
+            "symbol": "var_ghost1_alive_0"
+        },
+        {
+            "id": "22",
+            "name": "Ghost2-Alive",
+            "symbol": "var_ghost2_alive_0"
+        },
+        {
+            "id": "23",
+            "name": "Ghost3-Alive",
+            "symbol": "var_ghost3_alive"
+        },
+        {
+            "id": "24",
+            "name": "Ghost4-Alive",
+            "symbol": "var_ghost4_alive_0"
+        },
+        {
+            "id": "25",
+            "name": "Ghost5-Alive",
+            "symbol": "var_ghost5_alive"
+        },
+        {
+            "id": "26",
+            "name": "CaveGhostsVariableSet",
+            "symbol": "var_caveghostsvariableset"
         },
         {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
@@ -25214,61 +27045,6 @@
             "symbol": "var_player_y_7"
         },
         {
-            "id": "16",
-            "name": "Ghost1-HP",
-            "symbol": "var_ghost1_hp"
-        },
-        {
-            "id": "17",
-            "name": "Ghost2-HP",
-            "symbol": "var_ghost2_hp"
-        },
-        {
-            "id": "18",
-            "name": "Ghost3-HP",
-            "symbol": "var_ghost3_hp"
-        },
-        {
-            "id": "19",
-            "name": "Ghost4-HP",
-            "symbol": "var_ghost4_hp"
-        },
-        {
-            "id": "20",
-            "name": "Ghost5-HP",
-            "symbol": "var_ghost5_hp"
-        },
-        {
-            "id": "21",
-            "name": "Ghost1-Alive",
-            "symbol": "var_ghost1_alive_0"
-        },
-        {
-            "id": "22",
-            "name": "Ghost2-Alive",
-            "symbol": "var_ghost2_alive_0"
-        },
-        {
-            "id": "23",
-            "name": "Ghost3-Alive",
-            "symbol": "var_ghost3_alive"
-        },
-        {
-            "id": "24",
-            "name": "Ghost4-Alive",
-            "symbol": "var_ghost4_alive_0"
-        },
-        {
-            "id": "25",
-            "name": "Ghost5-Alive",
-            "symbol": "var_ghost5_alive"
-        },
-        {
-            "id": "26",
-            "name": "CaveGhostsVariableSet",
-            "symbol": "var_caveghostsvariableset"
-        },
-        {
             "id": "67eb1570-ad36-4603-afe9-7973e1873f95__L1",
             "name": "Player Y",
             "symbol": "var_player_y_10"
@@ -25356,17 +27132,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
-        "startX": 13,
-        "startY": 5,
+        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startX": 9,
+        "startY": 11,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "left",
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 60.88586766830531,
+        "worldScrollY": 92,
+        "zoom": 79.89118783780168,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -25394,9 +27170,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            204,
-            204,
-            332
+            30,
+            423,
+            288
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
