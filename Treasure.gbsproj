@@ -3758,7 +3758,7 @@
                     "name": "Steve",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -3782,7 +3782,7 @@
                                             "text": [
                                                 "Goodluck out\nthere."
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec"
                                         },
                                         "id": "f8015f76-e4b3-47f2-ad2f-520d9a732e0e"
                                     }
@@ -3795,7 +3795,7 @@
                                                 "Good morning, \nstranger!",
                                                 "I dont think i\nhave seen you\naround before."
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
                                             "__collapse": false
                                         },
                                         "id": "b1c4daa1-9a58-4973-afc1-bb7c3e22e680"
@@ -3810,7 +3810,7 @@
                                                 "and an old man\nnamed Bart\nfound me. ",
                                                 "Do you happen to\nknow anything?"
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "",
                                             "__collapse": false
                                         },
                                         "id": "548a1cb4-e651-4949-bf35-79d506ec8c39"
@@ -3834,7 +3834,7 @@
                                                 "who lives across\nthe shore.",
                                                 "They say he has\nthe ability to \nrestore \nmemories."
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
                                             "__collapse": false
                                         },
                                         "id": "af3a9e78-57f9-457b-a2e2-d193e9ec8fb5"
@@ -3875,7 +3875,7 @@
                                             "text": [
                                                 "Just follow the \npath down the \nroad."
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
                                             "__collapse": false
                                         },
                                         "id": "829a4ae7-551a-47e6-a17b-77ce8c7b1b7c"
@@ -3904,7 +3904,7 @@
                                             "text": [
                                                 "But i must\nwarn you!"
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
                                             "__collapse": false
                                         },
                                         "id": "2c338dbe-3dc7-45fd-b786-78b88e38b5b0"
@@ -3934,7 +3934,7 @@
                                                 "There are wild\ncreatures \ninhabiting this\nisland.",
                                                 "You may have to \nfight them off"
                                             ],
-                                            "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+                                            "avatarId": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
                                             "__collapse": false
                                         },
                                         "id": "869b909f-3cb4-4182-b18e-c75f970d5a86"
@@ -3965,6 +3965,14 @@
                         }
                     ],
                     "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "npc-6"
+                            },
+                            "id": "06c3e353-34c7-4a49-a30d-967f7f6603e7"
+                        },
                         {
                             "command": "EVENT_IF_TRUE",
                             "args": {
@@ -4309,13 +4317,24 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_34",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I love animals"
+                                ],
+                                "avatarId": "b2872639-20d8-442d-81d3-38341959bc01"
+                            },
+                            "id": "567a1976-4554-4183-8671-f50ddeccc963"
+                        }
+                    ],
                     "startScript": [
                         {
                             "command": "EVENT_ACTOR_SET_STATE",
                             "args": {
                                 "actorId": "$self$",
-                                "spriteStateId": "npc-3"
+                                "spriteStateId": "npc-4"
                             },
                             "id": "4c511209-2a70-48c5-acd0-8b55a75350b2"
                         }
@@ -5603,7 +5622,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "290a155b-5e9e-4d97-966a-426151c2b348",
+                    "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -5621,7 +5640,7 @@
                                     "It's so serene",
                                     "I love mother\nnature!"
                                 ],
-                                "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                                "avatarId": "0a2778a1-53bf-421b-9673-3bd026eb9223"
                             },
                             "id": "334b86b6-a652-43e3-b8fe-15ddf0d96dee"
                         },
@@ -5634,7 +5653,16 @@
                             "id": "41dadd38-d340-48e0-8219-b704e7bcad1b"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "npc-5"
+                            },
+                            "id": "9ad80e26-2f7c-4f69-9415-da7e4742a6f0"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -16228,7 +16256,7 @@
             "id": "cd1a03ea-c89c-43c7-8774-8efc177c2dd1",
             "symbol": "scene_7",
             "x": 411.792681158881,
-            "y": 77.2954125318606,
+            "y": 78.01411656458248,
             "actors": [],
             "triggers": [],
             "script": [
@@ -16688,7 +16716,21 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_36",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I managed to get\nthis village's",
+                                    "First working\ncomputer",
+                                    "Now i need to\nfigure out",
+                                    "How to run this\n\"MS-DOS\"."
+                                ],
+                                "avatarId": "706c5863-902b-44d3-88b8-6d6159538365"
+                            },
+                            "id": "f0ef8bee-19a6-43b3-bb14-a8c94d4287bc"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -16711,8 +16753,30 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_37",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Did you know www\nstands for\nWorld Wide Web?",
+                                    "Technology is so\namazing!"
+                                ],
+                                "avatarId": "0a2778a1-53bf-421b-9673-3bd026eb9223"
+                            },
+                            "id": "bd5a70d4-2893-4f2a-817e-45186cac7edf"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "npc-5",
+                                "__collapse": false
+                            },
+                            "id": "c0bc159e-f7a8-4051-9244-28cb02fae1c8"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -16930,7 +16994,7 @@
                 0,
                 0,
                 0,
-                0,
+                15,
                 0,
                 0,
                 0,
@@ -17141,8 +17205,28 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_35",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I wonder what i \nshould cook for\ndinner tonight.."
+                                ],
+                                "avatarId": "2223a528-bcb6-4048-afaa-61840238d6d7"
+                            },
+                            "id": "1d884a35-8d85-4ad8-8cb8-37a17ca4c219"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "npc-3"
+                            },
+                            "id": "e0e728ce-98e9-4c41-a2ec-0a5395a4d547"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -17164,8 +17248,28 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_38",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Mommy, can we\nplease have \nmeatloaf for\ndinner?"
+                                ],
+                                "avatarId": "b2872639-20d8-442d-81d3-38341959bc01"
+                            },
+                            "id": "4924807b-d192-4f40-959d-5e0347045e08"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "npc-4"
+                            },
+                            "id": "f878d4b8-e924-4aae-9b24-8b51bfe1f3b0"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -18534,7 +18638,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "room2.png"
+            "filename": "room2.png",
+            "tileColors": []
         },
         {
             "id": "5f30a112-0034-4982-9bfd-24bc10fec688",
@@ -18544,7 +18649,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "room3.png"
+            "filename": "room3.png",
+            "tileColors": []
         },
         {
             "id": "80941896-5e45-4577-8506-b65514b8451c",
@@ -18620,7 +18726,8 @@
             "height": 36,
             "imageWidth": 224,
             "imageHeight": 288,
-            "filename": "water1.png"
+            "filename": "water1.png",
+            "tileColors": []
         }
     ],
     "spriteSheets": [
@@ -30139,6 +30246,48 @@
             "filename": "kittykat.png"
         },
         {
+            "id": "706c5863-902b-44d3-88b8-6d6159538365",
+            "name": "npc-1",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-1.png"
+        },
+        {
+            "id": "9de088cc-437c-48fc-affd-987bb1bb8029",
+            "name": "npc-2",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-2.png"
+        },
+        {
+            "id": "2223a528-bcb6-4048-afaa-61840238d6d7",
+            "name": "npc-3",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-3.png"
+        },
+        {
+            "id": "b2872639-20d8-442d-81d3-38341959bc01",
+            "name": "npc-4",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-4.png"
+        },
+        {
+            "id": "0a2778a1-53bf-421b-9673-3bd026eb9223",
+            "name": "npc-5",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-5.png"
+        },
+        {
+            "id": "cc5fcc44-aa9b-4bfc-8e98-38e9ac3a6eec",
+            "name": "npc-6",
+            "width": 16,
+            "height": 16,
+            "filename": "npc-6.png"
+        },
+        {
             "id": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
             "name": "oldman",
             "width": 16,
@@ -30686,9 +30835,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1213,
-        "worldScrollY": 4698,
-        "zoom": 451.68619602731405,
+        "worldScrollX": 398,
+        "worldScrollY": 432,
+        "zoom": 138.55147518775402,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -30716,9 +30865,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            258,
-            258,
-            420
+            186,
+            186,
+            303
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
