@@ -5583,6 +5583,30 @@
                     "symbol": "actor_6",
                     "script": [
                         {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "6",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 5,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "9cfdb1a0-df40-4c70-a6d5-9f39f0cff3b5"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+                                "$actor[0]$": "ababdcec-234d-4807-ba5e-fd1e448e6b9b",
+                                "$actor[1]$": "392429cc-0176-42bc-826c-148738fa6ee7",
+                                "$actor[2]$": "865386e6-b3b9-46db-b0f1-1550bd2e9c8f"
+                            },
+                            "id": "19bbe22e-bb77-4c6b-ab0d-18b82569b3c8"
+                        },
+                        {
                             "command": "EVENT_INC_VALUE",
                             "args": {
                                 "variable": "3"
@@ -7620,6 +7644,30 @@
                     "collisionGroup": "",
                     "symbol": "actor_7",
                     "script": [
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "6",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 4,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "41a555b5-1651-43a5-b95c-3674714c64c9"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+                                "$actor[0]$": "ababdcec-234d-4807-ba5e-fd1e448e6b9b",
+                                "$actor[1]$": "392429cc-0176-42bc-826c-148738fa6ee7",
+                                "$actor[2]$": "865386e6-b3b9-46db-b0f1-1550bd2e9c8f"
+                            },
+                            "id": "cf2fb803-0917-48ba-91b1-8303feaf2ab8"
+                        },
                         {
                             "command": "EVENT_INC_VALUE",
                             "args": {
@@ -19244,9 +19292,57 @@
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
-                    "collisionGroup": "",
+                    "collisionGroup": "1",
                     "symbol": "actor_32",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "6",
+                                "operation": "sub",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 1,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false,
+                                "__collapse": true
+                            },
+                            "id": "223ba081-0734-43a4-b188-40a1b22b6746"
+                        },
+                        {
+                            "command": "EVENT_CAMERA_SHAKE",
+                            "args": {
+                                "time": 0.5,
+                                "frames": 30,
+                                "shakeDirection": "horizontal",
+                                "__collapse": true
+                            },
+                            "id": "07ceeb2a-d0a7-4eab-8121-edd9072e8dfd"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "6df9f058-b2c7-4d36-8792-13d2ede2f942",
+                                "$actor[0]$": "4decf553-57fb-422f-a4bb-206691e8eb5c",
+                                "$actor[1]$": "b3f912c3-2f15-477d-9b7b-0cd77e77071c",
+                                "$actor[2]$": "f9914d9c-5d10-4aef-bc2f-6ec56eec3213",
+                                "__collapse": true
+                            },
+                            "id": "f7a0d6f0-4ad7-4c4d-b5eb-d34a59f6da77"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+                                "$actor[0]$": "4decf553-57fb-422f-a4bb-206691e8eb5c",
+                                "$actor[1]$": "b3f912c3-2f15-477d-9b7b-0cd77e77071c",
+                                "$actor[2]$": "f9914d9c-5d10-4aef-bc2f-6ec56eec3213",
+                                "__collapse": true
+                            },
+                            "id": "53786305-9fe9-4cb6-8cde-c480e9feec5f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [
                         {
@@ -19293,7 +19389,7 @@
                             "args": {
                                 "sceneId": "04814126-5d50-46a1-aa89-077b9d330679",
                                 "x": 14,
-                                "y": 28,
+                                "y": 30,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             },
@@ -21126,6 +21222,16 @@
             "imageHeight": 512,
             "filename": "cave2.png",
             "tileColors": []
+        },
+        {
+            "id": "9c8448ec-cc67-41ca-9add-a7a6463c6205",
+            "name": "controls",
+            "symbol": "bg_controls",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "controls.png"
         },
         {
             "id": "a9d2b324-87fd-48f4-9699-8c17e2fe47bf",
@@ -33521,6 +33627,26 @@
             "symbol": "var_sharky_0"
         },
         {
+            "id": "31",
+            "name": "GCreeperX",
+            "symbol": "var_gcreeperx"
+        },
+        {
+            "id": "32",
+            "name": "GCreeperY",
+            "symbol": "var_gcreepery"
+        },
+        {
+            "id": "33",
+            "name": "PickaxeCollected",
+            "symbol": "var_pickaxecollected"
+        },
+        {
+            "id": "34",
+            "name": "KittyKatTalkedPondScene",
+            "symbol": "var_kittykattalkedpondscene"
+        },
+        {
             "id": "e9e18a91-472c-4ec4-8ffa-4826b95e6893__L0",
             "name": "BoxCount",
             "symbol": "var_boxcount"
@@ -33866,21 +33992,6 @@
             "symbol": "var_playery_0"
         },
         {
-            "id": "31",
-            "name": "GCreeperX",
-            "symbol": "var_gcreeperx"
-        },
-        {
-            "id": "32",
-            "name": "GCreeperY",
-            "symbol": "var_gcreepery"
-        },
-        {
-            "id": "33",
-            "name": "PickaxeCollected",
-            "symbol": "var_pickaxecollected"
-        },
-        {
             "id": "0e002215-8b4c-41f9-b14d-0d5d6cbf354c__L0",
             "name": "PlayerX",
             "symbol": "var_playerx_1"
@@ -33894,11 +34005,6 @@
             "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4__L1",
             "name": "Helpingsteve",
             "symbol": "var_helpingsteve"
-        },
-        {
-            "id": "34",
-            "name": "KittyKatTalkedPondScene",
-            "symbol": "var_kittykattalkedpondscene"
         }
     ],
     "engineFieldValues": [
@@ -33908,17 +34014,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
-        "startX": 9,
-        "startY": 12,
+        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startX": 11,
+        "startY": 13,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 5.599999904632568,
-        "zoom": 75.65978453680736,
+        "worldScrollX": 748,
+        "worldScrollY": 2239.199951171875,
+        "zoom": 278.1252589002238,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
