@@ -7,7 +7,7 @@
 #include "data/scene_1_collisions.h"
 #include "data/palette_0.h"
 #include "data/palette_1.h"
-#include "data/sprite_actor3animated.h"
+#include "data/sprite_actor3animated2.h"
 #include "data/scene_1_actors.h"
 #include "data/scene_1_triggers.h"
 #include "data/scene_1_sprites.h"
@@ -27,10 +27,10 @@ const struct scene_t scene_1 = {
     .palette = TO_FAR_PTR_T(palette_0),
     .sprite_palette = TO_FAR_PTR_T(palette_1),
     .reserve_tiles = 0,
-    .player_sprite = TO_FAR_PTR_T(sprite_actor3animated),
-    .n_actors = 1,
+    .player_sprite = TO_FAR_PTR_T(sprite_actor3animated2),
+    .n_actors = 5,
     .n_triggers = 1,
-    .n_sprites = 1,
+    .n_sprites = 3,
     .n_projectiles = 0,
     .actors = TO_FAR_PTR_T(scene_1_actors),
     .triggers = TO_FAR_PTR_T(scene_1_triggers),

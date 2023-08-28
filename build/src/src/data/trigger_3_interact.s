@@ -22,8 +22,8 @@ _trigger_3_interact::
         VM_SET_CONST_INT8       _fade_frames_per_step, 3
         VM_FADE_OUT             1
         VM_SET_CONST            .LOCAL_ACTOR, 0
-        VM_SET_CONST            ^/(.LOCAL_ACTOR + 1)/, 1920
-        VM_SET_CONST            ^/(.LOCAL_ACTOR + 2)/, 3712
+        VM_SET_CONST            ^/(.LOCAL_ACTOR + 1)/, 3072
+        VM_SET_CONST            ^/(.LOCAL_ACTOR + 2)/, 5760
         VM_ACTOR_SET_POS        .LOCAL_ACTOR
         VM_ACTOR_SET_DIR        .LOCAL_ACTOR, .DIR_DOWN
         VM_RAISE                EXCEPTION_CHANGE_SCENE, 3
