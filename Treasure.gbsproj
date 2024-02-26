@@ -1,8 +1,8 @@
 {
     "name": "Treasure",
     "author": "fayaz",
-    "_version": "3.1.0",
-    "_release": "3",
+    "_version": "3.2.0",
+    "_release": "1",
     "scenes": [
         {
             "name": "Home",
@@ -49575,6 +49575,26 @@
             "tileColors": []
         },
         {
+            "id": "fdf25f11-947e-4db9-a88c-fd404d13b073",
+            "name": "maze4",
+            "symbol": "bg_maze4",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "maze4.png"
+        },
+        {
+            "id": "bf718020-e3e8-4e7d-ae28-40cb2f433d1d",
+            "name": "mazeboss",
+            "symbol": "bg_mazeboss",
+            "width": 28,
+            "height": 24,
+            "imageWidth": 224,
+            "imageHeight": 192,
+            "filename": "mazeboss.png"
+        },
+        {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
             "symbol": "bg_placeholder",
@@ -49628,6 +49648,16 @@
             "imageHeight": 480,
             "filename": "sage2.png",
             "tileColors": []
+        },
+        {
+            "id": "64b820d5-cbc4-4e53-bc73-43f103c36c97",
+            "name": "sage3",
+            "symbol": "bg_sage3",
+            "width": 28,
+            "height": 37,
+            "imageWidth": 224,
+            "imageHeight": 296,
+            "filename": "sage3.png"
         },
         {
             "id": "ae413f64-dbaa-4929-a096-cc78ee03145e",
@@ -63130,6 +63160,14 @@
     ],
     "music": [
         {
+            "id": "39a601a6-8508-45ee-a67d-f982229eda54",
+            "name": "song_template",
+            "symbol": "song_song_template",
+            "filename": "song_template.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "symbol": "song_template",
@@ -64227,17 +64265,19 @@
         }
     ],
     "settings": {
-        "startSceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
-        "startX": 13,
-        "startY": 4,
+        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startX": 9,
+        "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 708.7999877929688,
-        "worldScrollY": 200,
-        "zoom": 98.65189026668486,
+        "showCollisionSlopeTiles": false,
+        "showCollisionExtraTiles": false,
+        "worldScrollX": 0,
+        "worldScrollY": 20,
+        "zoom": 82.40653203800139,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -64265,9 +64305,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
-            585,
-            126
+            205,
+            445,
+            133
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
