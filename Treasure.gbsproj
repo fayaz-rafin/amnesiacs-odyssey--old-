@@ -12691,20 +12691,26 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "2e074a47-e0dd-4fa6-bc32-e3633e505587"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "variable",
+                                                "value": "31"
+                                            },
+                                            "y": {
+                                                "type": "variable",
+                                                "value": "32"
+                                            },
+                                            "__comment": true
+                                        },
+                                        "id": "c111abf6-b652-4edb-b26e-3c6b628618f8"
                                     }
                                 ]
                             },
                             "id": "b5b5d27d-78ea-41fb-807d-d5c00fa32192"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_GET_POSITION",
-                            "args": {
-                                "actorId": "$self$",
-                                "vectorX": "31",
-                                "vectorY": "32",
-                                "__comment": true
-                            },
-                            "id": "259d6d0b-156f-404b-980a-a08dd4d27740"
                         }
                     ],
                     "updateScript": [
@@ -13362,7 +13368,7 @@
                     ],
                     "id": "fcf7e173-4b20-4300-8462-e826d8e66e8e",
                     "x": 31,
-                    "y": 26
+                    "y": 27
                 },
                 {
                     "name": "Heart3",
@@ -15408,6 +15414,15 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "d5e9006e-d55c-4ddf-935d-8c412bedf408"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_GET_POSITION",
+                            "args": {
+                                "actorId": "fcf7e173-4b20-4300-8462-e826d8e66e8e",
+                                "vectorX": "31",
+                                "vectorY": "32"
+                            },
+                            "id": "72f3684f-6f42-4951-a9ba-ba277d19d70d"
                         }
                     ],
                     "leaveScript": []
@@ -15434,7 +15449,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -64520,7 +64535,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 83.19999694824219,
-        "worldScrollY": 218.39999389648438,
+        "worldScrollY": 118.4000015258789,
         "zoom": 77.30980691686091,
         "customColorsEnabled": false,
         "sgbEnabled": false,
