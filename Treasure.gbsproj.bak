@@ -6098,10 +6098,18 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "49",
-                                "__collapseElse": true
+                                "__collapseElse": true,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be"
+                                        },
+                                        "id": "600e87d3-ed00-4769-a20b-706fca6ac664"
+                                    },
                                     {
                                         "command": "EVENT_ACTOR_SET_STATE",
                                         "args": {
@@ -6109,6 +6117,20 @@
                                             "spriteStateId": "raft_movement"
                                         },
                                         "id": "cc0d9178-49fa-4213-a337-8af9b73f67b2"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_INPUT_SCRIPT",
+                                        "args": {
+                                            "input": [
+                                                "b"
+                                            ],
+                                            "override": true,
+                                            "__scriptTabs": "press"
+                                        },
+                                        "children": {
+                                            "true": []
+                                        },
+                                        "id": "5e9d8bb7-ba75-4c6e-b1ac-6823900e6495"
                                     }
                                 ],
                                 "false": []
@@ -6148,7 +6170,8 @@
                                         "command": "EVENT_ACTOR_SHOW",
                                         "args": {
                                             "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
-                                            "__collapse": false
+                                            "__collapse": false,
+                                            "__comment": true
                                         },
                                         "id": "a3d614af-e409-4f3b-ab92-c35f9455ae71"
                                     },
@@ -6158,17 +6181,6 @@
                                             "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be"
                                         },
                                         "id": "7928f1fc-c949-4399-969f-649634fd2b64"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_SET_FRAME",
-                                        "args": {
-                                            "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
-                                            "frame": {
-                                                "type": "number",
-                                                "value": 2
-                                            }
-                                        },
-                                        "id": "efe083c1-994c-4089-b701-473007fdf382"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_SET_POSITION",
@@ -19151,6 +19163,13 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "d0156d40-0477-4e06-b3a2-f0e3456668b2"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "b8b5c047-e3e4-4c3e-975f-8cf4a127a6c8"
                         }
                     ],
                     "leaveScript": []
@@ -63284,7 +63303,8 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false,
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -63341,7 +63361,8 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -63369,7 +63390,8 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -63400,7 +63422,7 @@
                         },
                         "otherActorId": "0",
                         "__collapseElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -64572,7 +64594,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 138.39999389648438,
-        "worldScrollY": 700.7999877929688,
+        "worldScrollY": 1100.800048828125,
         "zoom": 130.40312229469237,
         "customColorsEnabled": false,
         "sgbEnabled": false,
