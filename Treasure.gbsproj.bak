@@ -28085,7 +28085,7 @@
                                 "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "vectorX": "29",
                                 "vectorY": "30",
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "id": "b6a94d21-0ea5-428f-82f0-036e0ffadf86"
                         },
@@ -28094,10 +28094,10 @@
                             "args": {
                                 "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "operation": "up",
-                                "otherActorId": "32c3727a-95fb-460d-b91b-c73fd310a7b5",
+                                "otherActorId": "player",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -28127,10 +28127,10 @@
                             "args": {
                                 "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "operation": "left",
-                                "otherActorId": "32c3727a-95fb-460d-b91b-c73fd310a7b5",
+                                "otherActorId": "player",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -28160,10 +28160,10 @@
                             "args": {
                                 "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "operation": "right",
-                                "otherActorId": "32c3727a-95fb-460d-b91b-c73fd310a7b5",
+                                "otherActorId": "player",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -28193,10 +28193,10 @@
                             "args": {
                                 "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "operation": "down",
-                                "otherActorId": "32c3727a-95fb-460d-b91b-c73fd310a7b5",
+                                "otherActorId": "player",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -28233,7 +28233,7 @@
                                     "type": "variable",
                                     "value": "30"
                                 },
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "id": "765ddf8f-c2cd-4fb4-8fe6-8878d809593f"
                         }
