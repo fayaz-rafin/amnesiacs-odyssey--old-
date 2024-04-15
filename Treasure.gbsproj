@@ -14000,23 +14000,51 @@
                         {
                             "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "33",
-                                "__collapseElse": false,
-                                "__disableElse": true
+                                "variable": "13",
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "actorId": "$self$"
+                                            "variable": "33",
+                                            "__collapseElse": false
                                         },
-                                        "id": "fc533986-a778-42f5-962e-a6f5ff31a952"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_ACTOR_DEACTIVATE",
+                                                    "args": {
+                                                        "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                                                    },
+                                                    "id": "0648a124-84ff-4d8c-99df-7b14c34821e9"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_ACTOR_ACTIVATE",
+                                                    "args": {
+                                                        "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                                                    },
+                                                    "id": "932b8f08-dc08-47d9-b6be-d13d5dd23244"
+                                                }
+                                            ]
+                                        },
+                                        "id": "92454b91-69a0-40b1-afd8-1e97880cc0cc"
                                     }
                                 ],
-                                "false": []
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                                        },
+                                        "id": "52fab998-fb92-4a62-a4af-0f851d9672c7"
+                                    }
+                                ]
                             },
-                            "id": "328f31f0-7f07-4fc8-ad1d-3c12be393692"
+                            "id": "2c9a87ab-7574-492e-83af-3a1e3a0d455a"
                         }
                     ],
                     "updateScript": [
@@ -14070,7 +14098,7 @@
                     "hit3Script": [],
                     "id": "28b62af2-855b-4fe3-afeb-06ff67785907",
                     "x": 31,
-                    "y": 32
+                    "y": 31
                 },
                 {
                     "name": "Ghost1",
@@ -62495,7 +62523,7 @@
                     "args": {
                         "actorId": "player",
                         "operation": "up",
-                        "otherActorId": "$self$",
+                        "otherActorId": "0",
                         "__collapseElse": true,
                         "__collapse": true,
                         "__comment": false,
@@ -62617,11 +62645,11 @@
                         "operator": "<=",
                         "distance": {
                             "type": "number",
-                            "value": 5
+                            "value": 3
                         },
                         "otherActorId": "0",
                         "__collapseElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -64155,7 +64183,7 @@
                         },
                         "moveType": "horizontal",
                         "useCollisions": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "c4c80e43-7273-45d8-b23a-9696d2a76250"
                 },
@@ -64197,7 +64225,7 @@
                         "__collapseElse": true,
                         "__comment": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -64225,7 +64253,7 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": true,
+                        "__collapse": false,
                         "__comment": false
                     },
                     "children": {
@@ -64254,7 +64282,7 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": true,
+                        "__collapse": false,
                         "__comment": false
                     },
                     "children": {
@@ -65467,8 +65495,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 208.8000030517578,
-        "worldScrollY": 891.2000122070312,
+        "worldScrollX": 864.7999877929688,
+        "worldScrollY": 351.20001220703125,
         "zoom": 141.88162099849205,
         "customColorsEnabled": false,
         "sgbEnabled": false,
