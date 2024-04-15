@@ -5357,8 +5357,8 @@
             "autoFadeSpeed": 1,
             "id": "04814126-5d50-46a1-aa89-077b9d330679",
             "symbol": "scene_3",
-            "x": 301.0118681888059,
-            "y": 711.53188118233,
+            "x": 270.38509940257165,
+            "y": 734.7659816408527,
             "actors": [
                 {
                     "name": "Box3",
@@ -5709,7 +5709,7 @@
                                     "type": "number",
                                     "value": 16
                                 },
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "afe42647-1f7f-4430-81a1-34156cb1f25e"
                         },
@@ -5718,7 +5718,7 @@
                             "args": {
                                 "actorId": "player",
                                 "spriteStateId": "raft_movement",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "92dc41e9-020e-4e1f-b708-aebcb8f4e280"
                         },
@@ -5726,7 +5726,7 @@
                             "command": "EVENT_ACTOR_DEACTIVATE",
                             "args": {
                                 "actorId": "$self$",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "200116e3-3f6e-44c8-8ee3-f5df2fca70e9"
                         },
@@ -5743,8 +5743,8 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "33",
-                                "__collapseElse": true,
-                                "__disableElse": true,
+                                "__collapseElse": false,
+                                "__disableElse": false,
                                 "__collapse": false
                             },
                             "children": {
@@ -5774,17 +5774,6 @@
                                         "id": "c9411b96-7d0f-439e-adf5-5e777f3ae301"
                                     },
                                     {
-                                        "command": "EVENT_ACTOR_SET_FRAME",
-                                        "args": {
-                                            "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
-                                            "frame": {
-                                                "type": "number",
-                                                "value": 2
-                                            }
-                                        },
-                                        "id": "9612c0f6-d7d5-4591-92e0-8428e6929815"
-                                    },
-                                    {
                                         "command": "EVENT_ACTOR_SET_POSITION",
                                         "args": {
                                             "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
@@ -5808,7 +5797,15 @@
                                         "id": "572c3860-75f6-4427-8571-a772770383ca"
                                     }
                                 ],
-                                "false": []
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "4c5f18c1-ee02-4b58-bb47-236b89a712f6"
+                                    }
+                                ]
                             },
                             "id": "a14d9b90-df87-40ee-8243-cf75f31facfe"
                         },
@@ -5816,7 +5813,9 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "L0",
-                                "__collapseElse": true
+                                "__collapseElse": false,
+                                "__collapse": false,
+                                "__disableElse": true
                             },
                             "children": {
                                 "true": [
@@ -5828,7 +5827,26 @@
                                         "id": "6d2a5cc9-523b-41e1-902e-f4b005f790a1"
                                     }
                                 ],
-                                "false": []
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_STATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "spriteStateId": "raft-empty",
+                                            "__comment": true
+                                        },
+                                        "id": "5c582515-ae7b-4332-9870-319375432130"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "__collapse": false,
+                                            "__comment": true
+                                        },
+                                        "id": "917d60b5-d765-461f-a096-6ff4cbf0e558"
+                                    }
+                                ]
                             },
                             "id": "642417e3-fce2-43df-b56a-00d9991b49fd"
                         }
@@ -6320,7 +6338,8 @@
                     "args": {
                         "variable": "35",
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": false,
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -6497,7 +6516,8 @@
                     "command": "EVENT_IF_TRUE",
                     "args": {
                         "variable": "L0",
-                        "__collapseElse": true
+                        "__collapseElse": true,
+                        "__comment": true
                     },
                     "children": {
                         "true": [],
@@ -8511,7 +8531,8 @@
                 {
                     "command": "EVENT_SET_TRUE",
                     "args": {
-                        "variable": "33"
+                        "variable": "33",
+                        "__comment": true
                     },
                     "id": "9dcfb378-b572-4007-9ca5-53e530980948"
                 }
@@ -10737,7 +10758,7 @@
                 15,
                 15,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -18975,8 +18996,8 @@
             "autoFadeSpeed": 1,
             "id": "e8eceb00-4b89-48c7-b6d2-85a16e60aef0",
             "symbol": "scene_10",
-            "x": 309.79180624629544,
-            "y": 997.6121427787144,
+            "x": 280.7491806731422,
+            "y": 1046.1925346465346,
             "actors": [
                 {
                     "name": "Heart3",
@@ -27375,8 +27396,8 @@
             "autoFadeSpeed": 1,
             "id": "401d3960-789f-464f-bde7-a93bc77d3d97",
             "symbol": "scene_15",
-            "x": 614.0531355732569,
-            "y": 1333.565611553363,
+            "x": 166.67491938958435,
+            "y": 1437.0079576281116,
             "actors": [
                 {
                     "name": "hidden health",
@@ -49004,8 +49025,8 @@
             "autoFadeSpeed": 1,
             "id": "969c52f4-f2e9-4f0d-8ca1-b8477687e20c",
             "symbol": "scene_19",
-            "x": 929.8995802440334,
-            "y": 819.0973653979362,
+            "x": 758.5731945577311,
+            "y": 1166.5989967427943,
             "actors": [],
             "triggers": [
                 {
@@ -49455,8 +49476,8 @@
             "autoFadeSpeed": 1,
             "id": "e49baaba-6a59-4a07-b092-f54bee10a3cf",
             "symbol": "scene_20",
-            "x": 1161.5378391189117,
-            "y": 815.9117565490797,
+            "x": 1069.409499646089,
+            "y": 1169.8785345236092,
             "actors": [
                 {
                     "name": "Heart3",
@@ -65436,9 +65457,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
-        "startX": 13,
-        "startY": 7,
+        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+        "startX": 9,
+        "startY": 12,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -65446,9 +65467,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 2271.199951171875,
-        "worldScrollY": 2480.800048828125,
-        "zoom": 178.1288491142891,
+        "worldScrollX": 208.8000030517578,
+        "worldScrollY": 891.2000122070312,
+        "zoom": 141.88162099849205,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
