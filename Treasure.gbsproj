@@ -8058,7 +8058,7 @@
                                 "comparator": 24,
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -8532,7 +8532,7 @@
                     "command": "EVENT_SET_TRUE",
                     "args": {
                         "variable": "33",
-                        "__comment": true
+                        "__comment": false
                     },
                     "id": "9dcfb378-b572-4007-9ca5-53e530980948"
                 }
@@ -25445,15 +25445,15 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -25509,15 +25509,15 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -27450,7 +27450,7 @@
                                 "comparator": 24,
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -27472,9 +27472,9 @@
                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                         "args": {
                                             "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
-                                            "$actor[0]$": "663a3424-0298-4d01-9538-04a4f07cd455",
-                                            "$actor[1]$": "064df3dc-b50b-4128-bb0b-9af575a90209",
-                                            "$actor[2]$": "0a486de9-78a7-4b94-a3dd-a4b6bd21a995",
+                                            "$actor[0]$": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+                                            "$actor[1]$": "d983f305-fb7d-4842-a956-7bdf6719aea6",
+                                            "$actor[2]$": "b115eabd-fa2f-4258-9fdc-ee851f60b0e5",
                                             "__collapse": false
                                         },
                                         "id": "4646a18d-2673-48d3-9af2-eb7508c3d2ab"
@@ -27793,7 +27793,7 @@
                                 "comparator": 24,
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -27815,9 +27815,9 @@
                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                         "args": {
                                             "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
-                                            "$actor[0]$": "663a3424-0298-4d01-9538-04a4f07cd455",
-                                            "$actor[1]$": "064df3dc-b50b-4128-bb0b-9af575a90209",
-                                            "$actor[2]$": "0a486de9-78a7-4b94-a3dd-a4b6bd21a995",
+                                            "$actor[0]$": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+                                            "$actor[1]$": "d983f305-fb7d-4842-a956-7bdf6719aea6",
+                                            "$actor[2]$": "b115eabd-fa2f-4258-9fdc-ee851f60b0e5",
                                             "__collapse": false
                                         },
                                         "id": "4ffd4c8a-804b-4a2a-8475-6a13868cb0a9"
@@ -27842,7 +27842,7 @@
                     "hit3Script": [],
                     "id": "568d0464-08d4-4a53-9163-9ef192900bf7",
                     "x": 11,
-                    "y": 40
+                    "y": 38
                 }
             ],
             "triggers": [
@@ -65486,9 +65486,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
-        "startX": 9,
-        "startY": 12,
+        "startSceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
+        "startX": 7,
+        "startY": 6,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -65496,8 +65496,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 864.7999877929688,
-        "worldScrollY": 351.20001220703125,
+        "worldScrollX": 8,
+        "worldScrollY": 2108.800048828125,
         "zoom": 141.88162099849205,
         "customColorsEnabled": false,
         "sgbEnabled": false,
