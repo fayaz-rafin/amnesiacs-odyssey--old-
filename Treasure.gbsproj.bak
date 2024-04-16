@@ -27771,7 +27771,7 @@
                                 },
                                 "otherActorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
                                 "__collapseElse": true,
-                                "__collapse": false,
+                                "__collapse": true,
                                 "__disableElse": true
                             },
                             "children": {
@@ -27827,6 +27827,26 @@
                                 "false": []
                             },
                             "id": "df3eb19a-ca66-437b-957f-150582299a70"
+                        },
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "49",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_CANCEL",
+                                        "args": {
+                                            "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54"
+                                        },
+                                        "id": "bcbf733a-d5b4-4a18-a49d-f89dc2171b0e"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "2b7ccb95-e3b2-4209-b1bb-b9a2deb0c654"
                         }
                     ],
                     "hit1Script": [],
@@ -28254,7 +28274,7 @@
                             "command": "EVENT_SET_FALSE",
                             "args": {
                                 "variable": "49",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "22e3f6fe-2e5e-47b6-906c-11c3f633573f"
                         },
@@ -28469,183 +28489,6 @@
                             "id": "4e85dcde-127d-431b-a1a9-7aff4339ce1b"
                         }
                     ]
-                },
-                {
-                    "name": "",
-                    "id": "5e68c157-aaaa-432e-9874-dc3b9fdd94a9",
-                    "x": 5,
-                    "y": 40,
-                    "symbol": "trigger_22",
-                    "width": 14,
-                    "height": 14,
-                    "script": [
-                        {
-                            "command": "EVENT_ACTOR_GET_POSITION",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "vectorX": "29",
-                                "vectorY": "30",
-                                "__collapse": true
-                            },
-                            "id": "b6a94d21-0ea5-428f-82f0-036e0ffadf86"
-                        },
-                        {
-                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "operation": "up",
-                                "otherActorId": "player",
-                                "__collapseElse": true,
-                                "__disableElse": true,
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-                                        "args": {
-                                            "vectorX": "30",
-                                            "operation": "sub",
-                                            "other": "val",
-                                            "vectorY": "L0",
-                                            "value": 2,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false,
-                                            "__collapse": false,
-                                            "__comment": false
-                                        },
-                                        "id": "61e7aa89-0b5d-4f28-8cef-af69469b22fb"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "a69d0fff-136f-4377-9a8d-1f2080b8c01f"
-                        },
-                        {
-                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "operation": "left",
-                                "otherActorId": "player",
-                                "__collapseElse": true,
-                                "__disableElse": true,
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-                                        "args": {
-                                            "vectorX": "29",
-                                            "operation": "sub",
-                                            "other": "val",
-                                            "vectorY": "L0",
-                                            "value": 2,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false,
-                                            "__collapse": false,
-                                            "__comment": false
-                                        },
-                                        "id": "1c3cccd4-439b-4c45-8624-e25061161590"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "46372f6e-2d54-46a9-a20e-bd42b013ead7"
-                        },
-                        {
-                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "operation": "right",
-                                "otherActorId": "player",
-                                "__collapseElse": true,
-                                "__disableElse": true,
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-                                        "args": {
-                                            "vectorX": "29",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "L0",
-                                            "value": 2,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false,
-                                            "__collapse": false,
-                                            "__comment": false
-                                        },
-                                        "id": "a4fa06b7-18b4-411f-91e2-1dc86769d053"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "a3b2ed9f-1376-4262-84c3-dbce525015ef"
-                        },
-                        {
-                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "operation": "down",
-                                "otherActorId": "player",
-                                "__collapseElse": true,
-                                "__disableElse": true,
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH",
-                                        "args": {
-                                            "vectorX": "30",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "L0",
-                                            "value": 2,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false,
-                                            "__collapse": false,
-                                            "__comment": false
-                                        },
-                                        "id": "772a86e2-ace7-4a68-b5f0-3a26fefd1dbd"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "56752477-3f76-4455-83f3-fc63ac838c0c"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_SET_POSITION",
-                            "args": {
-                                "actorId": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                                "x": {
-                                    "type": "variable",
-                                    "value": "29"
-                                },
-                                "y": {
-                                    "type": "variable",
-                                    "value": "30"
-                                },
-                                "__collapse": true
-                            },
-                            "id": "765ddf8f-c2cd-4fb4-8fe6-8878d809593f"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_PUSH",
-                            "args": {
-                                "continue": false
-                            },
-                            "id": "b51699a8-0bb7-4163-9fa4-e73947980faf"
-                        }
-                    ],
-                    "leaveScript": []
                 }
             ],
             "script": [
@@ -65537,9 +65380,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
-        "startX": 9,
-        "startY": 13,
+        "startSceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
+        "startX": 4,
+        "startY": 7,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -65547,9 +65390,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 211.1999969482422,
-        "worldScrollY": 3695.199951171875,
-        "zoom": 220.3127487450838,
+        "worldScrollX": 0,
+        "worldScrollY": 24,
+        "zoom": 53.26004622876644,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",

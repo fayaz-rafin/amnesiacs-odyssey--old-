@@ -27853,8 +27853,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "b5f864b4-404c-494f-a417-e1fb1edc9b54",
-                    "x": 11,
-                    "y": 12
+                    "x": 9,
+                    "y": 24
                 },
                 {
                     "name": "Heart3",
@@ -63445,7 +63445,9 @@
                         "variable": "6",
                         "operator": "<=",
                         "comparator": "0",
-                        "__collapseElse": true
+                        "__collapseElse": true,
+                        "__disableElse": true,
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -65390,9 +65392,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 0,
-        "worldScrollY": 24,
-        "zoom": 53.26004622876644,
+        "worldScrollX": 812,
+        "worldScrollY": 1464,
+        "zoom": 208.86285950243428,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
