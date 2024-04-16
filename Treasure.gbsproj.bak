@@ -13359,8 +13359,8 @@
                                                     "command": "EVENT_ACTOR_GET_POSITION",
                                                     "args": {
                                                         "actorId": "$self$",
-                                                        "vectorX": "31",
-                                                        "vectorY": "32"
+                                                        "vectorX": "L3",
+                                                        "vectorY": "L4"
                                                     },
                                                     "id": "a694e70e-209e-48bf-8fd2-e5daa6fee858"
                                                 },
@@ -13998,11 +13998,9 @@
                     ],
                     "startScript": [
                         {
-                            "command": "EVENT_IF_VALUE",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "5",
-                                "operator": "<=",
-                                "comparator": "0",
+                                "variable": "13",
                                 "__collapseElse": false
                             },
                             "children": {
@@ -14011,7 +14009,7 @@
                                         "command": "EVENT_IF_TRUE",
                                         "args": {
                                             "variable": "33",
-                                            "__collapseElse": true
+                                            "__collapseElse": false
                                         },
                                         "children": {
                                             "true": [
@@ -14023,16 +14021,17 @@
                                                     "id": "0648a124-84ff-4d8c-99df-7b14c34821e9"
                                                 }
                                             ],
-                                            "false": []
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_ACTOR_ACTIVATE",
+                                                    "args": {
+                                                        "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                                                    },
+                                                    "id": "932b8f08-dc08-47d9-b6be-d13d5dd23244"
+                                                }
+                                            ]
                                         },
                                         "id": "92454b91-69a0-40b1-afd8-1e97880cc0cc"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_ACTIVATE",
-                                        "args": {
-                                            "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
-                                        },
-                                        "id": "932b8f08-dc08-47d9-b6be-d13d5dd23244"
                                     }
                                 ],
                                 "false": [
@@ -14045,7 +14044,7 @@
                                     }
                                 ]
                             },
-                            "id": "d42560be-d5c6-41f0-9e85-6afa8ecbbdab"
+                            "id": "2c9a87ab-7574-492e-83af-3a1e3a0d455a"
                         }
                     ],
                     "updateScript": [
@@ -15524,7 +15523,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -17608,7 +17607,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -62502,24 +62501,6 @@
                     "id": "4a144411-f5c0-4164-a131-248105cf9725"
                 },
                 {
-                    "command": "EVENT_ACTOR_MOVE_TO",
-                    "args": {
-                        "actorId": "0",
-                        "x": {
-                            "type": "variable",
-                            "value": "V0"
-                        },
-                        "y": {
-                            "type": "variable",
-                            "value": "V1"
-                        },
-                        "moveType": "horizontal",
-                        "useCollisions": true,
-                        "__collapse": false
-                    },
-                    "id": "5a46bba4-4937-42d9-b6cd-5d3ef239ed08"
-                },
-                {
                     "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                     "args": {
                         "actorId": "player",
@@ -62640,6 +62621,24 @@
                     "id": "f035d4ea-d460-486c-a754-a038cb58e851"
                 },
                 {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "0",
+                        "x": {
+                            "type": "variable",
+                            "value": "V0"
+                        },
+                        "y": {
+                            "type": "variable",
+                            "value": "V1"
+                        },
+                        "moveType": "horizontal",
+                        "useCollisions": true,
+                        "__collapse": false
+                    },
+                    "id": "5a46bba4-4937-42d9-b6cd-5d3ef239ed08"
+                },
+                {
                     "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
                     "args": {
                         "actorId": "player",
@@ -62650,7 +62649,7 @@
                         },
                         "otherActorId": "0",
                         "__collapseElse": true,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -62668,11 +62667,11 @@
                                     "angleVariable": "L0",
                                     "directionType": "actor",
                                     "initialOffset": 1,
-                                    "speed": 1,
+                                    "speed": 2,
                                     "animSpeed": 0,
                                     "lifeTime": 0.2,
                                     "loopAnim": false,
-                                    "destroyOnHit": false,
+                                    "destroyOnHit": true,
                                     "collisionGroup": "3",
                                     "collisionMask": [
                                         "player"
@@ -64196,7 +64195,7 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false
                     },
                     "children": {
@@ -64226,7 +64225,7 @@
                         "__collapseElse": true,
                         "__comment": false,
                         "__disableElse": true,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -64254,7 +64253,7 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false
                     },
                     "children": {
@@ -64283,7 +64282,7 @@
                         "otherActorId": "0",
                         "__collapseElse": true,
                         "__disableElse": true,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false
                     },
                     "children": {
