@@ -2,6 +2,12 @@
 ## Game: Amnesiac's Odyssey
 
 This is a game we're working on for the Nintendo Gameboy line of Handheld Console using GBDK, GB Studio and Aseprite. More info will be added as we progress further into production.
+
+Here's the trailer fr our video:
+
+[![Amnesiac's Odyssey Video](https://img.youtube.com/vi/oZIf9TAiI28/0.jpg)](https://www.youtube.com/watch?v=oZIf9TAiI28)
+
+
 ---
 Amnesiac's Odyssey is a prototype Action/adventure game developed by me and my friend. The story is about a sailor who lost his memory and is trying to find out his origins and where he came from and the only way back home is to find the hidden treasure lost in this mysterious new world.
 
