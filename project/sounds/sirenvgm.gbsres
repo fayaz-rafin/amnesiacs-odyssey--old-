@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "ed1ca5bc-f0be-4e06-8508-6f6752bac79c",
+  "name": "Siren.vgm",
+  "symbol": "sound_siren_vgm",
+  "filename": "Siren.vgm",
+  "type": "vgm"
+}

@@ -1,0 +1,492 @@
+{
+  "_resourceType": "actor",
+  "id": "d2faf8bf-88de-42a9-ba17-9571d55897e4",
+  "_index": 0,
+  "symbol": "actor_3",
+  "prefabId": "",
+  "name": "Steve",
+  "x": 17,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "61aeec4e-d6d2-43e1-99da-3b9d7fa610c6",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "64434c31-2d32-458a-ae96-3870efb917d7"
+            },
+            "id": "84d36d4c-aba4-421f-b59e-c1d9ba917b6f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Did you find it?"
+              ],
+              "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+            },
+            "id": "1cef30b2-e074-4934-a7f1-8abbd8cd3e0e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Yup, right here"
+              ],
+              "avatarId": ""
+            },
+            "id": "1fa72f6a-b25e-46cf-8536-21b8b49307b4"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "83b30d04-b1b0-4139-9dfe-2d1ce4452e61",
+              "spriteStateId": "",
+              "actorId": "player",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "up",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ]
+            },
+            "id": "a883a982-0616-4d71-b975-c69315367042"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I finally feel \ncomplete!"
+              ],
+              "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+            },
+            "id": "fcbb10a8-61b3-45f3-ae8c-784ecd77dc35"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "8ac36739-4b26-417f-b0bc-fa3e1604b617"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "What was that in\nthere?"
+              ],
+              "avatarId": ""
+            },
+            "id": "90e679c1-08e6-461b-92bb-fd02d094cd94"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "That",
+                "Was a creeper.",
+                "It was chasing\nme and i was\ntrying to escape",
+                "So i opened \na portal.",
+                "And it followed\nme here",
+                "And i dropped my\npickaxe inside\nthe cave.",
+                "So now, \nhere we are"
+              ],
+              "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+            },
+            "id": "eb997ef4-0c01-4caa-9688-4a37f05f6c21"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "15c3c169-ea77-4e48-834b-3497c68fa308"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Meow.."
+              ],
+              "avatarId": "2ec68969-e52c-4514-aa19-50627413d2f8"
+            },
+            "id": "1553e68d-b56c-43e4-8157-b75ee9db8268"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "64434c31-2d32-458a-ae96-3870efb917d7",
+              "x": {
+                "type": "number",
+                "value": 19
+              },
+              "y": {
+                "type": "number",
+                "value": 4
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "id": "e7c60a4e-80f2-4300-b9b9-8fd9948c5283"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Is this your\ncat?"
+              ],
+              "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+            },
+            "id": "bb8bf97d-07a9-4962-86c7-ca68baf81d75"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "No, Its not mine.",
+                "She belongs to an\nold man",
+                "He lives in a \nvillage not far \nhere"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "72ce79de-4ba8-4c47-b97f-07f8ba6d4603"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1",
+              "__collapse": true
+            },
+            "id": "402e373f-f43c-47b4-a964-eb8092e78459"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A village?",
+                "You must take me\nthere asap!",
+                "I need to figure\nout how to go\nback home."
+              ],
+              "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+              "__collapse": false
+            },
+            "id": "6570aa7e-02cf-4ff3-8ae4-387612c14311"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "f03d8c9b-8a41-495b-9fd4-ee93210012bd"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Very well.",
+                "Follow me."
+              ],
+              "avatarId": "",
+              "__collapse": true
+            },
+            "id": "a652ca4e-8e09-4c66-8078-b8ddd80b1923"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": "2",
+              "__collapse": true
+            },
+            "id": "e75bbbab-16df-4343-8ff2-c43c0913331e"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "224a0d63-fba0-42cc-9d4a-1479f3ceb272",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "up",
+              "fadeSpeed": "2",
+              "__collapse": true
+            },
+            "id": "3b36f1a6-011d-4a87-89aa-fdcad74d05bd"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "__collapse": false,
+              "__comment": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": true
+                  },
+                  "id": "2a78eb95-f1b7-46a4-8aa5-942ed6b3fd36"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      " Thanks for your\n help."
+                    ],
+                    "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                  },
+                  "id": "8fb732c9-fd90-477c-9ece-27cc7ce1fb48"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Hello, friend.",
+                      "Yes you're not\nhallucinating.",
+                      "I am indeed\nSteve from\nMINECRAFT!",
+                      "I somehow ended\nup in this\nvillage",
+                      "And while I was\nlooking for\nclues",
+                      "I lost my \npickaxe in the \ncave.",
+                      "There's no way\nfor me to craft\na new one here."
+                    ],
+                    "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                  },
+                  "id": "4389fbd5-cc29-4509-99aa-8c207917dcda"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202",
+                    "__collapse": false
+                  },
+                  "id": "4ca5faae-5b77-42c3-96f6-7edd55375cb8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Can you help me\nretrieve my\npickaxe?"
+                    ],
+                    "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                  },
+                  "id": "55850c74-c8a5-40fe-80aa-3fe5cb031b49"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "L1",
+                    "trueText": "Yes",
+                    "falseText": "No"
+                  },
+                  "id": "be2ab063-bdc9-4cab-b852-2a4eaddb9d9c"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "L1",
+                    "__collapseElse": false,
+                    "__collapse": false,
+                    "condition": {
+                      "type": "variable",
+                      "value": "L1"
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Thanks a lot!",
+                            "I appreciate it"
+                          ],
+                          "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                        },
+                        "id": "6273fe20-46b8-4c30-ab3a-7b86077c2f4a"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2",
+                          "__collapse": false
+                        },
+                        "id": "af5e1713-3062-4f11-ae64-c0211131a8ae"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Are you serious?",
+                            "Look..if you\nhelp me find it,",
+                            "Maybe we can\nboth help\neach other"
+                          ],
+                          "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                        },
+                        "id": "4ead8484-4df4-437f-9df3-2e5ed632f643"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2",
+                          "__collapse": false
+                        },
+                        "id": "1337f859-5ecd-4fc2-afea-e0643a8fc1cf"
+                      }
+                    ]
+                  },
+                  "id": "d4eae393-5531-4946-90c0-9b55d81338bb"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": true
+                  },
+                  "id": "c3a407a8-c64a-493d-969a-35da33986359"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "I'll be waiting \nfor you right \nhere."
+                    ],
+                    "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+                  },
+                  "id": "3e4bc633-dd0b-4e67-a04e-7a74a2fd58cc"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "L0",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "07ba0504-2b2d-449b-a518-76b482d9dcaa"
+                }
+              ]
+            },
+            "id": "ed1d1e47-e3a7-4e22-842a-1e78531d3bb1"
+          }
+        ]
+      },
+      "id": "2d06f0b2-5a1d-444b-a669-a5e5dc0fe550"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "9cf737f7-6ae0-4ac8-93b2-8c5053ea0766"
+          }
+        ],
+        "false": []
+      },
+      "id": "d0fb22d9-b117-4fa3-9eb6-c1e3a552e051"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

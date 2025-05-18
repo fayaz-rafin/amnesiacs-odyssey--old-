@@ -1,0 +1,230 @@
+{
+  "_resourceType": "script",
+  "id": "87a738ad-0b91-4874-a60e-64b64b7c8546",
+  "name": "Creeper Attack Script",
+  "symbol": "script_1",
+  "description": "This is a reworked creeper attack mechanic script. This script has improved lag and wrong-directional attacks. In this script, we first set the direction of the creeper such that it is facing the player then using the gb studio command we check if the player is within 5 tiles from the player. If the player is within range creeper launches a projectile followed by a 0.5s wait.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Player X",
+      "passByReference": false
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Player Y",
+      "passByReference": false
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Cave_Enemy"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "V0",
+        "vectorY": "V1",
+        "__collapse": false
+      },
+      "id": "4a144411-f5c0-4164-a131-248105cf9725"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapse": false
+            },
+            "id": "fda1d8e7-349c-44da-8e18-dcbca9d80aa1"
+          }
+        ],
+        "false": []
+      },
+      "id": "a59bd4b3-4704-45b8-b1a3-67e191290da1"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "down",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              },
+              "__collapse": false
+            },
+            "id": "08b00113-0f07-4740-96b1-b45bc43fcfb4"
+          }
+        ],
+        "false": []
+      },
+      "id": "1e9d94aa-96c0-4187-8ded-9c8340cd70d1"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "right",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapse": false
+            },
+            "id": "f3dc75e9-44fa-4adc-8e16-a044abbbc08c"
+          }
+        ],
+        "false": []
+      },
+      "id": "297474ee-9257-4269-b581-28be71b1d3eb"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "left",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              },
+              "__collapse": false
+            },
+            "id": "423d9bc1-086f-4683-9a7f-daba783b048c"
+          }
+        ],
+        "false": []
+      },
+      "id": "f035d4ea-d460-486c-a754-a038cb58e851"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "variable",
+          "value": "V1"
+        },
+        "moveType": "horizontal",
+        "useCollisions": true,
+        "__collapse": false
+      },
+      "id": "5a46bba4-4937-42d9-b6cd-5d3ef239ed08"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 3
+        },
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+              "spriteStateId": "",
+              "actorId": "0",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "0",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "actor",
+              "initialOffset": 1,
+              "speed": 2,
+              "animSpeed": 0,
+              "lifeTime": 0.2,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ],
+              "__collapse": false
+            },
+            "id": "1e28c0ea-595e-4197-9cbd-1f8d2c021f1b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "ae050d7c-a5a0-4c20-bd7f-e451d62529b4"
+          }
+        ],
+        "false": []
+      },
+      "id": "616e5d36-a595-412d-a3ed-3fa432c46cc5"
+    }
+  ]
+}

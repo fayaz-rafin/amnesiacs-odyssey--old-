@@ -1,0 +1,47 @@
+{
+  "_resourceType": "actor",
+  "id": "a11e99e5-583b-40ec-9a21-16408d121cbd",
+  "_index": 4,
+  "symbol": "actor_34",
+  "prefabId": "",
+  "name": "",
+  "x": 42,
+  "y": 24,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I love animals"
+        ],
+        "avatarId": "b2872639-20d8-442d-81d3-38341959bc01"
+      },
+      "id": "567a1976-4554-4183-8671-f50ddeccc963"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-4"
+      },
+      "id": "4c511209-2a70-48c5-acd0-8b55a75350b2"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "96b9dfa1-c20b-4939-8080-c8576c298f8a",
+  "name": "organ",
+  "symbol": "song_organ",
+  "filename": "organ.mod",
+  "settings": {},
+  "type": "mod"
+}

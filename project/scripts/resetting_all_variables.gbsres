@@ -1,0 +1,49 @@
+{
+  "_resourceType": "script",
+  "id": "f19131ab-45a6-439c-ab29-7a0378249663",
+  "name": "Resetting all variables",
+  "symbol": "script_6",
+  "description": "Script is only run once right after restart or tryagain is selected in gameover scri",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_RESET_VARIABLES",
+      "args": {},
+      "id": "7b866c17-e8ac-4bee-b698-1ad0364dc606"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "__comment": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "9d78c236-c52d-4b84-855e-e0bf2d7b551b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "15",
+        "__comment": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "ee3eb220-4878-43c9-b991-66cf8bd4516c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "26",
+        "__comment": true,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f67026aa-f033-4ff3-b872-696cbfd4e9a2"
+    }
+  ]
+}

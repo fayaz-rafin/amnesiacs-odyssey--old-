@@ -1,0 +1,137 @@
+{
+  "_resourceType": "script",
+  "id": "2c747239-a220-49eb-9c8e-a1df092311a6",
+  "name": "Setting Cave Ghosts Variables",
+  "symbol": "script_3",
+  "description": "Setting the variables of the ghost enemies present in the game. ",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "16",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "7e4abf49-a738-4580-aefe-4709bbce17db"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "17",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "8062bff4-f220-49c4-9f57-16bb0782e311"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "18",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "1af3401d-704d-4373-80b1-84553ee7f28d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "ece75748-fe2c-45cd-aae2-124c15a795fd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "16",
+        "value": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "68168ceb-2853-4786-977d-1ce5ca90c23a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b3687e43-a10a-40c5-968c-5b3d7ae378b6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "5f8fcda2-0415-46e3-9d1b-432b48717f74"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "23",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "bc96a36d-2519-4670-87b4-ed3c6ce85f8a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "24",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "c426fd69-9eb2-4276-8dc0-86f69c89ac5c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "25",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "307a59b7-ca6b-4e53-8146-f2d47ad626c8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "26",
+        "__collapse": true,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "2be52934-5ebc-4114-a4cb-1d6125f027ff"
+    }
+  ]
+}

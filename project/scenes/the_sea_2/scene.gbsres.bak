@@ -1,0 +1,39 @@
+{
+  "_resourceType": "scene",
+  "id": "401d3960-789f-464f-bde7-a93bc77d3d97",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "the sea 2",
+  "symbol": "scene_15",
+  "x": 166.67491938958435,
+  "y": 1437.0079576281116,
+  "width": 64,
+  "height": 64,
+  "backgroundId": "ae413f64-dbaa-4929-a096-cc78ee03145e",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft_movement",
+        "__collapse": false
+      },
+      "id": "724bfadc-40df-4e91-95e3-953584a4a01f"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "006bb172-54a9-4d12-82a5-bba1a17f94f0"
+      },
+      "id": "30afd7b8-0fd5-4fcb-a226-6882547ed9a4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0012+0f2+005+0f!0019+0f2+005+0f!0039+0f!005+0f!0013+0f!0023+0f2+007+0f!0011+0f2+0023+0f2+008+0f!001c+0f2+0021+0f!001d+0f!0018+0f!0017+0f!00f+0f!0016+0f2+0016+0f!0010+0f2+0060+0f!009+0f!0015+0f!001e+0f2+008+0f2+0016+0f!0023+0f2+002c+0f2+0010+0f2+002c+0f2+00c+0f!003f+0f2+005f+0f2+00f+0f2+002d+0f!0010+0f!007b+0f2+0035+0f!009+0f!0034+0f2+0080+0f2+004+0f!003a+0f!003+0f!0021e+0f2+005+0f2+0021+0f2+0014+0f2+005+0f2+0021+0f2+0014+0f2+005+0f2+0021+0f2+0014+0f2+005+0f2+00ad+0f2+003e+0f2+003b+0f2+00b+0f2+004+0f2+002b+0f2+00b+0f2+004+0f2+0038+0f2+004+0f2+0029+0f2+00d+0f2+004+0f2+001a+0f2+008+0f2+003+0f2+002e+0f4+007+0f2+002+0f2+0038+0f!00!0f2+002+0f2+003a+0f2+0042+0f2+003e+0f2+003e+0f2+0072+0f2+003e+0f!00b+0f2+003e+0f2+006+0f2+00!0f2+00!0f2+0038+0f2+00!0f2+00!0f2+002e+0f2+0011+0f2+002b+0f2+0012+0f3+0026+0f2+0017+0f!0026+0f2+001a+0f2+001f+0f2+003e+0f2+001f+0f2+002+0f2+007+0f2+002+0f2+003+0f2+002b+0f2+003+0f2+003+0f2+003+0f!003+0f2+00!0f2+002d+0f2+00f+0f2+0014+"
+}

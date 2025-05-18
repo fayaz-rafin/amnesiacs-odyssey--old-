@@ -1,0 +1,272 @@
+{
+  "_resourceType": "actor",
+  "id": "12a1c7bd-9170-4e0e-a9a0-5bac3b6e19d4",
+  "_index": 0,
+  "symbol": "actor_12",
+  "prefabId": "",
+  "name": "Steve",
+  "x": 22,
+  "y": 24,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L1",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Goodluck out\nthere."
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223"
+            },
+            "id": "f8015f76-e4b3-47f2-ad2f-520d9a732e0e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Good morning, \nstranger!",
+                "I dont think i\nhave seen you\naround before."
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223",
+              "__collapse": false
+            },
+            "id": "b1c4daa1-9a58-4973-afc1-bb7c3e22e680"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I... ",
+                "I seem to have\nlost my memories",
+                "I woke up on\nsome beach",
+                "and an old man\nnamed Bart\nfound me. ",
+                "Do you happen to\nknow anything?"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "548a1cb4-e651-4949-bf35-79d506ec8c39"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32",
+              "__collapse": false
+            },
+            "id": "9c0901fc-e62c-4edf-af4a-33e9227724a5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I'm afraid \nI don't. ",
+                "But if you lost\nyour memories,\n",
+                "you might want\nto seek out the\nwise sage.",
+                "who lives across\nthe shore.",
+                "They say he has\nthe ability to \nrestore \nmemories."
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223",
+              "__collapse": false
+            },
+            "id": "af3a9e78-57f9-457b-a2e2-d193e9ec8fb5"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1",
+              "__collapse": true
+            },
+            "id": "e8095702-7c23-4cff-ad62-98dacb5243e6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "That could be the \nanswer I've been \nlooking for! ",
+                "Where can I find \nthis wise sage?"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "589626ab-6b5a-4b16-83bc-4d8377653c96"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "b1f6a515-e1cc-4a26-a1c0-402adb5ac1bb"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Just follow the \npath down the \nroad."
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223",
+              "__collapse": false
+            },
+            "id": "829a4ae7-551a-47e6-a17b-77ce8c7b1b7c"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 22
+              },
+              "y": {
+                "type": "number",
+                "value": 28
+              },
+              "moveType": "horizontal",
+              "useCollisions": true,
+              "__collapse": true
+            },
+            "id": "5e9bc1cc-5694-4224-a0b6-76023dfd086f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "But i must\nwarn you!"
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223",
+              "__collapse": false
+            },
+            "id": "2c338dbe-3dc7-45fd-b786-78b88e38b5b0"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 22
+              },
+              "y": {
+                "type": "number",
+                "value": 26
+              },
+              "moveType": "horizontal",
+              "useCollisions": true,
+              "__collapse": false
+            },
+            "id": "d3554e68-48d6-4f6f-baee-993a2bfaa5b3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "There are wild\ncreatures \ninhabiting this\nisland.",
+                "You may have to \nfight them off"
+              ],
+              "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223",
+              "__collapse": false
+            },
+            "id": "869b909f-3cb4-4182-b18e-c75f970d5a86"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Thank you. ",
+                "I'll take my \nchances."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "070678a6-741e-42b3-8b8d-c620d11eaf58"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L1",
+              "__collapse": true,
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "04682f87-6ff3-4028-b4db-b4d1844dcef1"
+          }
+        ]
+      },
+      "id": "a4b2a871-ace6-4887-a07b-3b508d783f49"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-6"
+      },
+      "id": "06c3e353-34c7-4a49-a30d-967f7f6603e7"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 15
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "id": "b4160f50-0fcf-4789-a929-72cfe1e86cfa"
+          }
+        ],
+        "false": []
+      },
+      "id": "d64f1b0b-9c3f-448a-ac87-acbf8035352b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

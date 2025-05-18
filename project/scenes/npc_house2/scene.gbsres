@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "cc11c5d4-f10c-41d0-953c-9aba8c102788",
+  "_index": 8,
+  "type": "TOPDOWN",
+  "name": "NPC_House2",
+  "symbol": "scene_9",
+  "x": 608,
+  "y": 344,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "5f30a112-0034-4982-9bfd-24bc10fec688",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "44fac29a-6f64-42ab-b661-328c8b8ddd83"
+      },
+      "id": "db12bd2b-be30-4405-94fd-7adf0c738767"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2a+0010+0f4+0010+0f4+002+0f2+003+0f21+009+0f4+003+0f6+00e+0f6+00e+0f6+009+0f4+00!0f6+009+0f4+00!0f4+0010+0f4+0010+0f4+00b+0f4+00!0f4+00b+0f4+00!0f4+00b+0f4+00!0f7+002+0f12+002+0fd+"
+}

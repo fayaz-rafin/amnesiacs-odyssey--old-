@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "524ee8ef-3ff8-43f0-af3c-77856a7f0958",
+  "name": "Pause.vgm",
+  "symbol": "sound_pause_vgm",
+  "filename": "Pause.vgm",
+  "type": "vgm"
+}

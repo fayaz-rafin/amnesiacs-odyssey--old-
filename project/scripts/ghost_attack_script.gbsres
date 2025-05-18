@@ -1,0 +1,226 @@
+{
+  "_resourceType": "script",
+  "id": "f1af2891-922e-40d7-94d2-e9631be54a69",
+  "name": "Ghost Attack Script",
+  "symbol": "script_12",
+  "description": "This is a reworked ghost attack mechanic script. This script has improved lag and wrong-directional attacks. In this script, we first set the direction of the ghost such that it is facing the player then using the gb studio command we check if the player is within 3 tiles from the player. If the player is within range ghost launches a projectile followed by a 0.5s wait.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "PlayerX",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "PlayerY",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Ghost"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "V0",
+        "vectorY": "V1",
+        "__collapse": false
+      },
+      "id": "eab3bfa5-09a6-48e2-b47f-d61d66c066e3"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "variable",
+          "value": "V1"
+        },
+        "moveType": "horizontal",
+        "useCollisions": true,
+        "__collapse": false
+      },
+      "id": "c4c80e43-7273-45d8-b23a-9696d2a76250"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "d1ad34d2-c3cc-4ad6-9624-8f5080edec44"
+          }
+        ],
+        "false": []
+      },
+      "id": "c2466634-1abb-4f69-bc93-d9608a59aafb"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "down",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__comment": false,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "985077ca-29b6-4f35-a387-2d346f78b92b"
+          }
+        ],
+        "false": []
+      },
+      "id": "74ddf88b-fe67-4afe-beb8-4d0e641ad83b"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "right",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "3c878f8d-140e-4cda-b0fd-a37831055d6b"
+          }
+        ],
+        "false": []
+      },
+      "id": "4415c0ec-8302-4eaf-a743-691050218230"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "left",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "b7caa023-5d29-45d2-afee-95e823bf2d3f"
+          }
+        ],
+        "false": []
+      },
+      "id": "1aa4c5e7-d589-4687-ae97-46c6c6a1cb39"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 3
+        },
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+              "spriteStateId": "",
+              "actorId": "0",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "0",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "actor",
+              "initialOffset": 1,
+              "speed": 1,
+              "animSpeed": 0,
+              "lifeTime": 0.1,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ],
+              "__collapse": false
+            },
+            "id": "6394b13c-847b-476c-8eed-4721787e4687"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "0a9951b8-3ed9-4147-84d1-d9a2a525f6fb"
+          }
+        ],
+        "false": []
+      },
+      "id": "c1c337ce-c866-4d97-9174-0d8feebebd52"
+    }
+  ]
+}

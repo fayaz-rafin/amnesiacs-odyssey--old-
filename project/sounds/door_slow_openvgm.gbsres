@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "a6d44ce0-f510-4a39-baa2-72c1cade70f1",
+  "name": "Door_Slow_Open.vgm",
+  "symbol": "sound_door_slow_open_vgm",
+  "filename": "Door_Slow_Open.vgm",
+  "type": "vgm"
+}

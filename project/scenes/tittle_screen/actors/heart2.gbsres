@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "5ef99927-f3b3-4008-8cb3-cf5ee1c19c31",
+  "_index": 1,
+  "symbol": "actor_31",
+  "prefabId": "",
+  "name": "Heart2",
+  "x": 2,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "706e532f-5817-41f6-af5d-46a01d60d8f0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "2e8b1bc9-c208-4df6-b976-cfa181c18342",
+  "name": "town",
+  "symbol": "bg_town",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "filename": "town.png",
+  "tileColors": "",
+  "autoColor": false
+}

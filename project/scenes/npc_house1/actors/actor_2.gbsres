@@ -1,0 +1,49 @@
+{
+  "_resourceType": "actor",
+  "id": "1825d1de-c4b8-45e9-8c7a-e7d72f3930c2",
+  "_index": 1,
+  "symbol": "actor_37",
+  "prefabId": "",
+  "name": "",
+  "x": 10,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Did you know www\nstands for\nWorld Wide Web?",
+          "Technology is so\namazing!"
+        ],
+        "avatarId": "0a2778a1-53bf-421b-9673-3bd026eb9223"
+      },
+      "id": "bd5a70d4-2893-4f2a-817e-45186cac7edf"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-5",
+        "__collapse": false
+      },
+      "id": "c0bc159e-f7a8-4051-9244-28cb02fae1c8"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,136 @@
+{
+  "_resourceType": "scene",
+  "id": "21ef57fc-2c9a-4c57-acb8-d51becf39639",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "Village",
+  "symbol": "scene_2",
+  "labelColor": "green",
+  "x": 192,
+  "y": 280,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "be931fdd-f679-4c16-8dea-700a3004bd13",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+        "$actor[0]$": "a065f9c1-0142-4b32-b623-bf1f7af0fd2c",
+        "$actor[1]$": "27c5b885-1e83-4c36-9c38-3b2c534afba5",
+        "$actor[2]$": "a4bab740-d930-4d5a-af86-c7707faba8e2",
+        "__comment": true
+      },
+      "id": "fb06acfc-1113-4679-8f19-fe608c24fc22"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Attack",
+              "__comment": false
+            },
+            "id": "f3cf9410-62a5-4068-bcc0-2b4fa9399a56"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "actor",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 0,
+              "lifeTime": 0.1,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ],
+              "__collapse": false
+            },
+            "id": "6113c5fa-4604-4071-8757-da5257bf52b5"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "daa66877-be97-4dce-a800-8ba6d3689bfb"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "player",
+              "spriteStateId": ""
+            },
+            "id": "4d685790-1cd0-46bb-82e4-9ff72a3edb0e"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "fe208751-7632-4df8-a1f0-4cc9301922ab"
+          }
+        ]
+      },
+      "id": "78a3a5b2-2e9b-4d57-b3f4-ddb94a3dad6a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a40a2eb5-0eaa-4b4c-93dc-5f08e899eaa5"
+      },
+      "id": "85b2d07b-d145-4e80-906a-b992c6741c9a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a40a2eb5-0eaa-4b4c-93dc-5f08e899eaa5"
+      },
+      "id": "372cc6b0-b740-4b59-8fb0-4547daf0961a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "44fac29a-6f64-42ab-b661-328c8b8ddd83"
+      },
+      "id": "c14a66c3-90b8-4cde-aa74-75019c3cbe93"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2d4+002a+0f6+002a+0f6+002a+0f6+0018+0f6+00c+0f6+0018+0f6+00!0fa+00!0f6+0018+0f6+00!0f!008+0f!00!0f6+00a+0f6+008+0f6+00!0f!008+0f!00!0f6+00a+0f6+008+0f6+00!0f!008+0f!00!0f6+00a+0f6+008+0f2+002+0f2+00!0fa+00!0f6+00a+0f6+001a+0f6+00a+0f6+001a+0f6+00a+0f2+002+0f2+001a+0f6+002a+0f6+0018+0f18+0018+0f18+0018+0f18+0018+0f18+0018+0f18+0018+0f2+002+0f4+002+0f4+002+0f8+003+0f6+0021+0f6+003+0f6+0021+0f6+003+0f6+0021+0f6+003+0f6+0021+0f6+003+0f6+0021+0f6+003+0f2+002+0f2+0021+0f6+002a+0f6+002a+0f6+002a+0f6+002a+0f1a+002+0f2e+002+0f2e+002+0f2e+002+0f16+"
+}

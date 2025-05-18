@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+  "_index": 5,
+  "symbol": "actor_62",
+  "prefabId": "",
+  "name": "Heart1",
+  "x": 4,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+        "$actor[0]$": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+        "$actor[1]$": "d983f305-fb7d-4842-a956-7bdf6719aea6",
+        "$actor[2]$": "b115eabd-fa2f-4258-9fdc-ee851f60b0e5",
+        "__collapse": false
+      },
+      "id": "252c34bf-3e92-42cb-87bf-a51b32c425c2"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

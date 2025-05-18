@@ -1,0 +1,41 @@
+{
+  "_resourceType": "actor",
+  "id": "17848567-c4f2-4240-b92d-fe7d035524fe",
+  "_index": 1,
+  "symbol": "actor_54",
+  "prefabId": "",
+  "name": "KittyKat",
+  "x": 9,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "95da87bf-511c-4aed-bf69-d44b78fa636d",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1a2af093-d98a-4f49-8a59-0a14cc5e83cf",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "e8a45c48-41f2-4cfe-965f-47874456f241"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

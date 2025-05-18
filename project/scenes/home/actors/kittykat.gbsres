@@ -1,0 +1,97 @@
+{
+  "_resourceType": "actor",
+  "id": "94487f81-864b-493c-b2d6-0ba60e965924",
+  "_index": 1,
+  "symbol": "actor_8",
+  "prefabId": "",
+  "name": "kittykat",
+  "x": 9,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "95da87bf-511c-4aed-bf69-d44b78fa636d",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "12",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "12"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "horizontal",
+              "useCollisions": true,
+              "__collapse": false
+            },
+            "id": "ffd9e720-638a-4b74-a33f-a148b61a920f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "8479e4ae-6912-403d-9059-902ac5101f92",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              }
+            },
+            "id": "343a583f-fb94-4fa7-b6f5-e0488ef57b54"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "8479e4ae-6912-403d-9059-902ac5101f92",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "7aec104f-8f7b-49fe-87bc-b4ec19a2a01c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "05eede78-782a-46e8-862c-b2ce7951cb81"
+          }
+        ]
+      },
+      "id": "6d550c76-0888-44a4-b098-c1bc885e3d09"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

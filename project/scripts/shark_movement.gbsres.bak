@@ -1,0 +1,168 @@
+{
+  "_resourceType": "script",
+  "id": "194f89f9-b36c-407a-b8e4-3b812b987ac8",
+  "name": "Shark Movement",
+  "symbol": "script_11",
+  "description": "This script will allow shar to follow the player when rafting through the seas",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "PlayerX",
+      "passByReference": false
+    },
+    "V1": {
+      "id": "V1",
+      "name": "PlayerY",
+      "passByReference": false
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Shark"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "e1bd18dd-00ba-4ace-8e34-d2f95436bb33"
+          }
+        ],
+        "false": []
+      },
+      "id": "fea27ec9-3f1d-4020-a93e-89b9bf28cf7c"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "down",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "d56f79f1-52e6-4d73-b0de-d0373074c7cc"
+          }
+        ],
+        "false": []
+      },
+      "id": "ad5c260b-887c-458d-94ae-2d3097eb758f"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "left",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              },
+              "__comment": false
+            },
+            "id": "e3fd3f5c-e9e5-4428-8c9f-fc089f9b7c10"
+          }
+        ],
+        "false": []
+      },
+      "id": "4669fefc-22b1-4458-a722-557e3bd8b1ed"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "right",
+        "otherActorId": "0",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "a6fbb485-c483-4b05-af98-30c3148e0ef3"
+          }
+        ],
+        "false": []
+      },
+      "id": "11ea6041-91ef-4a42-bb22-9c133941be50"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "variable",
+          "value": "V1"
+        },
+        "moveType": "horizontal",
+        "useCollisions": true,
+        "__collapse": false
+      },
+      "id": "c561f9c0-984a-48ef-8508-c779c8cdab06"
+    }
+  ]
+}

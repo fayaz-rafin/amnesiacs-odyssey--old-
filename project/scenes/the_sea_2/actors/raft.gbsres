@@ -1,0 +1,89 @@
+{
+  "_resourceType": "actor",
+  "id": "006bb172-54a9-4d12-82a5-bba1a17f94f0",
+  "_index": 1,
+  "symbol": "actor_57",
+  "prefabId": "",
+  "name": "raft",
+  "x": 1,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "83b30d04-b1b0-4139-9dfe-2d1ce4452e61",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "variable",
+          "value": "27"
+        },
+        "y": {
+          "type": "variable",
+          "value": "28"
+        },
+        "__collapse": false
+      },
+      "id": "d6cab8a1-e672-47d3-9393-fd689402fa36"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "raft_movement",
+        "__collapse": false
+      },
+      "id": "48b9e2a5-cb38-41c8-90b7-45124b179cad"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "d0af384e-2598-4f60-b226-6765bd5e46ea"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft-empty",
+        "__comment": true
+      },
+      "id": "f856a21c-61bb-4d82-b3d8-fbc9a154caf2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "aa7a8c1b-fe76-451d-943b-2e61d056fc8d"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft-empty"
+      },
+      "id": "87ff831a-2dd8-4ca6-933f-67dcc7371df3"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

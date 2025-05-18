@@ -1,0 +1,25 @@
+{
+  "_resourceType": "trigger",
+  "id": "e0c7349d-62a4-43ca-8440-5d38732204d1",
+  "_index": 2,
+  "symbol": "trigger_12",
+  "prefabId": "",
+  "name": "raftEntrenceTrigger",
+  "x": 15,
+  "y": 14,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__comment": true
+      },
+      "id": "7dbd2a65-e79e-4690-9ca8-168f6d093955"
+    }
+  ]
+}

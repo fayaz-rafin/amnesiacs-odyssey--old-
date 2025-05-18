@@ -1,0 +1,72 @@
+{
+  "_resourceType": "actor",
+  "id": "692db992-3bc3-42f2-be94-912bdcc4e545",
+  "_index": 4,
+  "symbol": "actor_64",
+  "prefabId": "",
+  "name": "Heart2",
+  "x": 2,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<=",
+        "comparator": 12,
+        "__collapseElse": false,
+        "__comment": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 12
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+              "spriteStateId": "Half_Heart"
+            },
+            "id": "7b23bf36-a329-48b2-8e06-b392bc59701a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+              "spriteStateId": ""
+            },
+            "id": "c2654486-b61e-40d1-8668-771579500961"
+          }
+        ]
+      },
+      "id": "a9d64373-d185-4768-9777-691875c31ef1"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

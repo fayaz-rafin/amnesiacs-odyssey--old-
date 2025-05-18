@@ -1,0 +1,96 @@
+{
+  "_resourceType": "scene",
+  "id": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+  "_index": 5,
+  "type": "TOPDOWN",
+  "name": "Tittle Screen",
+  "symbol": "scene_6",
+  "labelColor": "gray",
+  "x": 232,
+  "y": 80,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8a55a777-f282-4aa0-82e0-0250c961bfe9",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "14",
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "1173008d-6705-4b96-8c06-b1ee925f94d9",
+              "$actor[6af0ee7e-513f-449a-b9e1-e42f2ed84f86]$": "94bba262-088b-4731-a826-2d0f4f949cba",
+              "$actor[0]$": "0f9abd1a-29d6-4d6e-830a-1e71fbe57490",
+              "$actor[1]$": "5ef99927-f3b3-4008-8cb3-cf5ee1c19c31",
+              "$actor[2]$": "6d29dd53-2c93-4f91-a5e4-8387d533b6c4",
+              "__collapse": false
+            },
+            "id": "11b3c6f8-77f0-4159-a17b-c078d4f76c6b"
+          }
+        ],
+        "false": []
+      },
+      "id": "7837aa3f-795a-4a08-8ff7-33468a13b8c6"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e9e18a91-472c-4ec4-8ffa-4826b95e6893",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "down",
+              "fadeSpeed": 3
+            },
+            "id": "5bd55f05-cdd1-4f31-a85b-ffe4528bd4e1"
+          }
+        ]
+      },
+      "id": "334a043c-6f3b-418a-bd6a-d321f40ae540"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

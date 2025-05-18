@@ -1,0 +1,56 @@
+{
+  "_resourceType": "script",
+  "id": "8638faac-b54a-4cc3-9544-5b03ecb00970",
+  "name": "Setting Cave Creeper Variable",
+  "symbol": "script_5",
+  "description": "Setting all the variables needed by cave creeper",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "number",
+          "value": 10
+        },
+        "__collapse": false
+      },
+      "id": "f9a6e743-1412-41fc-b26e-32826b25efa5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "13",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b78c57d8-29c6-447a-ae34-c05cd57466b1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "__collapse": false,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "ecb3f62d-b490-44f8-9104-1c090c50d212"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "15",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "ea6cabf8-a9e3-46cb-9193-261192bec5b3"
+    }
+  ]
+}

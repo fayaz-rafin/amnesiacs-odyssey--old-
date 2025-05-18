@@ -1,0 +1,207 @@
+{
+  "_resourceType": "actor",
+  "id": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
+  "_index": 5,
+  "symbol": "actor_39",
+  "prefabId": "",
+  "name": "raft",
+  "x": 16,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "83b30d04-b1b0-4139-9dfe-2d1ce4452e61",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        },
+        "__comment": true
+      },
+      "id": "99098600-96f0-4566-9778-41c3a864c42a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "__collapse": false
+      },
+      "id": "afe42647-1f7f-4430-81a1-34156cb1f25e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "player",
+        "spriteStateId": "raft_movement",
+        "__collapse": false
+      },
+      "id": "92dc41e9-020e-4e1f-b708-aebcb8f4e280"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "200116e3-3f6e-44c8-8ee3-f5df2fca70e9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "941c8cb5-1b00-44eb-b3b9-e85708b15988"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "__disableElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__comment": true
+            },
+            "id": "960b252c-1d6c-4f62-966d-e7d75e392123"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
+              "__collapse": false
+            },
+            "id": "6b915206-8cd1-4130-b851-2039c03908f4"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be"
+            },
+            "id": "c9411b96-7d0f-439e-adf5-5e777f3ae301"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              }
+            },
+            "id": "2b8189c9-2abc-4d6e-8988-0771a0048dbb"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "raft-empty"
+            },
+            "id": "572c3860-75f6-4427-8571-a772770383ca"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "4c5f18c1-ee02-4b58-bb47-236b89a712f6"
+          }
+        ]
+      },
+      "id": "a14d9b90-df87-40ee-8243-cf75f31facfe"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "__collapse": false,
+        "__disableElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6d2a5cc9-523b-41e1-902e-f4b005f790a1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "raft-empty",
+              "__comment": true
+            },
+            "id": "5c582515-ae7b-4332-9870-319375432130"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "917d60b5-d765-461f-a096-6ff4cbf0e558"
+          }
+        ]
+      },
+      "id": "642417e3-fce2-43df-b56a-00d9991b49fd"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,255 @@
+{
+  "_resourceType": "trigger",
+  "id": "9eb39cbc-938e-43ea-ae08-93b19cc3227a",
+  "_index": 1,
+  "symbol": "trigger_26",
+  "prefabId": "",
+  "name": "Walkway",
+  "x": 21,
+  "y": 11,
+  "width": 8,
+  "height": 18,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "27",
+        "vectorY": "28",
+        "__comment": false
+      },
+      "id": "718cd243-41b0-476b-a47e-7c7f8f4dd98a"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "add",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 1,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": true,
+        "__comment": false
+      },
+      "id": "aface1bb-f733-4e77-8da0-a47f5c74c97d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__comment": false,
+        "__collapse": false
+      },
+      "id": "4b0a8d71-9abc-4ef2-9b2a-418968b26e1e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "__collapse": false,
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "dce14699-5ed5-4fdd-89f7-77a1504fddab"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b",
+        "__collapse": false
+      },
+      "id": "95fdfd3a-e244-4da9-8c59-6fdd78640cac"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 29
+        },
+        "__comment": true
+      },
+      "id": "a606f138-17dd-4291-848a-bbfa51dc5372"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b",
+        "x": {
+          "type": "variable",
+          "value": "27"
+        },
+        "y": {
+          "type": "variable",
+          "value": "28"
+        },
+        "__collapse": false,
+        "__comment": false
+      },
+      "id": "a1d4d896-481b-4e1f-99cf-36f2c6223673"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b",
+        "__collapse": true,
+        "__comment": false
+      },
+      "id": "f3d4f5c3-c96a-45a3-a78a-aae44eff47ec"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "006bb172-54a9-4d12-82a5-bba1a17f94f0",
+        "spriteStateId": "raft-empty",
+        "__collapse": false
+      },
+      "id": "25ec07b8-79c8-4ce8-bb26-0eabbbe1664b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Attack",
+              "__comment": false
+            },
+            "id": "e441a170-94e2-4a96-b874-66a508c9f972"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 16,
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "actor",
+              "initialOffset": 12,
+              "speed": 4,
+              "animSpeed": 255,
+              "lifeTime": 0.1,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ]
+            },
+            "id": "e22ababa-1514-45ba-a851-94982940da8b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "0239dd72-4643-4e9d-84fc-181768c72322"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "player",
+              "spriteStateId": ""
+            },
+            "id": "5c0d7c64-51aa-4067-9dd0-66a1a86a40b2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "49",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "3654a21d-cf8b-4825-93b9-01b83d9ae47d"
+          }
+        ]
+      },
+      "id": "671c1ed8-898a-42db-bfeb-bf8494654232"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "49",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "49"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b"
+            },
+            "id": "bb9da3e9-13f3-4eee-aba1-b41e6a81d5b1"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "3ffd05db-a5c9-487b-948d-e2862637671b"
+            },
+            "id": "990fdc9f-8dbb-4cf8-a62c-25b44ea11c39"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "raft_movement"
+            },
+            "id": "133bbe22-b56d-4212-958f-83f74e7aee93"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": []
+            },
+            "id": "df85ccd2-f651-41cd-b461-f68d12701bb2"
+          }
+        ],
+        "false": []
+      },
+      "id": "47ee0363-b5d6-498c-87ab-acb5524258cf"
+    }
+  ]
+}

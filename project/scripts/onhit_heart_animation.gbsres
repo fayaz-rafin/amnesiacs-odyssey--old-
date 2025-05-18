@@ -1,0 +1,369 @@
+{
+  "_resourceType": "script",
+  "id": "6df9f058-b2c7-4d36-8792-13d2ede2f942",
+  "name": "OnHit Heart Animation",
+  "symbol": "script_8",
+  "description": "Whenever the Player gets hit, it will run this script. The hearts will blink depending on the current hp of the player.",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Heart1"
+    },
+    "1": {
+      "id": "1",
+      "name": "Heart2"
+    },
+    "2": {
+      "id": "2",
+      "name": "Heart3"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": ">",
+        "comparator": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 16
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "6",
+              "operator": "<=",
+              "comparator": 20,
+              "__collapseElse": false,
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 20
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteStateId": "Half_Heart_Blink"
+                  },
+                  "id": "8e44221f-a0ae-49b2-b389-2c84032baa44"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "1",
+                    "spriteStateId": ""
+                  },
+                  "id": "0417121e-4c15-4b2c-8a7e-f6b5dc7510c7"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "2",
+                    "spriteStateId": ""
+                  },
+                  "id": "3641324e-883a-47d7-bce9-bcbc2caa82f5"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteStateId": "HeartBlink"
+                  },
+                  "id": "1621d8e7-4199-4b20-a11e-58329a781392"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "1",
+                    "spriteStateId": ""
+                  },
+                  "id": "fe48d704-f65b-4dc7-9b7f-33fc88431ca8"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "2",
+                    "spriteStateId": ""
+                  },
+                  "id": "b9ebbd16-945d-49df-9556-a84ac3937624"
+                }
+              ]
+            },
+            "id": "ddafea64-25c3-4c4a-9173-1eeeafb6a5d2"
+          }
+        ],
+        "false": []
+      },
+      "id": "331bbc00-5d62-4f2a-ac1d-051b257344a4"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<=",
+        "comparator": 16,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 16
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "6",
+              "operator": ">",
+              "comparator": 8,
+              "__collapseElse": false,
+              "__disableElse": true,
+              "__collapse": true,
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 8
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "6",
+                    "operator": "<=",
+                    "comparator": 12,
+                    "__collapseElse": false,
+                    "condition": {
+                      "type": "lte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "6"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 12
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "0"
+                        },
+                        "id": "a320987a-402b-4864-aa2b-c2d9b71c312e"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "1",
+                          "spriteStateId": "Half_Heart_Blink"
+                        },
+                        "id": "de8ea58d-dc6b-4e6b-9822-727ea674c06d"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "2",
+                          "spriteStateId": ""
+                        },
+                        "id": "cb34c525-fd69-4048-95d6-34303d7f1f49"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "0"
+                        },
+                        "id": "2276751b-1650-4b9e-bcdd-6f93594acac6"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "1",
+                          "spriteStateId": "HeartBlink"
+                        },
+                        "id": "350502fe-f627-4384-bdf2-ac6f5323de96"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_STATE",
+                        "args": {
+                          "actorId": "2",
+                          "spriteStateId": ""
+                        },
+                        "id": "6b9463af-6aa0-42d1-acd0-84bf8e413504"
+                      }
+                    ]
+                  },
+                  "id": "12db0318-881e-420d-afec-40d65a6d85e3"
+                }
+              ],
+              "false": []
+            },
+            "id": "454fab8e-2810-473a-9266-526866d39054"
+          }
+        ],
+        "false": []
+      },
+      "id": "15edb78f-3681-4992-b6fe-ce52112fb61b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<=",
+        "comparator": 8,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "6",
+              "operator": "<=",
+              "comparator": 4,
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "0"
+                  },
+                  "id": "acf58c08-aedd-49c0-ab5b-ec7fb9846a91"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "1"
+                  },
+                  "id": "3b7c4b18-4054-46ff-b777-e7339a5d16cd"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "2",
+                    "spriteStateId": "Half_Heart_Blink"
+                  },
+                  "id": "cf9dc02c-7a5d-4b18-8430-2a14997719a9"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "0"
+                  },
+                  "id": "b5cff03d-8a23-4928-8dca-40f06f029b08"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "1"
+                  },
+                  "id": "2fc71002-8c3c-4185-b57f-e248ca3b0647"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "2",
+                    "spriteStateId": "HeartBlink"
+                  },
+                  "id": "ab69db85-2488-430a-bc47-eb62b33e324a"
+                }
+              ]
+            },
+            "id": "000d978c-6863-4203-b206-37d6b4b958ff"
+          }
+        ],
+        "false": []
+      },
+      "id": "d6d7a4d0-16e2-41aa-8702-ab3bc5d91796"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "98c48941-e80c-483f-90e8-ce19bba4c594",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "30914b42-cfa1-43d6-97f7-d4c3378e36a2"
+    }
+  ]
+}

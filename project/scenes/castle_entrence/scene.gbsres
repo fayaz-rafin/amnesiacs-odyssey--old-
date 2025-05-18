@@ -1,0 +1,162 @@
+{
+  "_resourceType": "scene",
+  "id": "d12073e8-7c0d-470e-9db6-6636ba088ba2",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "Castle Entrence",
+  "symbol": "scene_11",
+  "x": 1421.6020282314043,
+  "y": 1416.0918424135682,
+  "width": 48,
+  "height": 36,
+  "backgroundId": "7c3ab9c9-6ee5-4ef7-a5bc-aaee3f9fb986",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Attack",
+              "__comment": true
+            },
+            "id": "5d75c0e9-c8d9-4b38-a001-c9f422dffba4"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.1,
+              "frames": 30,
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "b5921b40-2107-4345-af9b-2f3c4e31a208"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "actor",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 0,
+              "lifeTime": 0.1,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ],
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "d1cbe92a-2a20-4a35-b570-34c097a98383"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "f635e02a-59ac-4dfb-a88b-4fccaa4e0272"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "player",
+              "spriteStateId": "",
+              "__comment": true
+            },
+            "id": "ef0e7fee-d57e-45ba-96f7-f303027d728f"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.7,
+              "frames": 30,
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "553b00d7-c3a7-4e5e-a31e-713e11b6a871"
+          }
+        ]
+      },
+      "id": "2c28451a-3a26-4265-9973-d1baaaaaa793"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft_movement",
+        "__collapse": false
+      },
+      "id": "1abcd678-8d3c-4c33-b7da-92e0d1ae5e00"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "48",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "48"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4d9c06b2-aa4d-4a30-95c6-4e4b139b1fc1"
+            },
+            "id": "2d7f944a-a022-4de8-b33b-79b50ba2b239"
+          }
+        ],
+        "false": []
+      },
+      "id": "c4826bba-9182-4f42-ae69-05a4ac007a3d"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "daec7318-ef7f-467d-98fa-f4fd6dd21568"
+      },
+      "id": "1089b444-67ba-4a7c-a5e8-32d9a6afea0e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00c3+0f2+009+0f2+008+0f2+008+0f2+008+0f2+005+0f2+009+0f2+008+0f2+008+0f2+008+0f2+0078+0f2+002+0f2+002a+0f6+0029+0f3+002+0f3+0013+0f18+002+0f2e+002+0f16+0015+0f3+002+0f3+0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f!005+0f2+0028+0f3+002+0f3+0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f3+002+0f3+0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!00193+"
+}

@@ -1,0 +1,87 @@
+{
+  "_resourceType": "scene",
+  "id": "969c52f4-f2e9-4f0d-8ca1-b8477687e20c",
+  "_index": 18,
+  "type": "TOPDOWN",
+  "name": "Preload scene",
+  "symbol": "scene_19",
+  "x": 758.5731945577311,
+  "y": 1166.5989967427943,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "14",
+        "__collapseElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "1173008d-6705-4b96-8c06-b1ee925f94d9"
+            },
+            "id": "0859ae5f-feca-44a2-b223-f53b19ef50dc"
+          }
+        ],
+        "false": []
+      },
+      "id": "2fbef603-c68e-4d5b-a18e-55f5d23fce5e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "26",
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "26"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "__collapse": false,
+              "customEventId": "2c747239-a220-49eb-9c8e-a1df092311a6"
+            },
+            "id": "011c587f-46b9-477c-91e5-f4d861916583"
+          }
+        ],
+        "false": []
+      },
+      "id": "9530e049-0b31-4773-a7c8-d2ceaa094dd4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

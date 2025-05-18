@@ -1,0 +1,74 @@
+{
+  "_resourceType": "script",
+  "id": "1173008d-6705-4b96-8c06-b1ee925f94d9",
+  "name": "Setting Player Variables",
+  "symbol": "script_2",
+  "description": "Setting Player Variables",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Heart1"
+    },
+    "1": {
+      "id": "1",
+      "name": "Heart2"
+    },
+    "2": {
+      "id": "2",
+      "name": "Heart3"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 24
+        },
+        "__collapse": true
+      },
+      "id": "87e90c2d-d0d2-4532-b8f0-9f947baf5e1d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "533b358a-dc26-48c2-83b1-a563f1f12458"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "1",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "213e41f7-b0a6-40ec-b4fd-f60707995cd0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "2",
+        "spriteStateId": "",
+        "__collapse": true
+      },
+      "id": "60284a4c-9d7e-41da-b451-00d19caa94a3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "__collapse": false,
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "5e9e3449-00f1-480b-8174-6ce16d1110a4"
+    }
+  ]
+}

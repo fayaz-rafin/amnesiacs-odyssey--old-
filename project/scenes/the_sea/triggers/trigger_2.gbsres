@@ -1,0 +1,41 @@
+{
+  "_resourceType": "trigger",
+  "id": "058188ec-6e8e-4603-9c64-380de967c562",
+  "_index": 1,
+  "symbol": "trigger_25",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 35,
+  "width": 28,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "401d3960-789f-464f-bde7-a93bc77d3d97",
+        "x": {
+          "type": "number",
+          "value": 21
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "fa84283e-c77e-4012-a625-ade8e2295383"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft_movement"
+      },
+      "id": "55293520-c83d-41c4-8935-ea6c6b53b864"
+    }
+  ],
+  "leaveScript": []
+}

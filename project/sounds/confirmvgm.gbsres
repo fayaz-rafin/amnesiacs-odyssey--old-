@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "805666a6-5b6f-449f-95d7-846b4f8f75f9",
+  "name": "Confirm.vgm",
+  "symbol": "sound_confirm_vgm",
+  "filename": "Confirm.vgm",
+  "type": "vgm"
+}

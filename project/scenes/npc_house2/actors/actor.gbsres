@@ -1,0 +1,47 @@
+{
+  "_resourceType": "actor",
+  "id": "c2f8a5ae-b393-451c-a09d-7e3d3f671a8c",
+  "_index": 0,
+  "symbol": "actor_35",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I wonder what i \nshould cook for\ndinner tonight.."
+        ],
+        "avatarId": "2223a528-bcb6-4048-afaa-61840238d6d7"
+      },
+      "id": "1d884a35-8d85-4ad8-8cb8-37a17ca4c219"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-3"
+      },
+      "id": "e0e728ce-98e9-4c41-a2ec-0a5395a4d547"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

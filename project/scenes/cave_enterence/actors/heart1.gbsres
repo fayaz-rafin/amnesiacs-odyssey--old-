@@ -1,0 +1,83 @@
+{
+  "_resourceType": "actor",
+  "id": "663a3424-0298-4d01-9538-04a4f07cd455",
+  "_index": 4,
+  "symbol": "actor_27",
+  "prefabId": "",
+  "name": "Heart1",
+  "x": 4,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "62069d79-f9dd-4c50-bf98-ea3022a99c33",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<=",
+        "comparator": 20,
+        "__collapseElse": false,
+        "__comment": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 20
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+              "spriteStateId": "Half_Heart"
+            },
+            "id": "7f9bf5f5-d6fe-4b11-a7aa-a691da5f94a7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "6af0ee7e-513f-449a-b9e1-e42f2ed84f86",
+              "spriteStateId": ""
+            },
+            "id": "6b8fa379-d064-45c6-bf09-405e02705b02"
+          }
+        ]
+      },
+      "id": "db49fb1a-e1af-4ccb-86c6-9de944996b19"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+        "$actor[0]$": "663a3424-0298-4d01-9538-04a4f07cd455",
+        "$actor[1]$": "064df3dc-b50b-4128-bb0b-9af575a90209",
+        "$actor[2]$": "0a486de9-78a7-4b94-a3dd-a4b6bd21a995",
+        "__collapse": false
+      },
+      "id": "0c5b16f2-3648-4b79-9f4a-3b2edaf2dedf"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

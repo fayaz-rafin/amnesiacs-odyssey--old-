@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "f98063d8-6f81-4211-85b5-449a01a26ac7",
+  "_index": 0,
+  "symbol": "trigger_16",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 12,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "it's dangerous\nto go alone!",
+          "Take this."
+        ],
+        "avatarId": "f913561b-a5d0-4f96-a8f5-c2032e566223"
+      },
+      "id": "d60fe6d1-adfa-4954-b0c2-01207929fcae"
+    }
+  ],
+  "leaveScript": []
+}

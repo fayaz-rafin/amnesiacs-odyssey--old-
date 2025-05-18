@@ -1,0 +1,103 @@
+{
+  "_resourceType": "actor",
+  "id": "32c3727a-95fb-460d-b91b-c73fd310a7b5",
+  "_index": 0,
+  "symbol": "actor_58",
+  "prefabId": "",
+  "name": "hidden health",
+  "x": 11,
+  "y": 38,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<",
+        "comparator": 24,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 24
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "6",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "44031467-0263-4e24-a48a-d82bb7a65bd7"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+              "$actor[0]$": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+              "$actor[1]$": "d983f305-fb7d-4842-a956-7bdf6719aea6",
+              "$actor[2]$": "b115eabd-fa2f-4258-9fdc-ee851f60b0e5",
+              "__collapse": false
+            },
+            "id": "4646a18d-2673-48d3-9af2-eb7508c3d2ab"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "97bc16d7-0eba-429f-9187-630a5619b379"
+          }
+        ],
+        "false": []
+      },
+      "id": "b91f545c-4e9c-4050-b1de-38a5503c98b5"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3babde01-60dc-4457-810f-4573429b9fe5"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ddf9dd9a-4e75-4bb6-8a37-7aa79f77cc66"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

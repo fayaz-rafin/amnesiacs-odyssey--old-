@@ -1,0 +1,47 @@
+{
+  "_resourceType": "actor",
+  "id": "4f9910f4-723f-4190-8a33-ff87719ada73",
+  "_index": 1,
+  "symbol": "actor_38",
+  "prefabId": "",
+  "name": "",
+  "x": 13,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mommy, can we\nplease have \nmeatloaf for\ndinner?"
+        ],
+        "avatarId": "b2872639-20d8-442d-81d3-38341959bc01"
+      },
+      "id": "4924807b-d192-4f40-959d-5e0347045e08"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-4"
+      },
+      "id": "f878d4b8-e924-4aae-9b24-8b51bfe1f3b0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

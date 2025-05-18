@@ -1,0 +1,88 @@
+{
+  "_resourceType": "actor",
+  "id": "568d0464-08d4-4a53-9163-9ef192900bf7",
+  "_index": 6,
+  "symbol": "actor_96",
+  "prefabId": "",
+  "name": "health",
+  "x": 11,
+  "y": 38,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<",
+        "comparator": 24,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 24
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "6",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "f3fb6fb6-5092-4c0b-b8d8-ea325e6a8df5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+              "$actor[0]$": "599cfbf5-9e41-4418-8137-7c290d480ca6",
+              "$actor[1]$": "d983f305-fb7d-4842-a956-7bdf6719aea6",
+              "$actor[2]$": "b115eabd-fa2f-4258-9fdc-ee851f60b0e5",
+              "__collapse": false
+            },
+            "id": "4ffd4c8a-804b-4a2a-8475-6a13868cb0a9"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "38878e43-ee8b-4791-ae3a-ca08437b5df1"
+          }
+        ],
+        "false": []
+      },
+      "id": "107c25f8-51e0-41e3-9b73-f7d692c822ce"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

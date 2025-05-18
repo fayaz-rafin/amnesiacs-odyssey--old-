@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "977e2ad3-da8b-4d35-9dc9-b671be8bcab7",
+  "_index": 1,
+  "symbol": "actor_2",
+  "prefabId": "",
+  "name": "",
+  "x": 12,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The sound of the\nsea shore...",
+          "It's so serene",
+          "I love mother\nnature!"
+        ],
+        "avatarId": "0a2778a1-53bf-421b-9673-3bd026eb9223"
+      },
+      "id": "334b86b6-a652-43e3-b8fe-15ddf0d96dee"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2"
+      },
+      "id": "41dadd38-d340-48e0-8219-b704e7bcad1b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "npc-5"
+      },
+      "id": "9ad80e26-2f7c-4f69-9415-da7e4742a6f0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

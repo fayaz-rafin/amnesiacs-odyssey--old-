@@ -1,0 +1,87 @@
+{
+  "_resourceType": "actor",
+  "id": "18037933-45d8-403e-8a26-0fedf66d41ae",
+  "_index": 5,
+  "symbol": "actor_78",
+  "prefabId": "",
+  "name": "Box2",
+  "x": 38,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ecd84ac8-ebc5-45ad-bdf2-47a2d21f3c6c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<",
+        "comparator": 24,
+        "__collapseElse": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 24
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "6",
+              "operation": "add",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 4,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "33a53a3a-9bcf-4f65-906a-f8279f17d054"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+              "$actor[0]$": "ad29141e-4f84-4be8-8e55-a7f303256f00",
+              "$actor[1]$": "58afbe08-cfcf-4d50-919b-10e9de1d5a15",
+              "$actor[2]$": "a36be6f5-200a-4f5f-83fb-1a233af8596d",
+              "__collapse": false
+            },
+            "id": "304e33e1-85a3-421d-a9f8-ef00c30ad7de"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "385dea0b-ec75-4c2e-97ec-dd25d2493cee"
+          }
+        ],
+        "false": []
+      },
+      "id": "234bc13d-2932-44a7-a4b3-d4c0765ceda2"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

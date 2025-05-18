@@ -1,0 +1,131 @@
+{
+  "_resourceType": "trigger",
+  "id": "9c07c9f6-9560-48de-a32e-d6b0add6b9ea",
+  "_index": 4,
+  "symbol": "trigger_32",
+  "prefabId": "",
+  "name": "Pond_Trigger",
+  "x": 0,
+  "y": 15,
+  "width": 32,
+  "height": 17,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "49",
+        "__collapseElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "49"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be"
+            },
+            "id": "600e87d3-ed00-4769-a20b-706fca6ac664"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "raft_movement"
+            },
+            "id": "cc0d9178-49fa-4213-a337-8af9b73f67b2"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": []
+            },
+            "id": "5e9d8bb7-ba75-4c6e-b1ac-6823900e6495"
+          }
+        ],
+        "false": []
+      },
+      "id": "7bfd2e8a-b80b-4a6c-8e7c-98c2a72ceb04"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__collapse": false
+      },
+      "id": "6ec52da0-cf58-4e4e-839d-f3e196058328"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": true,
+        "__collapse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "__comment": true
+            },
+            "id": "c7d931cf-9efe-420a-901f-e180fa3c4e26"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
+              "__collapse": false,
+              "__comment": true
+            },
+            "id": "a3d614af-e409-4f3b-ab92-c35f9455ae71"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be"
+            },
+            "id": "7928f1fc-c949-4399-969f-649634fd2b64"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "2a0746d4-1edb-4721-9eba-0d4dfad7d5be",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              }
+            },
+            "id": "e61f20f0-116c-408a-8b13-3817a2bb695d"
+          }
+        ],
+        "false": []
+      },
+      "id": "e2aa1f56-8f44-4710-8218-9d7cd2b21aed"
+    }
+  ]
+}

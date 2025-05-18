@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ae413f64-dbaa-4929-a096-cc78ee03145e",
+  "name": "sea2",
+  "symbol": "bg_sea2",
+  "width": 64,
+  "height": 64,
+  "imageWidth": 512,
+  "imageHeight": 512,
+  "filename": "sea2.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "3183e3f7-392c-4466-bd4b-e816472044e7",
+  "_index": 12,
+  "type": "TOPDOWN",
+  "name": "Sword location",
+  "symbol": "scene_14",
+  "x": 60,
+  "y": 90.51220835321209,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "c21a3047-571d-4b9e-b8f3-ff68edb93de3",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2a+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+007+0f2+007+0f4+002+0f2+003+0f2+003+0f2+002+0f4+002+0f2+003+0f2+003+0f2+002+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+005+0ff+005+0f7+"
+}

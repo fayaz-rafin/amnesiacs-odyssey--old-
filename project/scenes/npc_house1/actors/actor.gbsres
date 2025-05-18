@@ -1,0 +1,41 @@
+{
+  "_resourceType": "actor",
+  "id": "6cc1e843-6d65-4c6d-b66d-8505b6df344a",
+  "_index": 0,
+  "symbol": "actor_36",
+  "prefabId": "",
+  "name": "",
+  "x": 7,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e102fb20-43db-4f06-9a0b-0762d7b37edc",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I managed to get\nthis village's",
+          "First working\ncomputer",
+          "Now i need to\nfigure out",
+          "How to run this\n\"MS-DOS\"."
+        ],
+        "avatarId": "706c5863-902b-44d3-88b8-6d6159538365"
+      },
+      "id": "f0ef8bee-19a6-43b3-bb14-a8c94d4287bc"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

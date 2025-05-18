@@ -1,0 +1,174 @@
+{
+  "_resourceType": "actor",
+  "id": "28b62af2-855b-4fe3-afeb-06ff67785907",
+  "_index": 5,
+  "symbol": "actor_30",
+  "prefabId": "",
+  "name": "PickAxe",
+  "x": 31,
+  "y": 31,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "83b30d04-b1b0-4139-9dfe-2d1ce4452e61",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "51b2b9b0-2013-4cb7-908c-81d91e13151d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pickaxe collected."
+        ],
+        "avatarId": ""
+      },
+      "id": "378c9288-60b2-4fb6-b253-6695ec813e3b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "33",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "46fcb69b-6cf7-4792-b9c7-6765f7634112"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "13",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "13"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "33",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "33"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                  },
+                  "id": "0648a124-84ff-4d8c-99df-7b14c34821e9"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+                  },
+                  "id": "932b8f08-dc08-47d9-b6be-d13d5dd23244"
+                }
+              ]
+            },
+            "id": "92454b91-69a0-40b1-afd8-1e97880cc0cc"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "28b62af2-855b-4fe3-afeb-06ff67785907"
+            },
+            "id": "52fab998-fb92-4a62-a4af-0f851d9672c7"
+          }
+        ]
+      },
+      "id": "2c9a87ab-7574-492e-83af-3a1e3a0d455a"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "13",
+        "__collapseElse": true,
+        "__comment": true,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "13"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "47788303-ab4c-4d47-8b70-d900cb4edb49"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "31"
+              },
+              "y": {
+                "type": "variable",
+                "value": "32"
+              }
+            },
+            "id": "ebe19550-c7d9-4457-8c83-a5c91ff74f3b"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c4aa9422-b9f5-4990-a8e6-6c919f08b726"
+          }
+        ],
+        "false": []
+      },
+      "id": "51aa91a9-439f-4a2d-98ca-b266fa4baf86"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

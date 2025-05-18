@@ -1,0 +1,25 @@
+{
+  "_resourceType": "trigger",
+  "id": "99b56a14-6007-4225-ac58-ce1e3d4de690",
+  "_index": 5,
+  "symbol": "trigger_33",
+  "prefabId": "",
+  "name": "",
+  "x": 31,
+  "y": 31,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "",
+        "__comment": true
+      },
+      "id": "5fa372d3-0ef9-4391-a9e6-03bcb4e4492b"
+    }
+  ]
+}

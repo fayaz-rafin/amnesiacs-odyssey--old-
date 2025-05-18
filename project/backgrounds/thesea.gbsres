@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "13f8d320-2375-4535-a6c0-491fc8b54e04",
+  "name": "thesea",
+  "symbol": "bg_thesea",
+  "width": 28,
+  "height": 36,
+  "imageWidth": 224,
+  "imageHeight": 288,
+  "filename": "thesea.png",
+  "tileColors": "",
+  "autoColor": false
+}

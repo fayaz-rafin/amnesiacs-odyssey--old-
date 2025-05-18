@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "cd1a03ea-c89c-43c7-8774-8efc177c2dd1",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "GameOver",
+  "symbol": "scene_7",
+  "labelColor": "red",
+  "x": 411.792681158881,
+  "y": 78.01411656458248,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a9d2b324-87fd-48f4-9699-8c17e2fe47bf",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "f45caaed-4779-4de9-a899-cf5fc96aa1fa",
+  "script": [
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Restart",
+        "falseText": "TryAgain"
+      },
+      "id": "5ceb24f1-bf5f-4a79-a061-25c0b174c8e3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f19131ab-45a6-439c-ab29-7a0378249663",
+              "__collapse": false
+            },
+            "id": "e0d8b82b-4768-4323-a28c-349464447a57"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f6fee759-d761-48eb-987d-a4f2c9d230bc",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "8d8837ee-6bd7-4e5a-bfe2-d5647f744801"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f19131ab-45a6-439c-ab29-7a0378249663",
+              "__collapse": false
+            },
+            "id": "88beb242-af87-47cf-9ed5-a3dbc6a1d862"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a57372a7-3d6a-4ad8-b167-c26969cbcac6",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "467c0c9c-d3a6-4028-bb58-4cfc1d12a0b6"
+          }
+        ]
+      },
+      "id": "cd5fae4c-edc9-4650-9680-68587a0fd52f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -1,0 +1,485 @@
+{
+  "_resourceType": "actor",
+  "id": "59fc6b68-560b-429a-8dff-605ae1792fbc",
+  "_index": 0,
+  "symbol": "actor_53",
+  "prefabId": "",
+  "name": "Old man",
+  "x": 11,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e5c9abd3-7f8f-4741-aa69-047b9aecbde0",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "684e286d-f6f4-4ff3-965c-d382518eaead",
+        "$actor[0]$": "4a0aa194-dce4-4dec-a781-d2ad99e228f4",
+        "$actor[1]$": "692db992-3bc3-42f2-be94-912bdcc4e545",
+        "$actor[2]$": "95162204-3b4b-4610-8d78-0c57abcce2d8",
+        "__collapse": true
+      },
+      "id": "74318eab-f061-4d68-8670-808a6a54f2b2"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "8578cfd6-c818-4755-a645-ef80a550508a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Meow.."
+        ],
+        "avatarId": "2ec68969-e52c-4514-aa19-50627413d2f8",
+        "__collapse": true
+      },
+      "id": "2b07d727-4be6-4d44-a144-1b00686ef804"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "My Kittykat!",
+          "Oh, am i happy\nto see you!"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "357089df-8a19-49bc-8be7-eaac33664b4d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "cb3bedab-06c9-4d72-823d-1718e22e285d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Thank you so \nmuch young lad!",
+          "Well, look at\nyou!",
+          "You've brought\na friend over",
+          "What's your name\nson?"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": true
+      },
+      "id": "574ef6f9-4296-46fd-b186-8987777275f4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "My name is Steve"
+        ],
+        "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+        "__collapse": false
+      },
+      "id": "a8517942-1704-408e-8a2b-3f3ce4f5c8b0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "He is also lost",
+          "Just like me.",
+          "I met him outside\nof a cave not far\nfrom here."
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "ede6d68c-b1da-4325-b1d7-4eb4ce0bc414"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A cave? ",
+          "That's dangerous",
+          "How'd you go\nthere without\na weapon?"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "1b874623-1c67-4bf0-84ac-2111b1920c22"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I have a weapon."
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "6b46ee18-405e-4754-b3c3-c46e0d99365c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Where on earth\ndid you find a \nweapon from?"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "2f98950e-50e6-4808-991e-a20ebfcc928f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "That's not\nimportant, Bart.",
+          "I've found out \nabout a wise sage",
+          "who might be able\nto help me regain \nmy memories."
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "776ed503-6cc9-4bdf-ab4f-c1233baed77b"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {
+        "__collapse": true
+      },
+      "id": "321ad922-7a3d-44c3-8612-c91c85733606"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "ad5b0071-d593-4c04-bc3c-2e310562fd78"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A sage, you say?",
+          "Aye, there's \npower in \nknowledge",
+          "If anyone can \nhelp,it's likely\nthem"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "a4447286-47e7-4841-99da-c35acd25374e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Do you know \nanything about\na sage?",
+          "This could be the\nanswer i'm looking\nfor"
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "39d3acbb-81d9-4137-96f2-d7887bcfd90b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        },
+        "__collapse": false
+      },
+      "id": "ed0c629b-d525-478b-b2c3-7113c9c82309"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "152071a0-525b-4862-8e2a-90204d78e63c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I do indeed\nrecall hearing",
+          "about this sage.",
+          "It was an old \nvillage folklore",
+          "Of a powerful \nyet wise sage",
+          "who lives in the\nislands south\nfrom this \nvillage"
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "71a9973e-96b9-472d-a2cb-76865b61e3d5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This all sounds\nlike a fairytale\nto me"
+        ],
+        "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4",
+        "__collapse": false
+      },
+      "id": "7477300b-2b2c-4404-8ce5-2b3ae26190d0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        },
+        "__collapse": false
+      },
+      "id": "2fd2775f-de6e-4937-acaa-772aa70239d5"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "player",
+        "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d",
+        "__collapse": false,
+        "__comment": true
+      },
+      "id": "a1cd6d36-29aa-415b-bb6e-c6321aa2e0d9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I'm ready to \nset out on this \njourney.",
+          "I need to know \nwho I am.",
+          "and the adventures\nthat led me to \nthis point."
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "efed60f9-2d5a-4ff1-af4c-9aa57f48791d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "189d946f-e400-48e2-b609-66bb24e20a17"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A noble quest \nindeed, lad. ",
+          "But I must \ntell you",
+          "reaching the \nisland won't be \na simple stroll",
+          "The southern \nwaters are \ntreacherous",
+          "and that island \nis a fair \ndistance away."
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3",
+        "__collapse": false
+      },
+      "id": "b6a8bd35-ff3b-4466-b179-c1a2775b4ff6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "What should i do\nthen?"
+        ],
+        "avatarId": "",
+        "__collapse": false
+      },
+      "id": "4c79d94a-3c24-4d67-abc5-8b57882f762f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "b2c1ae88-46b6-42f0-ab4d-a5742307ac1b",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        },
+        "__collapse": false
+      },
+      "id": "1b5b840e-f3a8-4420-be59-e32f1540e017"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "For starters,",
+          "You're gonna\nneed a boat\nto get there.",
+          "It's the \nleast i can do \nfor helping me\nout."
+        ],
+        "avatarId": "50b6f01c-2cd7-4978-98e1-3bea6da024a4"
+      },
+      "id": "31a0e5f0-10ac-466a-a822-3c312a7fa720"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "e7a2b3a2-a0bf-49a2-9ed8-b34e0f4ef706"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Thanks, Steve."
+        ],
+        "avatarId": ""
+      },
+      "id": "4bbd88d5-a057-4d1e-b607-9e1ac3a0ca45"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "71d47e04-3f9d-475c-a5c9-3829305a5283"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "c2d24865-8079-4b61-be2a-bd8408a92ce6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Thank you, Bart. ",
+          "Your guidance \nmeans a lot to me"
+        ],
+        "avatarId": ""
+      },
+      "id": "40bbb158-5e83-4217-b06a-425fc6d339b0"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "5d70ebd5-7916-4bb8-aebc-7edaa7a42e20"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Remember, lad,",
+          "the sea can be \nboth a friend \nand a foe.",
+          "Respect it, ",
+          "and it shall \nguide you.",
+          "Now go,",
+          "gather your \ncrew",
+          "and embark on \nyour path to",
+          "uncover the \ntruth."
+        ],
+        "avatarId": "c2d08e32-ddb9-4eb0-80ea-fa931bd360d3"
+      },
+      "id": "87aadff7-59d0-4deb-860a-dce034779127"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "b2c1ae88-46b6-42f0-ab4d-a5742307ac1b",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "vertical",
+        "useCollisions": true
+      },
+      "id": "40278e9e-5653-4e65-a93a-792ddd9bf8f0"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "b2c1ae88-46b6-42f0-ab4d-a5742307ac1b",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": true
+      },
+      "id": "590a472f-f948-4f2c-9480-7afa8ccf2e10"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "b2c1ae88-46b6-42f0-ab4d-a5742307ac1b",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "moveType": "horizontal",
+        "useCollisions": true
+      },
+      "id": "9f5cdb51-58bd-4f90-8f36-845ede5411c1"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "b2c1ae88-46b6-42f0-ab4d-a5742307ac1b"
+      },
+      "id": "c1395a62-ac09-4927-8bdd-8bd7a0032ffe"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

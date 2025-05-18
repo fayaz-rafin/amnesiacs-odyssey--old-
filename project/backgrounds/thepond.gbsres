@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "80941896-5e45-4577-8506-b65514b8451c",
+  "name": "thepond",
+  "symbol": "bg_thepond",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "filename": "thepond.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,63 @@
+{
+  "_resourceType": "scene",
+  "id": "e8eceb00-4b89-48c7-b6d2-85a16e60aef0",
+  "_index": 9,
+  "type": "TOPDOWN",
+  "name": "the sea",
+  "symbol": "scene_10",
+  "x": 280.7491806731422,
+  "y": 1046.1925346465346,
+  "width": 28,
+  "height": 36,
+  "backgroundId": "bdc66de4-6a4b-413d-88df-94aa07ebf210",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "raft_movement"
+      },
+      "id": "56c6e60c-4a5a-47d6-9b01-1f29bdc21231"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "194f89f9-b36c-407a-b8e4-3b812b987ac8",
+        "$actor[0]$": "c4de20ad-2134-4ecc-93d9-a55ff8ed5baa",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L3"
+        },
+        "$variable[V2]$": {
+          "type": "variable",
+          "value": "L2"
+        },
+        "$variable[V3]$": {
+          "type": "variable",
+          "value": "L3"
+        },
+        "__comment": true,
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L2"
+        }
+      },
+      "id": "0d746d18-f459-4181-b81a-97a5100c002c"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "daec7318-ef7f-467d-98fa-f4fd6dd21568"
+      },
+      "id": "aa3efc38-9c5c-4468-89e5-d42b594d9ebd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "008+0f2+005+0f2+0013+0f2+005+0f2+0013+0f2+005+0f2+0013+0f2+005+0f2+0013+0f2+005+0f2+0013+0f2+005+0f2+0013+0f!006+0f2+0013+0f!007+0f!0012+0f2+007+0f2+0010+0f2+009+0f2+007+0f2+006+0f2+009+0f2+007+0f3+004+0f2+00b+0f!007+0f!00!0f!004+0f2+00b+0f2+005+0f2+002+0f4+00d+0f2+003+0f4+002+0f4+00f+0f5+0018+0f2+00235+"
+}

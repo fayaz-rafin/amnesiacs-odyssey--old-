@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7c3ab9c9-6ee5-4ef7-a5bc-aaee3f9fb986",
+  "name": "sage1",
+  "symbol": "bg_sage1",
+  "width": 48,
+  "height": 36,
+  "imageWidth": 384,
+  "imageHeight": 288,
+  "filename": "sage1.png",
+  "tileColors": "",
+  "autoColor": false
+}
